@@ -11,10 +11,10 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://7expeditions.com/">
 <meta property="og:locale" content="ru_RU">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23221E18'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23F1EDE4' text-anchor='middle'%3E7%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23221E18'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='20' fill='%23F1EDE4' text-anchor='middle'%3E7%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;800&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/hero-poster.jpg" fetchpriority="high">
 
 <script type="application/ld+json">
@@ -52,7 +52,7 @@
     {
       "@type": "Service",
       "@id": "https://7expeditions.com/#service",
-      "serviceType": "Трофейные экспедиции",
+      "serviceType": ["Трофейные экспедиции", "Хелиски"],
       "provider": { "@id": "https://7expeditions.com/#org" },
       "description": "Многодневные трофейные экспедиции по Северной Америке: доисторический белый осётр на реке Фрейзер, дикий лосось и океанская рыбалка в Британской Колумбии и на Аляске, синий тунец в Новой Шотландии, щука и маскинонг в центральной Канаде, аллигаторовый гар в Техасе. Группы от шести человек, экспедиции от восьми дней. Семь экспедиций в год. Логистика, разрешения, гиды и снаряжение — внутри.",
       "areaServed": "Северная Америка",
@@ -103,8 +103,9 @@
 <style>
 :root{
   --ivory:#F1EDE4; --char:#221E18; --umber:#8A8071; --line:#CFC8BA;
-  --display:'Prata',serif; --body:'Golos Text',sans-serif;
+  --body:'Golos Text',sans-serif;
   --g:clamp(1.6rem,6vw,6.5rem);
+  --gap:clamp(8px,1vw,14px);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 ::selection{background:var(--char);color:var(--ivory)}
@@ -121,39 +122,54 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
 .hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.92)}
 .hero-media::after{content:"";position:absolute;inset:0;
   background:linear-gradient(to top, rgba(24,20,15,.62), rgba(24,20,15,.06) 45%, rgba(24,20,15,.28))}
-.hero-top{display:flex;justify-content:space-between;align-items:baseline;
-  padding:clamp(1.4rem,2.6vw,2.4rem) var(--g);color:var(--ivory)}
-.wordmark{font-family:var(--display);letter-spacing:.4em;text-transform:uppercase;
-  font-size:clamp(.9rem,1.3vw,1.05rem)}
-.wordmark b{font-weight:400;font-size:1.4em;letter-spacing:0;margin-right:.4em}
-.hero-top .caps{color:rgba(241,237,228,.72)}
-.hero-bottom{margin-top:auto;padding:0 var(--g) clamp(2.6rem,6vh,4.6rem);color:var(--ivory)}
-.hero h1{font-family:var(--display);font-weight:400;
-  font-size:clamp(2rem,4.6vw,4rem);line-height:1.26;max-width:14em;text-wrap:balance}
-.authline{margin-top:clamp(1.4rem,3vh,2.2rem);
+.hero-center{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:0 var(--g);color:var(--ivory)}
+.hero h1{font-family:var(--body);font-weight:800;text-transform:uppercase;letter-spacing:.07em;
+  font-size:clamp(2.4rem,6.4vw,5rem);line-height:1.12;text-wrap:balance}
+.hero h1 .num{color:transparent;-webkit-text-stroke:2.5px var(--ivory);margin-right:.045em;
+  display:inline-block;transform:scale(.957);transform-origin:center}
+@media(max-width:760px){.hero h1 .num{-webkit-text-stroke-width:1.8px;transform:scale(.938)}}
+.hero-sub{margin-top:clamp(1rem,2.4vh,1.7rem);max-width:36em;
+  font-family:'Montserrat',sans-serif;font-weight:300;text-transform:uppercase;
+  letter-spacing:.6em;margin-left:.6em;
+  font-size:clamp(.85rem,1.3vw,1.0625rem);color:var(--ivory)}
+.hero-authline{padding:0 var(--g) clamp(1.7rem,4vh,2.8rem);text-align:center;
   font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(241,237,228,.62)}
 
-.creed{padding:20svh var(--g)}
-.creed article{max-width:1050px;margin:0 auto 17svh}
-.creed article:last-child{margin-bottom:0}
-.statement{font-family:var(--display);font-weight:400;
-  font-size:clamp(1.55rem,3.1vw,2.6rem);line-height:1.44;max-width:22em}
-.statement .dim{color:var(--umber)}
-.rule{width:3.5rem;height:1px;background:var(--line);margin:0 auto 17svh}
+.service{padding:clamp(4.5rem,13svh,8.5rem) var(--g);text-align:center}
+.service h2{font-family:var(--body);font-weight:500;
+  font-size:clamp(1.7rem,3.4vw,2.8rem);line-height:1.3;text-wrap:balance}
+.service p{margin:clamp(1.8rem,4vh,2.6rem) auto 0;max-width:60ch;
+  font-size:clamp(1rem,1.35vw,1.15rem)}
 
-.gallery{display:flex;flex-direction:column}
-.gallery figure{position:relative}
-.gallery .ph{height:88svh;overflow:hidden}
-.gallery .ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.95)}
-.gallery figcaption{display:flex;justify-content:space-between;gap:2rem;
-  padding:1.15rem var(--g) 1.3rem;
-  font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--umber)}
-.gallery .pair{display:grid;grid-template-columns:1fr 1fr;gap:2px}
-.gallery .pair .cell{position:relative;height:88svh;overflow:hidden}
-.gallery .pair img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.95)}
-@media(max-width:760px){.gallery .pair{grid-template-columns:1fr}.gallery .pair .cell{height:64svh}.gallery .ph{height:64svh}}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);padding:0 var(--g)}
+.tile{position:relative;aspect-ratio:3/4;overflow:hidden}
+.tile img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.95)}
+.tile::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(24,20,15,.42), rgba(24,20,15,.18))}
+.tile-title{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;
+  font-family:var(--body);font-weight:500;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--ivory);text-align:center;
+  font-size:clamp(1.05rem,1.5vw,1.5rem);line-height:1.3;padding:0 .8rem}
+@media(max-width:760px){.tiles{grid-template-columns:1fr 1fr}}
 
-.contact{padding:24svh var(--g);text-align:center}
+.interlude{padding:clamp(6.5rem,18svh,12rem) var(--g);text-align:center}
+.interlude p{font-family:var(--body);font-weight:400;
+  font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.7;max-width:55ch;margin:0 auto;text-wrap:balance}
+
+.mosaic{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:clamp(180px,32vh,400px);
+  grid-auto-flow:dense;gap:var(--gap);padding:0 var(--g)}
+.mosaic .cell{position:relative;overflow:hidden}
+.mosaic img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.95)}
+.mosaic .w2{grid-column:span 2}
+.mosaic .t2{grid-row:span 2}
+@media(max-width:760px){
+  .mosaic{grid-template-columns:1fr;grid-auto-rows:52svh}
+  .mosaic .w2{grid-column:auto}
+  .mosaic .t2{grid-row:auto}
+}
+
+.contact{padding:16svh var(--g);text-align:center}
 .contact .caps{display:block;margin-bottom:2.6rem}
 .contact-links{display:flex;gap:clamp(2rem,6vw,4.6rem);justify-content:center;flex-wrap:wrap}
 .contact-links a{color:var(--char);text-decoration:none;
@@ -178,54 +194,51 @@ footer .season{text-transform:none;letter-spacing:.04em;font-style:italic;font-s
   <div class="hero-media" aria-hidden="true">
     <video src="assets/hero.mp4" poster="assets/hero-poster.jpg" width="640" height="360" autoplay loop muted playsinline></video>
   </div>
-  <div class="hero-top">
-    <div class="wordmark"><b>7</b>Expeditions</div>
-    <div class="caps">Северная Америка</div>
+  <div class="hero-center">
+    <h1><span class="num">7</span>expeditions</h1>
+    <p class="hero-sub">по-настоящему</p>
   </div>
-  <div class="hero-bottom">
-    <h1>Трофейные экспедиции по&nbsp;Северной Америке.</h1>
-    <div class="authline">Все кадры сняты в&nbsp;наших экспедициях</div>
-  </div>
+  <div class="hero-authline">Все кадры сняты в наших экспедициях</div>
 </header>
 
-<section class="creed" aria-label="Суть">
-  <article class="reveal"><p class="statement">Семь экспедиций в&nbsp;год. <span class="dim">Больше не&nbsp;делаем.</span></p></article>
-  <div class="rule" aria-hidden="true"></div>
-  <article class="reveal"><p class="statement">От&nbsp;Аляски до&nbsp;Техаса.</p></article>
-  <div class="rule" aria-hidden="true"></div>
-  <article class="reveal"><p class="statement">С&nbsp;2009&nbsp;года. <span class="dim">Ванкувер.</span></p></article>
-  <div class="rule" aria-hidden="true"></div>
-  <article class="reveal"><p class="statement">Логистика, разрешения, гиды, снаряжение&nbsp;— <span class="dim">всё внутри.</span></p></article>
+<section class="service reveal" aria-label="Полный сервис">
+  <h2>С 2009 года создаем уникальные экспедиции в Канаде и за её пределами</h2>
+  <p>Мы проводим лишь небольшое количество экспедиций в год, а значит, можем проработать каждую деталь до мелочей, сотрудничая только с партнёрами, которых знаем много лет.</p>
 </section>
 
-<section class="gallery" aria-label="Экспедиции">
-  <figure class="reveal">
-    <div class="ph"><img src="assets/sturgeon-fraser.jpg" alt="Белый осётр на реке Фрейзер, Британская Колумбия — трофейная экспедиция 7 Expeditions" width="1498" height="895" loading="lazy" decoding="async"></div>
-    <figcaption><span>Белый осётр — река Фрейзер</span><span>Британская Колумбия</span></figcaption>
-  </figure>
-  <figure class="reveal">
-    <div class="pair">
-      <div class="cell"><img src="assets/tuna-nova-scotia.jpg" alt="Вываживание синего тунца, Новая Шотландия — экспедиция 7 Expeditions" width="835" height="993" loading="lazy" decoding="async"></div>
-      <div class="cell"><img src="assets/winter.jpg" alt="Зимняя часть экспедиции — лыжи и снег" width="993" height="993" loading="lazy" decoding="async"></div>
-    </div>
-    <figcaption><span>Синий тунец — Новая Шотландия</span><span>Зима</span></figcaption>
-  </figure>
-  <figure class="reveal">
-    <div class="ph"><img src="assets/salmon-alaska.jpg" alt="Дикий лосось, Аляска — экспедиция 7 Expeditions" width="1324" height="993" loading="lazy" decoding="async"></div>
-    <figcaption><span>Дикий лосось</span><span>Аляска</span></figcaption>
-  </figure>
-  <figure class="reveal">
-    <div class="ph"><img src="assets/gar-texas.jpg" alt="Аллигаторовый гар, Техас — экспедиция 7 Expeditions" width="1324" height="993" loading="lazy" decoding="async"></div>
-    <figcaption><span>Аллигаторовый гар</span><span>Техас</span></figcaption>
-  </figure>
-  <figure class="reveal">
-    <div class="ph"><img src="assets/salmon-bc.jpg" alt="Дикий лосось, Британская Колумбия — экспедиция 7 Expeditions" width="1280" height="960" loading="lazy" decoding="async"></div>
-    <figcaption><span>Дикий лосось</span><span>Британская Колумбия</span></figcaption>
-  </figure>
-  <figure class="reveal">
-    <div class="ph"><img src="assets/salmon-pacific.jpg" alt="Дикий тихоокеанский лосось — экспедиция 7 Expeditions" width="1000" height="750" loading="lazy" decoding="async"></div>
-    <figcaption><span>Дикий лосось</span><span>Тихий океан</span></figcaption>
-  </figure>
+<section class="tiles reveal" aria-label="Направления">
+  <div class="tile">
+    <img src="assets/fishing.jpg" alt="Рыбак вываживает крупную рыбу с катера в океане на мощное морское удилище" width="835" height="993" loading="lazy" decoding="async">
+    <span class="tile-title">Трофейная рыбалка</span>
+  </div>
+  <div class="tile">
+    <img src="assets/heliskiing.jpg" alt="Лыжники на снежном гребне над океанским фьордом перед спуском" width="892" height="959" loading="lazy" decoding="async">
+    <span class="tile-title">Хелиски</span>
+  </div>
+  <div class="tile">
+    <img src="assets/expeditions.jpg" alt="Снегоход в глубоком снегу в зимнем лесу" width="558" height="748" loading="lazy" decoding="async">
+    <span class="tile-title">Экспедиции под ключ</span>
+  </div>
+  <div class="tile">
+    <img src="assets/events.jpg" alt="Путешественники и ледовый автобус Ice Explorer на леднике Колумбийского ледяного поля, Канада" width="1600" height="1062" loading="lazy" decoding="async">
+    <span class="tile-title">События</span>
+  </div>
+</section>
+
+<section class="interlude reveal" aria-label="О впечатлениях">
+  <p>Это не просто поездка — это приключение, которое останется с вами. Вертолёт улетает — и вокруг только горы, снег и тишина. Борьба с мощной рыбой на леске. Чистый воздух, треск костра, ощущение полной свободы — моменты, которые вы будете вспоминать годами</p>
+</section>
+
+<section class="mosaic reveal" aria-label="Фотографии экспедиций">
+  <div class="cell w2"><img src="assets/sturgeon-fraser.jpg" alt="Белый осётр на реке Фрейзер, Британская Колумбия — трофейная экспедиция 7 Expeditions" width="1498" height="895" loading="lazy" decoding="async"></div>
+  <div class="cell t2"><img src="assets/tuna-nova-scotia.jpg" alt="Вываживание синего тунца, Новая Шотландия — экспедиция 7 Expeditions" width="835" height="993" loading="lazy" decoding="async"></div>
+  <div class="cell"><img src="assets/winter.jpg" alt="Зимняя часть экспедиции — лыжи и снег" width="993" height="993" loading="lazy" decoding="async"></div>
+  <div class="cell"><img src="assets/salmon-bc.jpg" alt="Дикий лосось, Британская Колумбия — экспедиция 7 Expeditions" width="1280" height="960" loading="lazy" decoding="async"></div>
+  <div class="cell w2"><img src="assets/salmon-alaska.jpg" alt="Дикий лосось, Аляска — экспедиция 7 Expeditions" width="1324" height="993" loading="lazy" decoding="async"></div>
+  <div class="cell"><img src="assets/gar-texas.jpg" alt="Аллигаторовый гар, Техас — экспедиция 7 Expeditions" width="1324" height="993" loading="lazy" decoding="async"></div>
+  <div class="cell"><img src="assets/salmon-pacific.jpg" alt="Дикий тихоокеанский лосось — экспедиция 7 Expeditions" width="1000" height="750" loading="lazy" decoding="async"></div>
+  <div class="cell"><img src="assets/sturgeon-fraser.jpg" alt="Белый осётр на реке Фрейзер, Британская Колумбия — трофейная экспедиция 7 Expeditions" width="1498" height="895" loading="lazy" decoding="async"></div>
+  <div class="cell"><img src="assets/winter.jpg" alt="Зимняя часть экспедиции — лыжи и снег" width="993" height="993" loading="lazy" decoding="async"></div>
 </section>
 
 <section class="contact" aria-label="Контакт">
