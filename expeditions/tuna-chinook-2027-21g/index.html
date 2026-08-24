@@ -38,12 +38,18 @@ h1,h2,h3{font-family:'Prata',serif;font-weight:400}
   display:flex;flex-direction:column;justify-content:center;
 }
 .photo-page{padding:0;max-width:none;min-height:100vh;position:relative;display:block}
-.photo-page img{display:block;width:100%;height:100vh;object-fit:cover}
+.photo-page picture,.photo-page img{display:block;width:100%;height:100vh;object-fit:cover}
 .photo-page .cap{
   position:absolute;left:0;right:0;bottom:28px;text-align:center;
   color:#F1EDE4;text-shadow:0 0 24px rgba(0,0,0,.45);
 }
 hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+/* вертикальный кадр на горизонтальном экране — без обрезки */
+@media (orientation: landscape){
+  .photo-page.portrait{background:var(--bg)}
+  .photo-page.portrait img{object-fit:contain;height:calc(100vh - 72px)}
+  .photo-page.portrait .cap{color:var(--dim);text-shadow:none}
+}
 /* обложка */
 .cover{position:relative}
 .cover .overlay{
@@ -86,7 +92,7 @@ h3.sub{font-size:19px;margin:28px 0 12px}
     margin:0;padding:26mm 24mm;page-break-after:always;
   }
   .photo-page{height:297mm;width:210mm;padding:0;page-break-after:always}
-  .photo-page img{height:297mm;width:210mm}
+  .photo-page picture,.photo-page img{height:297mm;width:210mm}
   .page:last-child,.photo-page:last-child{page-break-after:auto}
 }
 </style>
@@ -95,7 +101,10 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 1 · Обложка -->
 <section class="photo-page cover">
-  <img src="img/cover.jpg" alt="">
+  <picture>
+    <source media="(orientation: portrait)" srcset="img/m/cover.jpg">
+    <img src="img/cover.jpg" alt="" style="object-position:50% 45%">
+  </picture>
   <div class="overlay">
     <h1>Трофейный дубль</h1>
     <div class="sub">Синий тунец Атлантики · Чавыча озера Онтарио</div>
@@ -113,8 +122,11 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 </section>
 
 <!-- 3 · Фото: трофей I -->
-<section class="photo-page">
-  <img src="img/tuna.jpg" alt="">
+<section class="photo-page portrait">
+  <picture>
+    <source media="(orientation: portrait)" srcset="img/m/tuna.jpg">
+    <img src="img/tuna.jpg" alt="" style="object-position:48% 40%">
+  </picture>
   <div class="cap caps">Синий тунец — восточнее Чатема</div>
 </section>
 
@@ -157,7 +169,10 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 5 · Фото: рабочий кадр -->
 <section class="photo-page">
-  <img src="img/boat.jpg" alt="">
+  <picture>
+    <source media="(orientation: portrait)" srcset="img/m/boat.jpg">
+    <img src="img/boat.jpg" alt="" style="object-position:52% 55%">
+  </picture>
   <div class="cap caps">Флот — Чатем</div>
 </section>
 
@@ -189,7 +204,10 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 7 · Фото: трофей II -->
 <section class="photo-page">
-  <img src="img/chinook.jpg" alt="">
+  <picture>
+    <source media="(orientation: portrait)" srcset="img/m/chinook.jpg">
+    <img src="img/chinook.jpg" alt="" style="object-position:50% 45%">
+  </picture>
   <div class="cap caps">Чавыча — Salmon River</div>
 </section>
 
@@ -211,7 +229,10 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 9 · Фото: жильё -->
 <section class="photo-page">
-  <img src="img/manor.jpg" alt="">
+  <picture>
+    <source media="(orientation: portrait)" srcset="img/m/manor.jpg">
+    <img src="img/manor.jpg" alt="" style="object-position:47% 60%">
+  </picture>
   <div class="cap caps">Douglaston Manor — Salmon River</div>
 </section>
 
@@ -246,7 +267,10 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 11 · Фото: финал -->
 <section class="photo-page">
-  <img src="img/river.jpg" alt="">
+  <picture>
+    <source media="(orientation: portrait)" srcset="img/m/river.jpg">
+    <img src="img/river.jpg" alt="" style="object-position:50% 50%">
+  </picture>
   <div class="cap caps">Река Salmon — Пуласки</div>
 </section>
 
