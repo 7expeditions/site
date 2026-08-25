@@ -55,11 +55,11 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
 @media (orientation: portrait){
   .photo-page:has(img.wide){
     min-height:0;height:auto;
-    padding:56px 0;
+    padding:0;
     display:flex;flex-direction:column;justify-content:center;
   }
   .photo-page img.wide{height:auto;width:100%}
-  .photo-page:has(img.wide) .cap{position:static;margin-top:20px}
+  .photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
 }
 .photo-page:has(img.wide){background:var(--bg)}
 .photo-page:has(img.wide) .cap{color:var(--dim);text-shadow:none}
@@ -207,16 +207,26 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   <div class="cap caps">Флот — Чатем</div>
 </section>
 
-<!-- 6 · Программа II -->
+<!-- 6 · День 5: переход -->
 <section class="page">
-  <h2 class="section">Часть II · Чавыча</h2>
-  <div class="section-sub">Douglaston Manor · река Salmon, Нью-Йорк · 23–27 сентября</div>
-
   <div class="day">
     <div class="d">День 5 · 23 сентября</div>
     <div class="w">Чатем → Syracuse → Douglaston Manor</div>
     <p>Чартерный рейс в Syracuse, трансфер 45 минут. Заселение в Douglaston Manor — дом на частном участке реки Salmon, целиком под группу. Вечером — встреча с гидами, план по воде на три дня.</p>
   </div>
+</section>
+
+<!-- 7 · Фото: трофей II -->
+<section class="photo-page">
+  <img src="img/chinook.jpg" alt="" class="wide">
+  <div class="cap caps">Чавыча — Salmon River</div>
+</section>
+
+<!-- 8 · Программа II -->
+<section class="page">
+  <h2 class="section">Часть II · Чавыча</h2>
+  <div class="section-sub">Douglaston Manor · река Salmon, Нью-Йорк · 23–27 сентября</div>
+
   <div class="day">
     <div class="d">Дни 6–8 · 24–26 сентября</div>
     <div class="w">Douglaston Salmon Run · три рыболовных дня</div>
@@ -227,12 +237,6 @@ h3.sub{font-size:19px;margin:28px 0 12px}
     <div class="w">Syracuse</div>
     <p>Трансфер в аэропорт 45 минут. Вылет по маршрутам группы.</p>
   </div>
-</section>
-
-<!-- 7 · Фото: трофей II -->
-<section class="photo-page">
-  <img src="img/chinook.jpg" alt="" class="wide">
-  <div class="cap caps">Чавыча — Salmon River</div>
 </section>
 
 <!-- 8 · Быт -->
