@@ -61,6 +61,15 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
 .cover .sub{font-family:'Golos Text',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:17px;line-height:1.5;margin-bottom:18px}
 /* суть */
 .fact{font-size:19px;line-height:1.7;margin-bottom:26px}
+.lead{font-family:'Prata',serif;font-size:26px;line-height:1.4;margin-bottom:44px}
+.blk{margin-bottom:44px}
+.blk .caps{display:block;margin-bottom:14px}
+.blk .hero{font-family:'Prata',serif;font-size:22px;line-height:1.45;margin-bottom:14px}
+.blk p{font-size:16px;line-height:1.7;color:#4A4338}
+@media (max-width:480px){
+  .lead{font-size:21px;margin-bottom:36px}
+  .blk .hero{font-size:19px}
+}
 /* программа */
 h2.section{font-size:26px;margin-bottom:6px}
 .section-sub{color:var(--dim);font-size:14px;margin-bottom:36px}
@@ -115,11 +124,21 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 2 · Суть -->
 <section class="page">
-  <div class="caps" style="margin-bottom:40px">Две лучшие рыбалки северо-востока США</div>
-  <p class="fact">Гигантский синий тунец до 900 фунтов на банках восточнее Чатема, в двух часах от Бостона. Самая стабильная тунцовая вода северо-востока: рыба стоит здесь с июня по ноябрь.</p>
-  <p class="fact">Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
-  <p class="fact">Трофейная чавыча озера Онтарио до 45 фунтов на частном отрезке реки Salmon. Лучшая неделя в году.</p>
-  <p class="fact">Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
+  <div class="lead">Две лучшие рыбалки северо-востока США</div>
+
+  <div class="blk">
+    <span class="caps">Озеро Онтарио · река Salmon</span>
+    <div class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.</div>
+    <p>Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
+  </div>
+
+  <hr style="margin:0 0 44px">
+
+  <div class="blk" style="margin-bottom:0">
+    <span class="caps">Атлантика · банки восточнее Чатема</span>
+    <div class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</div>
+    <p>Самая стабильная тунцовая вода северо-востока: рыба стоит здесь с июня по ноябрь. Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
+  </div>
 </section>
 
 <!-- 3 · Фото: трофей I -->
