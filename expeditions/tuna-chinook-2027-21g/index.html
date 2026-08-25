@@ -50,6 +50,9 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   .photo-page.portrait img{object-fit:contain;height:calc(100vh - 72px)}
   .photo-page.portrait .cap{color:var(--dim);text-shadow:none}
 }
+.photo-page img.wide{object-fit:contain;background:var(--bg);height:calc(100vh - 72px)}
+.photo-page:has(img.wide){background:var(--bg)}
+.photo-page:has(img.wide) .cap{color:var(--dim);text-shadow:none}
 /* обложка */
 .cover{position:relative}
 .cover .overlay{
@@ -218,10 +221,7 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 7 · Фото: трофей II -->
 <section class="photo-page">
-  <picture>
-    <source media="(orientation: portrait)" srcset="img/m/chinook.jpg">
-    <img src="img/chinook.jpg" alt="" style="object-position:50% 45%">
-  </picture>
+  <img src="img/chinook.jpg" alt="" class="wide">
   <div class="cap caps">Чавыча — Salmon River</div>
 </section>
 
