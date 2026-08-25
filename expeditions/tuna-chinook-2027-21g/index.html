@@ -88,6 +88,14 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 /* условия */
 .terms p{font-size:15px;margin-bottom:14px}
 .contact{margin-top:56px}
+.contact-links{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.contact-links a{
+  font-family:'Golos Text',sans-serif;font-weight:400;
+  text-transform:uppercase;letter-spacing:.3em;font-size:12px;
+  color:var(--ink);text-decoration:none;
+  border-bottom:1px solid var(--line);padding-bottom:6px;
+}
+@media print{.contact-links a{border-bottom:0}}
 @media (max-width:480px){
   .cover h1{font-size:30px}
   .cover .sub{font-size:14px;letter-spacing:.18em}
@@ -281,7 +289,12 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 12 · Контакт -->
 <section class="page" style="align-items:center;text-align:center">
-  <div class="caps">WhatsApp · Telegram · explore@7expeditions.com</div>
+  <span class="caps">Первый контакт</span>
+  <nav class="contact-links">
+    <a href="https://wa.me/17788553539">WhatsApp</a>
+    <a href="https://t.me/VadimRubinov">Telegram</a>
+    <a href="mailto:explore@7expeditions.com">Почта</a>
+  </nav>
 </section>
 
 </body>
