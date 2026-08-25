@@ -51,6 +51,16 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   .photo-page.portrait .cap{color:var(--dim);text-shadow:none}
 }
 .photo-page img.wide{object-fit:contain;background:var(--bg);height:calc(100vh - 72px)}
+/* портрет: секция по высоте кадра, без пустых полей сверху и снизу */
+@media (orientation: portrait){
+  .photo-page:has(img.wide){
+    min-height:0;height:auto;
+    padding:56px 0;
+    display:flex;flex-direction:column;justify-content:center;
+  }
+  .photo-page img.wide{height:auto;width:100%}
+  .photo-page:has(img.wide) .cap{position:static;margin-top:20px}
+}
 .photo-page:has(img.wide){background:var(--bg)}
 .photo-page:has(img.wide) .cap{color:var(--dim);text-shadow:none}
 /* обложка */
