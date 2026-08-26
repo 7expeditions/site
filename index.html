@@ -139,7 +139,7 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
   letter-spacing:.06em;color:#E4DED2;white-space:nowrap}
 @media(max-width:760px){
   .hero .logo,.hero .claim,.hero .shot{left:24px}
-  .hero .slogan{white-space:normal;letter-spacing:.54em}
+  .hero .slogan{white-space:normal;letter-spacing:min(.54em,calc((100vw - 247px)/12))}
 }
 
 .service{padding:clamp(4.5rem,13svh,8.5rem) var(--g);text-align:center}
