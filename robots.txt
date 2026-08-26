@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /expeditions/tuna-chinook-2027-21g/
+
+Sitemap: https://7expeditions.com/sitemap.xml
