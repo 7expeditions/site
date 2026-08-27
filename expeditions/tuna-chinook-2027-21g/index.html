@@ -113,8 +113,9 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 @media (max-width:480px){
   .cover h1{font-size:30px}
   .cover .sub{font-size:14px;letter-spacing:.18em}
-  .page{padding:72px 22px}
+  .page{min-height:0;padding:56px 22px}
   .page.compact{padding:36px 22px}
+  .page.compact[style]{padding-top:56px!important;padding-bottom:48px!important}
 }
 /* печать */
 @page{size:A4;margin:0}
