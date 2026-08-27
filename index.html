@@ -14,7 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23221E18'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='20' fill='%23F1EDE4' text-anchor='middle'%3E7%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/hero-poster.jpg" fetchpriority="high">
 
 <script type="application/ld+json">
@@ -104,8 +104,11 @@
 :root{
   --ivory:#F1EDE4; --char:#221E18; --umber:#8A8071; --line:#CFC8BA; --bg:#FBF9F4;
   --body:'Golos Text',sans-serif;
+  --display:'Prata',serif;
   --g:clamp(1.6rem,6vw,6.5rem);
   --gap:clamp(8px,1vw,14px);
+  --frame:1200px;
+  --frame-pad:max(1.6rem,calc((100% - var(--frame))/2));
 }
 *{margin:0;padding:0;box-sizing:border-box}
 ::selection{background:var(--char);color:var(--ivory)}
@@ -141,20 +144,20 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
 }
 
 .service{padding:clamp(4.5rem,13svh,8.5rem) var(--g);text-align:center}
-.service h2{font-family:var(--body);font-weight:500;max-width:52rem;margin:0 auto;
-  font-size:clamp(1.7rem,3.4vw,2.8rem);line-height:1.3;text-wrap:balance}
+.service h2{font-family:var(--display);font-weight:400;max-width:52rem;margin:0 auto;
+  font-size:clamp(1.3rem,1.8vw,1.5rem);line-height:1.45;text-wrap:balance}
 .service p{margin:clamp(1.8rem,4vh,2.6rem) auto 0;max-width:52rem;
   font-size:clamp(1rem,1.35vw,1.15rem)}
 
-.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);padding:0 var(--g)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);padding:0 var(--frame-pad)}
 .tile{position:relative;aspect-ratio:3/4;overflow:hidden}
 .tile img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.95)}
 .tile::after{content:"";position:absolute;inset:0;
   background:linear-gradient(to top, rgba(24,20,15,.42), rgba(24,20,15,.18))}
 .tile-title{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;
-  font-family:var(--body);font-weight:500;text-transform:uppercase;letter-spacing:.12em;
+  font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.2em;
   color:var(--ivory);text-align:center;
-  font-size:clamp(1.05rem,1.5vw,1.5rem);line-height:1.3;padding:0 .8rem}
+  font-size:clamp(.95rem,1.2vw,1.15rem);line-height:1.4;padding:0 .8rem}
 @media(max-width:760px){.tiles{grid-template-columns:1fr}}
 
 .interlude{padding:clamp(6.5rem,18svh,12rem) var(--g);text-align:center}
@@ -170,7 +173,7 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
 .contact-links a.mail{text-transform:none;letter-spacing:.08em}
 
 footer{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:baseline;
-  padding:1.9rem var(--g) 2.2rem;border-top:1px solid var(--line);
+  padding:1.9rem var(--frame-pad) 2.2rem;border-top:1px solid var(--line);
   font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--umber)}
 footer .place{text-transform:none;letter-spacing:.06em}
 
