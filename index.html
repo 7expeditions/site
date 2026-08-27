@@ -152,19 +152,14 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
 
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--edge);padding:var(--edge) var(--edge) 0}
 .tile{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--umber)}
+.tile img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.95)}
 .tile::after{content:"";position:absolute;inset:0;
   background:linear-gradient(to top, rgba(24,20,15,.42), rgba(24,20,15,.18))}
-.tile-size{position:absolute;right:12px;bottom:10px;z-index:1;
-  font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(241,237,228,.55)}
 .tile-title{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;
   font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.2em;
   color:var(--ivory);text-align:center;
   font-size:clamp(1rem,1.3vw,1.25rem);line-height:1.4;padding:0 .8rem}
 @media(max-width:760px){.tiles{grid-template-columns:1fr}}
-
-.interlude{padding:clamp(6.5rem,18svh,12rem) var(--g);text-align:center}
-.interlude p{font-family:var(--body);font-weight:400;
-  font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.7;max-width:52rem;margin:0 auto}
 
 .contact{padding:clamp(3.5rem,9svh,6rem) var(--g) clamp(2.5rem,6svh,4rem);text-align:center}
 .contact-links{display:flex;gap:clamp(2rem,6vw,4.6rem);justify-content:center;flex-wrap:wrap}
@@ -201,26 +196,22 @@ footer .place{text-transform:none;letter-spacing:.06em}
 
 <section class="tiles reveal" aria-label="Направления">
   <div class="tile">
+    <img src="assets/tile-fishing.jpg" alt="Катера для трофейной рыбалки на песчаном берегу реки Фрейзер, Британская Колумбия" width="1600" height="900" loading="lazy" decoding="async">
     <span class="tile-title">Трофейная рыбалка</span>
-    <span class="tile-size">1600 × 900</span>
   </div>
   <div class="tile">
+    <img src="assets/tile-heliski.jpg" alt="Вертолёт над заснеженным хребтом, лыжник на гребне перед спуском" width="1600" height="900" loading="lazy" decoding="async">
     <span class="tile-title">Хелиски</span>
-    <span class="tile-size">1600 × 900</span>
   </div>
   <div class="tile">
+    <img src="assets/tile-expeditions.jpg" alt="Группа рыболовов с трофейным белым осетром в реке Фрейзер, Британская Колумбия" width="744" height="418" loading="lazy" decoding="async">
     <span class="tile-title">Экспедиции</span>
-    <span class="tile-size">1600 × 900</span>
   </div>
 </section>
 
 <section class="service reveal" aria-label="Полный сервис">
   <h2>С 2009 года создаем экспедиции в Канаде и за её пределами</h2>
-  <p>За каждой стоят месяцы подготовки. Поэтому мы проводим лишь несколько в год.</p>
-</section>
-
-<section class="interlude reveal" aria-label="О впечатлениях">
-  <p>Мы разрабатываем путешествие под ваш график, стандарты и стиль: от сезонных рекомендаций и брони лучших локаций до индивидуальной логистики, разрешений, личных шеф-поваров и эксклюзивных возможностей.</p>
+  <p>За каждой стоят месяцы подготовки. Поэтому мы проводим лишь несколько в год. Мы разрабатываем путешествие под ваш график, стандарты и стиль: от сезонных рекомендаций и брони лучших локаций до индивидуальной логистики, разрешений, личных шеф-поваров и эксклюзивных возможностей.</p>
 </section>
 
 <section class="contact" aria-label="Контакт">
