@@ -107,8 +107,7 @@
   --display:'Prata',serif;
   --g:clamp(1.6rem,6vw,6.5rem);
   --gap:clamp(8px,1vw,14px);
-  --frame:1200px;
-  --frame-pad:max(1.6rem,calc((100% - var(--frame))/2));
+  --edge:clamp(10px,.9vw,14px);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 ::selection{background:var(--char);color:var(--ivory)}
@@ -118,7 +117,7 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
 body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
   opacity:.045}
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;isolation:isolate}
+.hero{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;isolation:isolate}
 .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.92)}
 .hero-media::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.22);pointer-events:none}
@@ -145,19 +144,22 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
 
 .service{padding:clamp(4.5rem,13svh,8.5rem) var(--g);text-align:center}
 .service h2{font-family:var(--display);font-weight:400;max-width:52rem;margin:0 auto;
-  font-size:clamp(1.3rem,1.8vw,1.5rem);line-height:1.45;text-wrap:balance}
-.service p{margin:clamp(1.8rem,4vh,2.6rem) auto 0;max-width:52rem;
-  font-size:clamp(1rem,1.35vw,1.15rem)}
+  text-transform:uppercase;letter-spacing:.08em;
+  font-size:clamp(1.2rem,1.6vw,1.5rem);line-height:1.5;text-wrap:balance}
+.service p{margin:clamp(1.8rem,4vh,2.6rem) auto 0;max-width:44rem;
+  font-family:var(--display);font-weight:400;color:#4A4338;
+  font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75}
 
-.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);padding:0 var(--frame-pad)}
-.tile{position:relative;aspect-ratio:3/4;overflow:hidden}
-.tile img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.95)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--edge);padding:var(--edge) var(--edge) 0}
+.tile{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--umber)}
 .tile::after{content:"";position:absolute;inset:0;
   background:linear-gradient(to top, rgba(24,20,15,.42), rgba(24,20,15,.18))}
+.tile-size{position:absolute;right:12px;bottom:10px;z-index:1;
+  font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(241,237,228,.55)}
 .tile-title{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;
   font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.2em;
   color:var(--ivory);text-align:center;
-  font-size:clamp(.95rem,1.2vw,1.15rem);line-height:1.4;padding:0 .8rem}
+  font-size:clamp(1rem,1.3vw,1.25rem);line-height:1.4;padding:0 .8rem}
 @media(max-width:760px){.tiles{grid-template-columns:1fr}}
 
 .interlude{padding:clamp(6.5rem,18svh,12rem) var(--g);text-align:center}
@@ -173,7 +175,7 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
 .contact-links a.mail{text-transform:none;letter-spacing:.08em}
 
 footer{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:baseline;
-  padding:1.9rem var(--frame-pad) 2.2rem;border-top:1px solid var(--line);
+  padding:1.9rem var(--edge) 2.2rem;border-top:1px solid var(--line);
   font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--umber)}
 footer .place{text-transform:none;letter-spacing:.06em}
 
@@ -197,28 +199,24 @@ footer .place{text-transform:none;letter-spacing:.06em}
   <div class="txt shot">* Все кадры сняты в наших экспедициях</div>
 </header>
 
+<section class="tiles reveal" aria-label="Направления">
+  <div class="tile">
+    <span class="tile-title">Трофейная рыбалка</span>
+    <span class="tile-size">1600 × 900</span>
+  </div>
+  <div class="tile">
+    <span class="tile-title">Хелиски</span>
+    <span class="tile-size">1600 × 900</span>
+  </div>
+  <div class="tile">
+    <span class="tile-title">Экспедиции</span>
+    <span class="tile-size">1600 × 900</span>
+  </div>
+</section>
+
 <section class="service reveal" aria-label="Полный сервис">
   <h2>С 2009 года создаем экспедиции в Канаде и за её пределами</h2>
   <p>За каждой стоят месяцы подготовки. Поэтому мы проводим лишь несколько в год.</p>
-</section>
-
-<section class="tiles reveal" aria-label="Направления">
-  <div class="tile">
-    <img src="assets/fishing.jpg" alt="Рыбак вываживает крупную рыбу с катера в океане на мощное морское удилище" width="835" height="993" loading="lazy" decoding="async">
-    <span class="tile-title">Трофейная рыбалка</span>
-  </div>
-  <div class="tile">
-    <img src="assets/heliskiing.jpg" alt="Лыжники на снежном гребне над океанским фьордом перед спуском" width="892" height="959" loading="lazy" decoding="async">
-    <span class="tile-title">Хелиски</span>
-  </div>
-  <div class="tile">
-    <img src="assets/expeditions.jpg" alt="Палаточный лагерь экспедиции на берегу океана с чёрным вулканическим песком" width="750" height="1000" loading="lazy" decoding="async">
-    <span class="tile-title">Экспедиции</span>
-  </div>
-  <div class="tile">
-    <img src="assets/events.jpg" alt="Сервированный стол с цветами под тентом на берегу с чёрным песком" width="852" height="1136" loading="lazy" decoding="async">
-    <span class="tile-title">События</span>
-  </div>
 </section>
 
 <section class="interlude reveal" aria-label="О впечатлениях">
