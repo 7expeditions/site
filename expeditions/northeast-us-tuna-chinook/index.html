@@ -99,8 +99,8 @@ h1,h2,h3{font-family:'Prata',serif;font-weight:400}
   display:flex;flex-direction:column;justify-content:center;
 }
 .page.compact{min-height:0;padding:56px 32px}
-.photo-page{padding:0;max-width:none;min-height:100vh;position:relative;display:block}
-.photo-page picture,.photo-page img{display:block;width:100%;height:100vh;object-fit:cover}
+.photo-page{padding:0;max-width:none;min-height:100vh;min-height:100svh;position:relative;display:block}
+.photo-page picture,.photo-page img{display:block;width:100%;height:100vh;height:100svh;object-fit:cover}
 .photo-page .cap{
   position:absolute;left:0;right:0;bottom:28px;text-align:center;
   color:#F1EDE4;text-shadow:0 0 24px rgba(0,0,0,.45);
@@ -146,6 +146,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
 }
 /* секции */
 h2.section{font-size:26px;margin-bottom:32px}
+.section-sub{color:var(--dim);font-size:14px;margin-bottom:36px}
 .txt p{font-size:16px;line-height:1.75;margin-bottom:22px}
 .txt p:last-child{margin-bottom:0}
 /* быт */
@@ -161,8 +162,9 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 @media (max-width:480px){
   .cover h1{font-size:30px}
   .cover .sub{font-size:14px;letter-spacing:.18em}
-  .page{padding:72px 22px}
+  .page{min-height:0;padding:56px 22px}
   .page.compact{padding:36px 22px}
+  .page.compact[style]{padding-top:56px!important;padding-bottom:48px!important}
 }
 </style>
 </head>
@@ -182,14 +184,12 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- Суть -->
 <section class="page">
-  <p class="intro" style="margin-bottom:56px">Гигантский синий тунец Атлантики и осенний ход чавычи в одной экспедиции: океан у Кейп-Кода и частная вода реки Salmon.</p>
-
   <h2 class="lead" style="margin-bottom:44px">Две лучшие рыбалки северо-востока США</h2>
 
   <div class="blk">
     <span class="caps">Озеро Онтарио · река Salmon</span>
     <div class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки.</div>
-    <p>Размещение в родовом имении над рекой. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
+    <p>Самая известная лососёвая река северо-востока: пик хода - вторая половина сентября и первая половина октября. Размещение в имении, которое принимало президентов и глав государств: родовой дом с двухвековой историей над частной водой, восемь спален.</p>
   </div>
 
   <hr style="margin:0 0 44px">
@@ -197,8 +197,19 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   <div class="blk" style="margin-bottom:0">
     <span class="caps">Атлантика · банки восточнее Чатема</span>
     <div class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</div>
-    <p>Самая стабильная тунцовая вода северо-востока: рыба стоит здесь с июня по ноябрь. Размещение в бутик-отеле на первой линии залива: девять номеров, окна на воду и сад, интерьеры в новоанглийской палитре.</p>
+    <p>Самая стабильная тунцовая вода северо-востока: рыба стоит здесь с июня по ноябрь. Размещение в бутик-отеле на первой линии залива: девять спален, окна на воду и сад, интерьеры в новоанглийской палитре.</p>
   </div>
+</section>
+
+<!-- Карта -->
+<section class="photo-page">
+  <img src="/expeditions/northeast-us-tuna-chinook/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon" class="wide">
+</section>
+
+<!-- Заголовок части I -->
+<section class="page compact">
+  <h2 class="section">Часть I · Синий тунец</h2>
+  <div class="section-sub" style="margin-bottom:0">Чатем, Кейп-Код</div>
 </section>
 
 <!-- Фото: тунец -->
@@ -225,6 +236,12 @@ h3.sub{font-size:19px;margin:28px 0 12px}
     <img src="/expeditions/northeast-us-tuna-chinook/img/boat.jpg" alt="Рыболовный флот в гавани Чатема, Кейп-Код, Массачусетс" style="object-position:52% 100%">
   </picture>
   <div class="cap caps">Флот · Чатем</div>
+</section>
+
+<!-- Заголовок части II -->
+<section class="page compact">
+  <h2 class="section">Часть II · Чавыча</h2>
+  <div class="section-sub" style="margin-bottom:0">Douglaston Manor · река Salmon, Нью-Йорк</div>
 </section>
 
 <!-- Фото: рыболов в реке -->
