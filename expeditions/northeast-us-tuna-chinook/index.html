@@ -68,7 +68,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F1EDE4;
@@ -86,7 +86,7 @@ body{
   font-size:16px;
   line-height:1.65;
 }
-h1,h2,h3{font-family:'Prata',serif;font-weight:400}
+h1,h2,h3{font-family:'Golos Text',sans-serif;font-weight:500}
 .caps{
   font-family:'Golos Text',sans-serif;font-weight:400;
   text-transform:uppercase;letter-spacing:.3em;
@@ -94,18 +94,34 @@ h1,h2,h3{font-family:'Prata',serif;font-weight:400}
 }
 .page{
   max-width:760px;margin:0 auto;
-  padding:96px 32px;
-  min-height:100vh;
-  display:flex;flex-direction:column;justify-content:center;
+  padding:112px 32px;
 }
-.page.compact{min-height:0;padding:56px 32px}
+.page.compact{padding:56px 32px}
+.page.compact.part{padding-top:96px}
+.part::before{content:"";display:block;width:56px;height:1px;background:var(--line);margin-bottom:28px}
 .photo-page{padding:0;max-width:none;min-height:100vh;min-height:100svh;position:relative;display:block}
 .photo-page picture,.photo-page img{display:block;width:100%;height:100vh;height:100svh;object-fit:cover}
 .photo-page .cap{
   position:absolute;left:0;right:0;bottom:28px;text-align:center;
-  color:#F1EDE4;text-shadow:0 0 24px rgba(0,0,0,.45);
+  color:#F1EDE4;text-shadow:0 0 2px rgba(0,0,0,.5),0 0 24px rgba(0,0,0,.45);
 }
 hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+/* фото в колонке */
+.photo-inline{max-width:760px;margin:0 auto;padding:64px 32px}
+.photo-inline img{display:block;width:100%;height:auto}
+.photo-inline .cap{display:block;margin-top:14px;text-align:center}
+/* ряды фото + текст */
+.row{max-width:1100px;margin:0 auto;padding:56px 32px;
+  display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.row img{display:block;width:100%;height:auto}
+.row h3{font-size:19px;margin-bottom:12px}
+.row p{font-size:15px;line-height:1.7;margin-bottom:14px}
+.row p:last-child{margin-bottom:0}
+.row.flip img{order:2}
+@media (max-width:900px){
+  .row{grid-template-columns:1fr;gap:24px}
+  .row.flip img{order:0}
+}
 /* вертикальный кадр на горизонтальном экране: без обрезки */
 @media (orientation: landscape){
   .photo-page.portrait{background:var(--bg)}
@@ -131,14 +147,14 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   justify-content:flex-end;align-items:center;padding:64px 24px;
   color:#F1EDE4;text-align:center;text-shadow:0 0 28px rgba(0,0,0,.5);
 }
-.cover h1{font-size:40px;letter-spacing:.02em;margin-bottom:14px}
-.cover .sub{font-family:'Golos Text',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:17px;line-height:1.5}
+.cover h1{font-size:56px;letter-spacing:.02em;margin-bottom:14px}
+.cover .sub{font-family:'Golos Text',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:19px;line-height:1.5}
 /* суть */
-.lead{font-family:'Prata',serif;font-size:26px;line-height:1.4;margin-bottom:44px}
+.lead{font-family:'Golos Text',sans-serif;font-weight:500;font-size:26px;line-height:1.4;margin-bottom:44px}
 .intro{font-size:19px;line-height:1.7}
 .blk{margin-bottom:44px}
 .blk .caps{display:block;margin-bottom:14px}
-.blk .hero{font-family:'Prata',serif;font-size:22px;line-height:1.45;margin-bottom:14px}
+.blk .hero{font-family:'Golos Text',sans-serif;font-weight:500;font-size:22px;line-height:1.45;margin-bottom:14px}
 .blk p{font-size:16px;line-height:1.7;color:#4A4338}
 @media (max-width:480px){
   .lead{font-size:21px;margin-bottom:36px}
@@ -164,7 +180,10 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   .cover .sub{font-size:14px;letter-spacing:.18em}
   .page{min-height:0;padding:56px 22px}
   .page.compact{padding:36px 22px}
+  .page.compact.part{padding-top:64px}
   .page.compact[style]{padding-top:56px!important;padding-bottom:48px!important}
+  .photo-inline{padding:40px 22px}
+  .row{padding:40px 22px}
 }
 </style>
 </head>
@@ -201,13 +220,18 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   </div>
 </section>
 
+<!-- Маршрут -->
+<section class="page compact part">
+  <div class="caps">Маршрут</div>
+</section>
+
 <!-- Карта -->
 <section class="photo-page">
   <img src="/expeditions/northeast-us-tuna-chinook/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon" class="wide">
 </section>
 
 <!-- Заголовок части I -->
-<section class="page compact">
+<section class="page compact part">
   <h2 class="section">Часть I · Синий тунец</h2>
   <div class="section-sub" style="margin-bottom:0">Чатем, Кейп-Код</div>
 </section>
@@ -229,16 +253,13 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 </section>
 
 <!-- Фото: флот -->
-<section class="photo-page">
-  <picture>
-    <source media="(orientation: portrait)" srcset="/expeditions/northeast-us-tuna-chinook/img/m/boat.jpg">
-    <img src="/expeditions/northeast-us-tuna-chinook/img/boat.jpg" alt="Рыболовный флот в гавани Чатема, Кейп-Код, Массачусетс" style="object-position:52% 100%">
-  </picture>
+<section class="photo-inline">
+  <img src="/expeditions/northeast-us-tuna-chinook/img/boat.jpg" alt="Рыболовный флот в гавани Чатема, Кейп-Код, Массачусетс" loading="lazy" decoding="async">
   <div class="cap caps">Флот · Чатем</div>
 </section>
 
 <!-- Заголовок части II -->
-<section class="page compact">
+<section class="page compact part">
   <h2 class="section">Часть II · Чавыча</h2>
   <div class="section-sub" style="margin-bottom:0">Douglaston Manor · река Salmon, Нью-Йорк</div>
 </section>
@@ -265,41 +286,30 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   <div class="cap caps">Чавыча · река Salmon</div>
 </section>
 
-<!-- Размещение I -->
-<section class="page byt">
-  <div class="caps" style="margin-bottom:40px">Размещение</div>
-
-  <h3 class="sub">Чатем, Кейп-Код</h3>
-  <p>Бутик-отель на первой линии залива, между Чатемом и Орлеаном. Девять номеров, сад, терраса; отмечен Fodor's, National Geographic Traveller и Travel&nbsp;+&nbsp;Leisure. Под ранние выходы в море кухня собирает завтрак к назначенному часу.</p>
+<!-- Размещение -->
+<section class="page compact part">
+  <div class="caps">Размещение</div>
 </section>
 
-<!-- Фото: отель -->
-<section class="photo-page">
-  <picture>
-    <source media="(orientation: portrait)" srcset="/expeditions/northeast-us-tuna-chinook/img/m/inn.jpg">
-    <img src="/expeditions/northeast-us-tuna-chinook/img/inn.jpg" alt="Бутик-отель на первой линии залива, Чатем, Кейп-Код" style="object-position:50% 55%">
-  </picture>
-  <div class="cap caps">Чатем · Кейп-Код</div>
+<section class="row">
+  <img src="/expeditions/northeast-us-tuna-chinook/img/inn.jpg" alt="Бутик-отель на первой линии залива, Чатем, Кейп-Код" loading="lazy" decoding="async">
+  <div>
+    <h3 class="sub" style="margin-top:0">Чатем, Кейп-Код</h3>
+    <p>Бутик-отель на первой линии залива, между Чатемом и Орлеаном. Девять номеров, сад, терраса; отмечен Fodor's, National Geographic Traveller и Travel&nbsp;+&nbsp;Leisure. Под ранние выходы в море кухня собирает завтрак к назначенному часу.</p>
+  </div>
 </section>
 
-<!-- Размещение II -->
-<section class="page byt">
-  <h3 class="sub">Река Salmon, Нью-Йорк</h3>
-  <p>Родовое имение над частной водой. Землю в 1807 году получил полковник, адъютант Джорджа Вашингтона; частную рыболовную воду открыл в 1987-м его потомок в седьмом поколении, сенатор и посол. Дом принимал президентов и глав государств.</p>
-  <p>До реки несколько сотен ярдов пешком.</p>
-</section>
-
-<!-- Фото: имение -->
-<section class="photo-page">
-  <picture>
-    <source media="(orientation: portrait)" srcset="/expeditions/northeast-us-tuna-chinook/img/m/manor.jpg">
-    <img src="/expeditions/northeast-us-tuna-chinook/img/manor.jpg" alt="Родовое имение над рекой Salmon, штат Нью-Йорк" style="object-position:47% 60%">
-  </picture>
-  <div class="cap caps">Река Salmon · Нью-Йорк</div>
+<section class="row flip">
+  <img src="/expeditions/northeast-us-tuna-chinook/img/manor.jpg" alt="Родовое имение над рекой Salmon, штат Нью-Йорк" loading="lazy" decoding="async">
+  <div>
+    <h3 class="sub" style="margin-top:0">Река Salmon, Нью-Йорк</h3>
+    <p>Родовое имение над частной водой. Землю в 1807 году получил полковник, адъютант Джорджа Вашингтона; частную рыболовную воду открыл в 1987-м его потомок в седьмом поколении, сенатор и посол. Дом принимал президентов и глав государств.</p>
+    <p>До реки несколько сотен ярдов пешком.</p>
+  </div>
 </section>
 
 <!-- Логистика -->
-<section class="page byt">
+<section class="page byt" style="padding-top:56px;padding-bottom:56px">
   <div class="caps" style="margin-bottom:40px">Логистика</div>
   <p>Прилёт через Бостон: до Чатема 150 километров.</p>
   <p>Между океаном и рекой - чартерный рейс, час пятнадцать в воздухе.</p>
@@ -307,11 +317,8 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 </section>
 
 <!-- Фото: река -->
-<section class="photo-page">
-  <picture>
-    <source media="(orientation: portrait)" srcset="/expeditions/northeast-us-tuna-chinook/img/m/river.jpg">
-    <img src="/expeditions/northeast-us-tuna-chinook/img/river.jpg" alt="Река Salmon у Пуласки, штат Нью-Йорк" style="object-position:50% 50%">
-  </picture>
+<section class="photo-inline">
+  <img src="/expeditions/northeast-us-tuna-chinook/img/river.jpg" alt="Река Salmon у Пуласки, штат Нью-Йорк" loading="lazy" decoding="async">
   <div class="cap caps">Река Salmon · Пуласки</div>
 </section>
 
