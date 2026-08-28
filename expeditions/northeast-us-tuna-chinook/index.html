@@ -126,6 +126,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   padding:0;
   display:flex;flex-direction:column;justify-content:center;
 }
+.photo-page:has(img.wide) picture{height:auto;width:100%}
 .photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
 /* кадр, который на телефоне показывается целиком, без обрезки */
 @media (orientation: portrait){
@@ -220,7 +221,10 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- Карта -->
 <section class="photo-page">
-  <img src="/expeditions/northeast-us-tuna-chinook/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon" class="wide map">
+  <picture>
+    <source media="(orientation: portrait)" srcset="/expeditions/northeast-us-tuna-chinook/img/m/map-tuna-chinook-en.svg">
+    <img src="/expeditions/northeast-us-tuna-chinook/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon" class="wide map">
+  </picture>
 </section>
 
 <!-- Заголовок части I -->
