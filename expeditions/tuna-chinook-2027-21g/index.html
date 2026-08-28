@@ -10,14 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F1EDE4;
+  --bg:#FBF9F4;
+  --ivory:#F1EDE4;
   --ink:#221E18;
   --dim:#8A8071;
   --line:#CFC8BA;
+  --edge:clamp(10px,.9vw,14px);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{background:var(--bg)}
 body{
+  padding:var(--edge) var(--edge) 0;
   background:var(--bg);
   color:var(--ink);
   font-family:'Golos Text',sans-serif;
@@ -25,6 +28,9 @@ body{
   font-size:16px;
   line-height:1.65;
 }
+body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.045}
 h1,h2,h3{font-family:'Prata',serif;font-weight:400}
 .caps{
   font-family:'Golos Text',sans-serif;font-weight:400;
@@ -33,13 +39,12 @@ h1,h2,h3{font-family:'Prata',serif;font-weight:400}
 }
 .page{
   max-width:760px;margin:0 auto;
-  padding:96px 32px;
-  min-height:100vh;
+  padding:clamp(72px,10vh,120px) 32px;
   display:flex;flex-direction:column;justify-content:center;
 }
 .page.compact{min-height:0;padding:56px 32px}
-.photo-page{padding:0;max-width:none;min-height:100vh;min-height:100svh;position:relative;display:block}
-.photo-page picture,.photo-page img{display:block;width:100%;height:100vh;height:100svh;object-fit:cover}
+.photo-page{padding:0;max-width:none;min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge));position:relative;display:block}
+.photo-page picture,.photo-page img{display:block;width:100%;height:calc(100vh - var(--edge));height:calc(100svh - var(--edge));object-fit:cover}
 .photo-page .cap{
   position:absolute;left:0;right:0;bottom:28px;text-align:center;
   color:#F1EDE4;text-shadow:0 0 24px rgba(0,0,0,.45);
@@ -51,17 +56,17 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   .photo-page.portrait img{object-fit:contain;height:calc(100vh - 72px)}
   .photo-page.portrait .cap{color:var(--dim);text-shadow:none}
 }
-.photo-page img.wide{object-fit:contain;background:var(--bg);height:calc(100vh - 72px)}
-/* портрет: секция по высоте кадра, без пустых полей сверху и снизу */
-@media (orientation: portrait){
-  .photo-page:has(img.wide){
-    min-height:0;height:auto;
-    padding:0;
-    display:flex;flex-direction:column;justify-content:center;
-  }
-  .photo-page img.wide{height:auto;width:100%}
-  .photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
+.photo-page img.wide{object-fit:contain;background:var(--bg);width:100%;height:auto}
+.photo-page img.map{background:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);
+  mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%)}
+/* широкий кадр: секция по высоте кадра, подпись под ним */
+.photo-page:has(img.wide){
+  min-height:0;height:auto;
+  padding:0;
+  display:flex;flex-direction:column;justify-content:center;
 }
+.photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
 .photo-page:has(img.wide){background:var(--bg)}
 .photo-page:has(img.wide) .cap{color:var(--dim);text-shadow:none}
 /* обложка */
@@ -71,15 +76,16 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   justify-content:flex-end;align-items:center;padding:64px 24px;
   color:#F1EDE4;text-align:center;text-shadow:0 0 28px rgba(0,0,0,.5);
 }
-.cover h1{font-size:40px;letter-spacing:.02em;margin-bottom:14px}
+.cover .title{font-family:'Prata',serif;font-weight:400;font-size:40px;letter-spacing:.02em;margin-bottom:14px}
 .cover .sub{font-family:'Golos Text',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:17px;line-height:1.5;margin-bottom:18px}
 /* суть */
 .fact{font-size:19px;line-height:1.7;margin-bottom:26px}
-.lead{font-family:'Prata',serif;font-size:26px;line-height:1.4;margin-bottom:44px}
+.lead{font-family:'Prata',serif;font-size:26px;line-height:1.5;margin-bottom:44px;
+  text-transform:uppercase;letter-spacing:.08em;color:#4A4338;-webkit-text-stroke:.3px currentColor;text-wrap:balance}
 .blk{margin-bottom:44px}
 .blk .caps{display:block;margin-bottom:14px}
 .blk .hero{font-family:'Prata',serif;font-size:22px;line-height:1.45;margin-bottom:14px}
-.blk p{font-size:16px;line-height:1.7;color:#4A4338}
+.blk p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338}
 @media (max-width:480px){
   .lead{font-size:21px;margin-bottom:36px}
   .blk .hero{font-size:19px}
@@ -90,9 +96,9 @@ h2.section{font-size:26px;margin-bottom:6px}
 .day{margin-bottom:26px}
 .day .d{font-weight:500;font-size:15px}
 .day .w{color:var(--dim);font-size:13px;margin:2px 0 6px}
-.day p{font-size:15px}
+.day p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338}
 /* быт */
-.byt p{font-size:15px;margin-bottom:18px}
+.byt p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:18px}
 h3.sub{font-size:19px;margin:28px 0 12px}
 /* границы */
 .cols{display:flex;gap:48px;flex-wrap:wrap;margin-top:8px}
@@ -100,7 +106,7 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 .cols ul{list-style:none}
 .cols li{font-size:15px;padding:9px 0;border-bottom:1px solid var(--line)}
 /* условия */
-.terms p{font-size:15px;margin-bottom:14px}
+.terms p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:14px}
 .contact{margin-top:56px}
 .contact-links{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;margin-top:18px}
 .contact-links a{
@@ -110,17 +116,27 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   border-bottom:1px solid var(--line);padding-bottom:6px;
 }
 @media print{.contact-links a{border-bottom:0}}
+@media (max-width:768px){
+  .page{min-height:0;padding:64px 32px}
+  .page.compact{padding:40px 32px}
+  .page.compact[style]{padding-top:64px!important;padding-bottom:56px!important}
+}
 @media (max-width:480px){
-  .cover h1{font-size:30px}
+  .cover .title{font-size:30px}
   .cover .sub{font-size:14px;letter-spacing:.18em}
-  .page{min-height:0;padding:56px 22px}
+  .page{padding:56px 22px}
   .page.compact{padding:36px 22px}
   .page.compact[style]{padding-top:56px!important;padding-bottom:48px!important}
 }
 /* печать */
 @page{size:A4;margin:0}
 @media print{
-  body{font-size:12.5pt}
+  body{font-size:12.5pt;padding:0}
+  body::after{display:none}
+  .photo-page:has(img.wide){height:297mm;min-height:297mm;display:block}
+  .photo-page img.wide,.photo-page img.map{height:297mm;width:210mm;object-fit:contain;
+    -webkit-mask-image:none;mask-image:none}
+  .blk p,.day p,.byt p,.terms p{font-size:11pt;line-height:1.6}
   .page{
     max-width:none;min-height:auto;height:297mm;width:210mm;
     margin:0;padding:26mm 24mm;page-break-after:always;
@@ -140,7 +156,7 @@ h3.sub{font-size:19px;margin:28px 0 12px}
     <img src="/expeditions/tuna-chinook-2027-21g/img/cover.jpg" alt="" style="object-position:50% 45%">
   </picture>
   <div class="overlay">
-    <h1>Тунец и Чавыча</h1>
+    <div class="title">Тунец и Чавыча</div>
     <div class="sub">восточного побережья США</div>
     <div class="caps" style="color:#F1EDE4">19–27 сентября 2027</div>
   </div>
@@ -148,11 +164,11 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
 <!-- 2 · Суть -->
 <section class="page">
-  <div class="lead">Две лучшие рыбалки северо-востока США</div>
+  <h1 class="lead">Две лучшие рыбалки северо-востока США</h1>
 
   <div class="blk">
     <span class="caps">Озеро Онтарио · река Salmon</span>
-    <div class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.</div>
+    <h2 class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.</h2>
     <p>Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
   </div>
 
@@ -160,14 +176,14 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 
   <div class="blk" style="margin-bottom:0">
     <span class="caps">Атлантика · банки восточнее Чатема</span>
-    <div class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</div>
+    <h2 class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</h2>
     <p>Самая стабильная тунцовая вода северо-востока: рыба стоит здесь с июня по ноябрь. Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
   </div>
 </section>
 
 <!-- Карта -->
 <section class="photo-page">
-  <img src="/expeditions/tuna-chinook-2027-21g/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon" class="wide">
+  <img src="/expeditions/tuna-chinook-2027-21g/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon" class="wide map">
 </section>
 
 <!-- Заголовок части I -->
