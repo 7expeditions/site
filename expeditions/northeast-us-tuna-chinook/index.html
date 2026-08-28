@@ -100,8 +100,7 @@ h1,h2,h3{font-family:'Prata',serif;font-weight:400}
 }
 .page{
   max-width:760px;margin:0 auto;
-  padding:96px 32px;
-  min-height:100vh;
+  padding:clamp(72px,10vh,120px) 32px;
   display:flex;flex-direction:column;justify-content:center;
 }
 .page.compact{min-height:0;padding:56px 32px}
@@ -118,16 +117,13 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   .photo-page.portrait img{object-fit:contain;height:calc(100vh - 72px)}
   .photo-page.portrait .cap{color:var(--dim);text-shadow:none}
 }
-.photo-page img.wide{object-fit:contain;background:var(--bg);height:calc(100vh - 72px)}
-@media (orientation: portrait){
-  .photo-page:has(img.wide){
-    min-height:0;height:auto;
-    padding:0;
-    display:flex;flex-direction:column;justify-content:center;
-  }
-  .photo-page img.wide{height:auto;width:100%}
-  .photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
+.photo-page img.wide{object-fit:contain;background:var(--bg);width:100%;height:auto}
+.photo-page:has(img.wide){
+  min-height:0;height:auto;
+  padding:0;
+  display:flex;flex-direction:column;justify-content:center;
 }
+.photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
 .photo-page:has(img.wide){background:var(--bg)}
 .photo-page:has(img.wide) .cap{color:var(--dim);text-shadow:none}
 /* обложка */
