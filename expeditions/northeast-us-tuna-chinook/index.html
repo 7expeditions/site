@@ -163,10 +163,15 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   color:var(--ink);text-decoration:none;
   border-bottom:1px solid var(--line);padding-bottom:6px;
 }
+@media (max-width:768px){
+  .page{min-height:0;padding:64px 32px}
+  .page.compact{padding:40px 32px}
+  .page.compact[style]{padding-top:64px!important;padding-bottom:56px!important}
+}
 @media (max-width:480px){
   .cover h1{font-size:30px}
   .cover .sub{font-size:14px;letter-spacing:.18em}
-  .page{min-height:0;padding:56px 22px}
+  .page{padding:56px 22px}
   .page.compact{padding:36px 22px}
   .page.compact[style]{padding-top:56px!important;padding-bottom:48px!important}
 }
