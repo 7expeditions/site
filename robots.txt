@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /expeditions/tuna-chinook-2027-21g/
+Disallow: /expeditions/northeast-us-tuna-chinook/old/
 
 Sitemap: https://7expeditions.com/sitemap.xml
