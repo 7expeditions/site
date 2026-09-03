@@ -105,13 +105,17 @@
   --bg:#FBF9F4; --ink:#221E18; --dim:#8A8071; --line:#CFC8BA;
   --serif:'Prata',Georgia,serif; --sans:'Golos Text',system-ui,sans-serif;
   --col:34rem; --gut:1.25rem;
+  --edge:clamp(10px,.9vw,14px);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.7}
+body{margin:0;padding:var(--edge) var(--edge) 0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.7}
+body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.045}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
-p{margin:0 0 1.35em}
+p{margin:0 0 1.35em;color:#4A4338}
 h1,h2{font-weight:400;margin:0}
 
 /* текстовая колонка */
@@ -136,7 +140,7 @@ h2{font-size:1.5rem;line-height:1.3;margin:0 0 1.3rem}
 .photo img{width:100%;height:100%;object-fit:cover}
 .photo picture{display:block;width:100%;height:100%}
 .photo.tall{height:78vh}
-.cap{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--dim);margin:0 0 2.4rem}
+.cap{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--dim);margin-bottom:2.4rem}
 .cap span{display:block}
 .cap .credit{font-size:.6875rem}
 
@@ -158,6 +162,10 @@ h2{font-size:1.5rem;line-height:1.3;margin:0 0 1.3rem}
 /* цитата */
 .quote{min-height:58vh;display:flex;align-items:center;padding:4rem var(--gut)}
 .quote .inner{max-width:26em;margin:0 auto;width:100%}
+@media (min-width:1000px){
+  .quote{padding-left:calc((100% - var(--col))/2);padding-right:var(--gut)}
+  .quote .inner{margin:0}
+}
 .quote blockquote{margin:0;font-style:italic;font-size:1.32rem;line-height:1.55}
 .quote .who{font-family:var(--sans);font-size:.75rem;color:var(--dim);margin-top:1.2rem;font-style:normal}
 .quote .ph{border-bottom:1px dashed var(--dim);color:var(--dim);font-style:normal;font-size:1rem}
@@ -184,12 +192,13 @@ footer .meta{margin:0}
 @media (min-width:1000px){
   :root{--col:36rem}
   body{font-size:1.125rem}
-  .block .col{padding-left:0;padding-right:0}
+  .col{padding-left:0;padding-right:0}
   .note{position:absolute;left:-12.5rem;width:10.5rem;text-align:right;margin:.35em 0 0}
   .hero h1{font-size:3rem}
   h2{font-size:1.75rem}
   .quote blockquote{font-size:1.55rem}
 }
+@media (min-width:1200px){ :root{--col:42rem} }
 @media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
 </style>
 </head>
