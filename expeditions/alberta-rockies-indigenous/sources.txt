@@ -18,3 +18,10 @@ d08-glacier	File:'Ice Explorers' Approaching the Athabasca Glacier -- Jasper Nat
 d08-peyto	File:Lac Peyto - Panoramique (4163380668).jpg	https://commons.wikimedia.org/wiki/File:Lac_Peyto_-_Panoramique_(4163380668).jpg
 d09-spirit-island	File:Spirit Island on Maligne Lake1.jpg	https://commons.wikimedia.org/wiki/File:Spirit_Island_on_Maligne_Lake1.jpg
 d10-fort-edmonton	File:Fort Edmonton park (7104554847).jpg	https://commons.wikimedia.org/wiki/File:Fort_Edmonton_park_(7104554847).jpg
+d02-tyrrell	File:We're looking good, buddy (5085439560).jpg	https://commons.wikimedia.org/wiki/File:We%27re_looking_good,_buddy_(5085439560).jpg
+d03-petroglyph	File:Writing on stone990.jpg	https://commons.wikimedia.org/wiki/File:Writing_on_stone990.jpg
+d03-waterton	File:Prince of Wales Hotel Waterton (8047361077).jpg	https://commons.wikimedia.org/wiki/File:Prince_of_Wales_Hotel_Waterton_(8047361077).jpg
+d04-buffalo-jump	File:Head-Smashed-In Buffalo Jump 02 (15264077432).jpg	https://commons.wikimedia.org/wiki/File:Head-Smashed-In_Buffalo_Jump_02_(15264077432).jpg
+d05-paint-pots	File:Kootenay National Park - Paint Pots 2.jpg	https://commons.wikimedia.org/wiki/File:Kootenay_National_Park_-_Paint_Pots_2.jpg
+d08-peyto	File:Peyto Lake-Banff NP-Canada.jpg	https://commons.wikimedia.org/wiki/File:Peyto_Lake-Banff_NP-Canada.jpg
+d10-legislature	File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg	https://commons.wikimedia.org/wiki/File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg
