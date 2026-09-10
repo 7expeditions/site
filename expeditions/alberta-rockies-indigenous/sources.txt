@@ -1,0 +1,20 @@
+Фото: Wikimedia Commons и веб, только для приватной страницы. Файл -> название на Commons -> страница.
+
+cover	File:Prairies to Peaks.jpg	https://commons.wikimedia.org/wiki/File:Prairies_to_Peaks.jpg
+d02-badlands	File:Horseshoe Canyon, Drumheller (5860923036).jpg	https://commons.wikimedia.org/wiki/File:Horseshoe_Canyon,_Drumheller_(5860923036).jpg
+d02-blackfoot	File:Blackfoot Crossing (7316112302).jpg	https://commons.wikimedia.org/wiki/File:Blackfoot_Crossing_(7316112302).jpg
+d03-hoodoos	File:Writing-on-stone Hoodoos.jpg	https://commons.wikimedia.org/wiki/File:Writing-on-stone_Hoodoos.jpg
+d03-waterton	File:Prince of Wales Hotel - Waterton Lakes National Park.jpg	https://commons.wikimedia.org/wiki/File:Prince_of_Wales_Hotel_-_Waterton_Lakes_National_Park.jpg
+d04-buffalo-jump	File:Head-Smashed-In Buffalo Jump.jpg	https://commons.wikimedia.org/wiki/File:Head-Smashed-In_Buffalo_Jump.jpg
+d04-frank-slide	File:Frank Slide, Canada.jpg	https://commons.wikimedia.org/wiki/File:Frank_Slide,_Canada.jpg
+d05-paint-pots	File:Kootenay National Park - Paint Pots 1.jpg	https://commons.wikimedia.org/wiki/File:Kootenay_National_Park_-_Paint_Pots_1.jpg
+d05-banff-springs	File:Fairmont Banff Springs Hotel, north view 20240821 1.jpg	https://commons.wikimedia.org/wiki/File:Fairmont_Banff_Springs_Hotel,_north_view_20240821_1.jpg
+d06-tipi	File:Teepee Town - panoramio.jpg	https://commons.wikimedia.org/wiki/File:Teepee_Town_-_panoramio.jpg
+d06-yamnuska	File:Mount-Yamnuska2-Szmurlo.jpg	https://commons.wikimedia.org/wiki/File:Mount-Yamnuska2-Szmurlo.jpg
+d06-fire	Robin Esrock / Canadian Geographic	https://canadiangeographic.ca/articles/aim-right-in-the-rockies-a-visit-to-painted-warriors/
+d07-takakkaw	File:Takakkaw Falls, west view 20240825 3.jpg	https://commons.wikimedia.org/wiki/File:Takakkaw_Falls,_west_view_20240825_3.jpg
+d07-bow-valley	File:Montane valley in Banff National Park.jpg	https://commons.wikimedia.org/wiki/File:Montane_valley_in_Banff_National_Park.jpg
+d08-glacier	File:'Ice Explorers' Approaching the Athabasca Glacier -- Jasper National Park Alberta September 2019 (49421973251).jpg	https://commons.wikimedia.org/wiki/File:%27Ice_Explorers%27_Approaching_the_Athabasca_Glacier_--_Jasper_National_Park_Alberta_September_2019_(49421973251).jpg
+d08-peyto	File:Lac Peyto - Panoramique (4163380668).jpg	https://commons.wikimedia.org/wiki/File:Lac_Peyto_-_Panoramique_(4163380668).jpg
+d09-spirit-island	File:Spirit Island on Maligne Lake1.jpg	https://commons.wikimedia.org/wiki/File:Spirit_Island_on_Maligne_Lake1.jpg
+d10-fort-edmonton	File:Fort Edmonton park (7104554847).jpg	https://commons.wikimedia.org/wiki/File:Fort_Edmonton_park_(7104554847).jpg
