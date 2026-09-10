@@ -25,3 +25,5 @@ d04-buffalo-jump	File:Head-Smashed-In Buffalo Jump 02 (15264077432).jpg	https://
 d05-paint-pots	File:Kootenay National Park - Paint Pots 2.jpg	https://commons.wikimedia.org/wiki/File:Kootenay_National_Park_-_Paint_Pots_2.jpg
 d08-peyto	File:Peyto Lake-Banff NP-Canada.jpg	https://commons.wikimedia.org/wiki/File:Peyto_Lake-Banff_NP-Canada.jpg
 d10-legislature	File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg	https://commons.wikimedia.org/wiki/File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg
+cover (v2)	File:Moraine Lake 1.jpg	https://commons.wikimedia.org/wiki/File:Moraine_Lake_1.jpg
+d02-blackfoot (v2)	Facebook, Blackfoot Crossing Historical Park	
