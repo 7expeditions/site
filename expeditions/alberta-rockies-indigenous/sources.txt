@@ -27,3 +27,5 @@ d08-peyto	File:Peyto Lake-Banff NP-Canada.jpg	https://commons.wikimedia.org/wiki
 d10-legislature	File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg	https://commons.wikimedia.org/wiki/File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg
 cover (v2)	File:Moraine Lake 1.jpg	https://commons.wikimedia.org/wiki/File:Moraine_Lake_1.jpg
 d02-blackfoot (v2)	Facebook, Blackfoot Crossing Historical Park	
+cover	File:Moraine Lake - 36964910112.jpg	https://commons.wikimedia.org/wiki/File:Moraine_Lake_-_36964910112.jpg
+d02-blackfoot	Facebook, Blackfoot Crossing Historical Park (960x540)
