@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тунец и Чавыча — Одноэтажная Америка, 19–27 сентября 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF9F4;
+  --ivory:#F1EDE4;
+  --ink:#221E18;
+  --dim:#8A8071;
+  --line:#CFC8BA;
+  --edge:clamp(10px,.9vw,14px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--bg)}
+body{
+  padding:var(--edge) var(--edge) 0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Golos Text',sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:1.65;
+}
+body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.045}
+h1,h2,h3{font-family:'Prata',serif;font-weight:400}
+.caps{
+  font-family:'Golos Text',sans-serif;font-weight:400;
+  text-transform:uppercase;letter-spacing:.3em;
+  font-size:11px;color:var(--dim);
+}
+.page{
+  max-width:760px;margin:0 auto;
+  padding:clamp(72px,10vh,120px) 32px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.page.compact{min-height:0;padding:56px 32px}
+hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+
+/* плейсхолдеры вместо фотографий */
+.ph{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;text-align:center;
+  background:var(--ivory);border:1px dashed var(--line);
+  padding:32px 24px;margin:0 auto;
+}
+.ph .tag{font-family:'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:var(--dim)}
+.ph .txt{font-family:'Prata',serif;font-size:17px;line-height:1.5;color:#4A4338;max-width:34em}
+.ph .spec{font-family:'Golos Text',sans-serif;font-size:12px;color:var(--dim)}
+.ph-full{min-height:62vh}
+.ph-wide{min-height:44vh;max-width:1100px}
+.ph-cover{min-height:72vh}
+
+/* карта */
+.mapwrap{padding:0;max-width:none;display:flex;flex-direction:column;justify-content:center}
+.mapwrap img{display:block;width:100%;height:auto;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);
+  mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%)}
+
+/* обложка */
+.cover{position:relative;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
+  padding:64px 24px;text-align:center}
+.cover .title{font-family:'Prata',serif;font-weight:400;font-size:40px;letter-spacing:.02em;margin-bottom:12px}
+.cover .sub{font-family:'Prata',serif;font-size:20px;line-height:1.5;margin-bottom:18px}
+.cover .dates{font-family:'Golos Text',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:14px;margin-bottom:8px}
+.cover .len{font-family:'Golos Text',sans-serif;font-size:13px;color:var(--dim)}
+
+/* суть */
+.lead{font-family:'Prata',serif;font-size:26px;line-height:1.5;margin-bottom:44px;
+  text-transform:uppercase;letter-spacing:.08em;color:#4A4338;-webkit-text-stroke:.3px currentColor;text-wrap:balance}
+.blk{margin-bottom:44px}
+.blk .hero{font-family:'Prata',serif;font-size:22px;line-height:1.45;margin-bottom:14px}
+.blk p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338}
+@media (min-width:900px){
+  .two{display:flex;gap:56px;align-items:flex-start}
+  .two>div{flex:1}
+  .two hr{display:none}
+  .blk{margin-bottom:0}
+}
+@media (max-width:480px){
+  .lead{font-size:21px;margin-bottom:36px}
+  .blk .hero{font-size:19px}
+}
+
+/* программа */
+.day{margin-bottom:34px}
+.day .d{font-weight:500;font-size:15px}
+.day .w{color:var(--dim);font-size:13px;margin:2px 0 8px}
+.day p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:14px}
+.day p:last-child{margin-bottom:0}
+
+/* трансферы */
+.byt p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:14px}
+
+.contact-links{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.contact-links a{
+  font-family:'Golos Text',sans-serif;font-weight:400;
+  text-transform:uppercase;letter-spacing:.3em;font-size:12px;
+  color:var(--ink);text-decoration:none;
+  border-bottom:1px solid var(--line);padding-bottom:6px;
+}
+@media (max-width:768px){
+  .page{min-height:0;padding:64px 32px}
+  .page.compact{padding:40px 32px}
+}
+@media (max-width:480px){
+  .cover .title{font-size:30px}
+  .cover .sub{font-size:17px}
+  .page{padding:56px 22px}
+  .page.compact{padding:36px 22px}
+}
+</style>
+</head>
+<body>
+
+<!-- Хиро -->
+<section class="page cover">
+  <div class="ph ph-cover" style="width:100%;margin-bottom:40px">
+    <div class="tag">Фото</div>
+    <div class="txt">Обложка. Тот же кадр, что на КП: река Salmon в низком осеннем свете.</div>
+    <div class="spec">Горизонтальный, на всю ширину. Мобильный кроп отдельно.</div>
+  </div>
+  <div class="title">Тунец и Чавыча</div>
+  <div class="sub">Одноэтажная Америка</div>
+  <div class="dates">19–27 сентября 2027</div>
+  <div class="len">8 дней, день прилёта и день отлёта не считаем</div>
+</section>
+
+<!-- Суть -->
+<section class="page">
+  <h1 class="lead">Две лучшие рыбалки Северо-востока США</h1>
+
+  <div class="two">
+    <div>
+      <div class="blk">
+        <h2 class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.</h2>
+        <p>Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <div class="blk">
+        <h2 class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</h2>
+        <p>Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Карта -->
+<section class="mapwrap">
+  <img src="/expeditions/tuna-chinook-2027/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon">
+</section>
+
+<!-- 19 сентября -->
+<section class="page">
+  <div class="day">
+    <div class="d">19 сентября, воскресенье</div>
+    <div class="w">Бостон → Чатем</div>
+    <p>Трансфер из Бостона в Чатем. Едем за рулём на трёх-четырёх ретро-машинах шестидесятых и семидесятых, багаж идёт отдельной машиной. Дорога занимает столько, сколько нужно: останавливаемся у воды, в старых городках по пути, где захочется выйти.</p>
+    <p>Живём в A Little Inn on Pleasant Bay: девять номеров на первой линии залива, между Чатемом и Орлеаном. На эти дни гостиница целиком наша, с садом и террасой, других гостей нет.</p>
+  </div>
+</section>
+
+<section class="page compact">
+  <div class="ph ph-wide">
+    <div class="tag">Фото</div>
+    <div class="txt">Ретро-машина на дороге Новой Англии. Открытый кузов, низкое солнце, дорога вдоль воды.</div>
+    <div class="spec">Горизонтальный кадр на всю ширину.</div>
+  </div>
+</section>
+
+<!-- 20 сентября -->
+<section class="page">
+  <div class="day">
+    <div class="d">20 сентября, понедельник</div>
+    <div class="w">Гигантский синий тунец · банки восточнее Чатема</div>
+    <p>Гигантский синий тунец, самая большая рыба, которую в Атлантике можно взять на удочку. Банки восточнее Чатема, самая стабильная тунцовая вода северо-востока: рыба стоит здесь с июня по ноябрь, а гавань всего в двух часах от бостонского аэропорта. Серьёзная океанская рыбалка начинается практически у порога Новой Англии.</p>
+    <p>Второе преимущество места, выбор. Здесь ловят и гиганта, на якоре, на живца, снастью 130&nbsp;lb, и тунца 30–100 килограммов, спиннингом и джигом по птичьим котлам, когда океан кипит. Каждый день на воде находим свою рыбу. Среднего тунца к тому же разрешено забирать.</p>
+    <p>И третье, берег. Вечер после океана проходит в городке новоанглийского побережья: рестораны, залив, сад у воды.</p>
+    <p>В первый день выходим в пять утра на трёх лодках и работаем на гиганта. Заготовка живца, переход на банки, дальше якорь и ожидание. Десять-двенадцать часов на воде, одна-две поклёвки на лодку, вываживание от часа до трёх.</p>
+  </div>
+</section>
+
+<section class="page compact">
+  <div class="ph ph-full">
+    <div class="tag">Фото</div>
+    <div class="txt">Трофейный синий тунец. Рыба у борта или на палубе, человек рядом для масштаба.</div>
+    <div class="spec">Вертикальный кадр. На десктопе без обрезки.</div>
+  </div>
+</section>
+
+<!-- 21 сентября -->
+<section class="page">
+  <div class="day">
+    <div class="d">21 сентября, вторник</div>
+    <div class="w">По результатам первого дня</div>
+    <p>Решаем по итогам первого дня: или снова за гигантом, или тунец на 30–100 килограммов спиннингом по птичьим котлам. Трофей или количество.</p>
+  </div>
+
+  <div class="day">
+    <div class="d">22 сентября, среда</div>
+    <div class="w">Резерв</div>
+    <p>Резерв под погоду. Если оба дня состоялись, третий день рыбалки по выбору группы или отдых.</p>
+  </div>
+</section>
+
+<section class="page compact">
+  <div class="ph ph-wide">
+    <div class="tag">Фото</div>
+    <div class="txt">Флот в гавани Чатема на рассвете. Лодки под выход.</div>
+    <div class="spec">Горизонтальный кадр на всю ширину.</div>
+  </div>
+</section>
+
+<!-- 23 сентября -->
+<section class="page">
+  <div class="day">
+    <div class="d">23 сентября, четверг</div>
+    <div class="w">Чатем → Oswego → Douglaston Manor</div>
+    <p>Чартерный рейс из Chatham, MA в Oswego, NY, примерно час пятнадцать.</p>
+    <p>Douglaston Manor стоит над устьем на земле, которая с 1807 года принадлежит одной семье, и первым её хозяином был адъютант Вашингтона. Седьмое поколение семьи держит здесь частную рыболовную воду: четыре километра реки от озера вверх, единственный закрытый участок на всей реке, куда рыба заходит первой и где на берегу только свои. Дом на восемь спален, кухня, столовая, причал, спуск к воде. На эти дни он сдаётся целиком, одной компании.</p>
+  </div>
+</section>
+
+<section class="page compact">
+  <div class="ph ph-full">
+    <div class="tag">Фото</div>
+    <div class="txt">Douglaston Manor. Дом со стороны реки или лужайки, общий план.</div>
+    <div class="spec">Горизонтальный кадр на всю ширину.</div>
+  </div>
+</section>
+
+<!-- 24–26 сентября -->
+<section class="page">
+  <div class="day">
+    <div class="d">24–26 сентября, пятница, суббота, воскресенье</div>
+    <div class="w">Douglaston Salmon Run · три рыболовных дня</div>
+    <p>За чавычей принято лететь на Аляску. Меньше известно, что в озере Онтарио живёт её полноценная пресноводная популяция: каждую осень рыба 20–40 фунтов заходит из озера в реку Salmon. Река держит рекорд Великих озёр по чавыче, 47,8&nbsp;фунта, и мировой рекорд по кижучу, 33,3&nbsp;фунта. И сюда час лёта от Нью-Йорка.</p>
+    <p>Ход короткий, пик приходится на вторую половину сентября и первую половину октября. Рыба, только что вошедшая из озера, ещё не растратила силу в реке: первые же метры борьбы объясняют, почему её зовут king salmon.</p>
+    <p>У самого устья лежат 2,5 мили частной воды, единственный закрытый участок на всех 17 милях реки. Рыба проходит здесь первой, прямо из озера, и вода целиком в распоряжении гостей дома. Ловля вброд, с гидами, обед на берегу. На воду выходим пешком, от дома до реки несколько сотен ярдов.</p>
+  </div>
+</section>
+
+<section class="page compact">
+  <div class="ph ph-full">
+    <div class="tag">Фото</div>
+    <div class="txt">Чавыча из реки Salmon. Свежая, серебряная рыба в руках или в воде.</div>
+    <div class="spec">Вертикальный кадр.</div>
+  </div>
+</section>
+
+<!-- 27 сентября -->
+<section class="page compact">
+  <div class="day">
+    <div class="d">27 сентября, понедельник</div>
+    <div class="w">Syracuse</div>
+    <p>Вылет по своим маршрутам, в Нью-Йорк или Бостон час.</p>
+  </div>
+</section>
+
+<!-- Трансферы -->
+<section class="page byt">
+  <div class="caps" style="margin-bottom:40px">Трансферы</div>
+  <p>Boston, MA → Chatham, MA · 150 км, авто или чартер.</p>
+  <p>Chatham, MA → Oswego, NY · чартер, 1 час 15 мин.</p>
+  <p>Syracuse, NY → New York, NY или Boston, MA · 1 час, регулярные рейсы.</p>
+</section>
+
+<section class="page compact">
+  <div class="ph ph-wide">
+    <div class="tag">Фото</div>
+    <div class="txt">Финальный кадр. Река Salmon у Пуласки в конце сентября.</div>
+    <div class="spec">Горизонтальный кадр на всю ширину.</div>
+  </div>
+</section>
+
+<!-- Контакт -->
+<section class="page compact" style="align-items:center;text-align:center;padding-top:120px;padding-bottom:100px">
+  <nav class="contact-links">
+    <a href="https://wa.me/17788553539">WhatsApp</a>
+    <a href="https://t.me/VadimRubinov">Telegram</a>
+    <a href="mailto:explore@7expeditions.com" style="text-transform:none;letter-spacing:.05em">explore@7expeditions.com</a>
+  </nav>
+</section>
+
+<footer style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;padding:30px 32px 34px;border-top:1px solid var(--line);font-family:'Golos Text',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)">
+  <div>© 7 Expeditions, 2009-2026</div>
+  <div style="text-transform:none;letter-spacing:.04em;font-size:12px">Vancouver, Canada</div>
+</footer>
+
+</body>
+</html>
