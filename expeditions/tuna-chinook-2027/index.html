@@ -164,23 +164,11 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 .photo-page.ph .txt{font-family:'Prata',serif;font-size:19px;line-height:1.5;color:#4A4338;max-width:30em}
 .photo-page.ph .spec{font-family:'Golos Text',sans-serif;font-size:12px;color:var(--dim)}
 /* суть: две колонки на десктопе */
-.two{display:grid;gap:18px}
-.two-rule{display:none}
-.two .blk{margin:0;background:var(--ivory);border-top:2px solid var(--ink);
-  padding:28px 26px 30px;display:flex;flex-direction:column}
-.two .blk .hero{font-size:21px;line-height:1.4;margin:0 0 18px}
-.two .blk .acc{position:relative;padding-top:18px;margin:0;
-  font-family:'Golos Text',sans-serif;font-size:14px;line-height:1.7;color:#5A5347}
-.two .blk .acc::before{content:"";position:absolute;top:0;left:0;width:48px;border-top:1px solid var(--line)}
 @media (min-width:900px){
-  .two{grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
-  .two .blk{padding:34px 32px 36px}
-  .two .blk .hero{font-size:23px}
-  .two .blk .acc{font-size:15px}
-}
-@media (max-width:480px){
-  .two .blk{padding:24px 22px 26px}
-  .two .blk .hero{font-size:19px;margin-bottom:16px}
+  .two{display:flex;gap:56px;align-items:flex-start}
+  .two>div{flex:1}
+  .two .blk{margin-bottom:0}
+  .two-rule{display:none}
 }
 </style>
 </head>
@@ -204,13 +192,20 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   <h1 class="lead">Две лучшие рыбалки Северо-востока США</h1>
 
   <div class="two">
-    <div class="blk">
-      <h2 class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.</h2>
-      <p class="acc">Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
+    <div>
+      <div class="blk">
+        <h2 class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.</h2>
+        <p>Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
+      </div>
     </div>
-    <div class="blk">
-      <h2 class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</h2>
-      <p class="acc">Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
+
+    <hr class="two-rule" style="margin:0 0 44px">
+
+    <div>
+      <div class="blk" style="margin-bottom:0">
+        <h2 class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</h2>
+        <p>Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
+      </div>
     </div>
   </div>
 </section>
