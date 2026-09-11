@@ -243,18 +243,18 @@
 <path d="M 1524,890 Q 990,480 424,520" fill="none" stroke="#3a4148" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round" opacity="0.8"/>
 <g transform="translate(958,586) rotate(189)"><path d="M0,0 L-16,6 L-14,1.2 L-24,2 L-26,-0.5 L-14,-2 L-16,-7 Z" fill="#3a4148" opacity="0.85"/></g>
 <text x="984" y="640" font-size="16" letter-spacing="3" fill="#565e66" text-anchor="middle">CHARTER FLIGHT</text>
-<circle cx="1339" cy="744" r="17" fill="none" stroke="#22282e" stroke-width="2.4"/>
+<circle cx="1339" cy="744" r="20" fill="none" stroke="#22282e" stroke-width="2.4"/>
 <rect x="1334" y="739" width="10" height="10" fill="#22282e"/>
-<text x="1364" y="753" font-size="26" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="start">BOSTON</text>
-<circle cx="798" cy="1148" r="17" fill="none" stroke="#22282e" stroke-width="2.4"/>
+<text x="1364" y="753" font-size="34" font-weight="700" letter-spacing="3" fill="#22282e" text-anchor="start">BOSTON</text>
+<circle cx="798" cy="1148" r="20" fill="none" stroke="#22282e" stroke-width="2.4"/>
 <rect x="793" y="1143" width="10" height="10" fill="#22282e"/>
-<text x="773" y="1157" font-size="26" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="end">NEW YORK</text>
-<rect x="1537" y="908" width="8" height="8" fill="#22282e"/>
-<text x="1528" y="919" font-size="21" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="end">CHATHAM</text>
-<rect x="401" y="568" width="8" height="8" fill="#22282e"/>
-<text x="418" y="597" font-size="21" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="start">SYRACUSE</text>
-<rect x="404" y="437" width="8" height="8" fill="#22282e"/>
-<text x="408" y="395" font-size="21" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="middle">PULASKI</text>
+<text x="773" y="1157" font-size="34" font-weight="700" letter-spacing="3" fill="#22282e" text-anchor="end">NEW YORK</text>
+<rect x="1536" y="907" width="10" height="10" fill="#22282e"/>
+<text x="1528" y="919" font-size="27" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="end">CHATHAM</text>
+<rect x="400" y="567" width="10" height="10" fill="#22282e"/>
+<text x="418" y="597" font-size="27" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="start">SYRACUSE</text>
+<rect x="403" y="436" width="10" height="10" fill="#22282e"/>
+<text x="408" y="395" font-size="27" font-weight="600" letter-spacing="3" fill="#22282e" text-anchor="middle">PULASKI</text>
 <text x="105" y="278" font-size="24" letter-spacing="5" fill="#8fa0ab" font-style="italic">LAKE ONTARIO</text>
 <text x="1130" y="1123" font-size="24" letter-spacing="5" fill="#8fa0ab" font-style="italic">ATLANTIC OCEAN</text>
 <text x="520" y="778" font-size="17" letter-spacing="6" fill="#8b8d88">NEW YORK</text>
