@@ -42,66 +42,78 @@ h1,h2,h3{font-family:'Prata',serif;font-weight:400}
   display:flex;flex-direction:column;justify-content:center;
 }
 .page.compact{min-height:0;padding:56px 32px}
-hr{border:0;border-top:1px solid var(--line);margin:40px 0}
-
-/* плейсхолдеры вместо фотографий */
-.ph{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:10px;text-align:center;
-  background:var(--ivory);border:1px dashed var(--line);
-  padding:32px 24px;margin:0 auto;
+.photo-page{padding:0;max-width:none;min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge));position:relative;display:block}
+.photo-page picture,.photo-page img{display:block;width:100%;height:calc(100vh - var(--edge));height:calc(100svh - var(--edge));object-fit:cover}
+.photo-page .cap{
+  position:absolute;left:0;right:0;bottom:28px;text-align:center;
+  color:#F1EDE4;text-shadow:0 0 24px rgba(0,0,0,.45);
 }
-.ph .tag{font-family:'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:var(--dim)}
-.ph .txt{font-family:'Prata',serif;font-size:17px;line-height:1.5;color:#4A4338;max-width:34em}
-.ph .spec{font-family:'Golos Text',sans-serif;font-size:12px;color:var(--dim)}
-.ph-full{min-height:62vh}
-.ph-wide{min-height:44vh;max-width:1100px}
-.ph-cover{min-height:72vh}
-
-/* карта */
-.mapwrap{padding:0;max-width:none;display:flex;flex-direction:column;justify-content:center}
-.mapwrap img{display:block;width:100%;height:auto;
+hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+/* вертикальный кадр на горизонтальном экране — без обрезки */
+@media (orientation: landscape){
+  .photo-page.portrait{background:var(--bg)}
+  .photo-page.portrait img{object-fit:contain;height:calc(100vh - 72px)}
+  .photo-page.portrait .cap{color:var(--dim);text-shadow:none}
+}
+.photo-page img.wide{object-fit:contain;background:var(--bg);width:100%;height:auto}
+.photo-page img.map{background:none;
   -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);
   mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%)}
-
+/* широкий кадр: секция по высоте кадра, подпись под ним */
+.photo-page:has(img.wide){
+  min-height:0;height:auto;
+  padding:0;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.photo-page:has(img.wide) picture{height:auto;width:100%}
+.photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
+/* кадр, который на телефоне показывается целиком, без обрезки */
+@media (orientation: portrait){
+  .photo-page.fit{min-height:0;height:auto;padding:0;display:flex;flex-direction:column;justify-content:center}
+  .photo-page.fit picture,.photo-page.fit img{height:auto;width:100%;object-fit:contain}
+  .photo-page.fit .cap{position:static;margin-top:14px;padding-bottom:14px;color:var(--dim);text-shadow:none}
+}
+.photo-page:has(img.wide){background:var(--bg)}
+.photo-page:has(img.wide) .cap{color:var(--dim);text-shadow:none}
 /* обложка */
-.cover{position:relative;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
-  padding:64px 24px;text-align:center}
-.coverphoto{width:100%;height:72vh;min-height:420px;overflow:hidden;margin-bottom:40px}
-.coverphoto picture{display:block;width:100%;height:100%}
-.coverphoto img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
-.cover .title{font-family:'Prata',serif;font-weight:400;font-size:40px;letter-spacing:.02em;margin-bottom:12px}
-.cover .sub{font-family:'Prata',serif;font-size:20px;line-height:1.5;margin-bottom:18px}
-.cover .dates{font-family:'Golos Text',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:14px;margin-bottom:8px}
-.cover .len{font-family:'Golos Text',sans-serif;font-size:13px;color:var(--dim)}
-
+.cover{position:relative}
+.cover .overlay{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  justify-content:flex-end;align-items:center;padding:64px 24px;
+  color:#F1EDE4;text-align:center;text-shadow:0 0 28px rgba(0,0,0,.5);
+}
+.cover .title{font-family:'Prata',serif;font-weight:400;font-size:40px;letter-spacing:.02em;margin-bottom:14px}
+.cover .sub{font-family:'Golos Text',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:17px;line-height:1.5;margin-bottom:18px}
 /* суть */
+.fact{font-size:19px;line-height:1.7;margin-bottom:26px}
 .lead{font-family:'Prata',serif;font-size:26px;line-height:1.5;margin-bottom:44px;
   text-transform:uppercase;letter-spacing:.08em;color:#4A4338;-webkit-text-stroke:.3px currentColor;text-wrap:balance}
 .blk{margin-bottom:44px}
+.blk .caps{display:block;margin-bottom:14px}
 .blk .hero{font-family:'Prata',serif;font-size:22px;line-height:1.45;margin-bottom:14px}
 .blk p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338}
-@media (min-width:900px){
-  .two{display:flex;gap:56px;align-items:flex-start}
-  .two>div{flex:1}
-  .two hr{display:none}
-  .blk{margin-bottom:0}
-}
 @media (max-width:480px){
   .lead{font-size:21px;margin-bottom:36px}
   .blk .hero{font-size:19px}
 }
-
 /* программа */
-.day{margin-bottom:34px}
+h2.section{font-size:26px;margin-bottom:6px}
+.section-sub{color:var(--dim);font-size:14px;margin-bottom:36px}
+.day{margin-bottom:26px}
 .day .d{font-weight:500;font-size:15px}
-.day .w{color:var(--dim);font-size:13px;margin:2px 0 8px}
-.day p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:14px}
-.day p:last-child{margin-bottom:0}
-
-/* трансферы */
-.byt p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:14px}
-
+.day .w{color:var(--dim);font-size:13px;margin:2px 0 6px}
+.day p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338}
+/* быт */
+.byt p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:18px}
+h3.sub{font-size:19px;margin:28px 0 12px}
+/* границы */
+.cols{display:flex;gap:48px;flex-wrap:wrap;margin-top:8px}
+.cols>div{flex:1;min-width:240px}
+.cols ul{list-style:none}
+.cols li{font-size:15px;padding:9px 0;border-bottom:1px solid var(--line)}
+/* условия */
+.terms p{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;margin-bottom:14px}
+.contact{margin-top:56px}
 .contact-links{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;margin-top:18px}
 .contact-links a{
   font-family:'Golos Text',sans-serif;font-weight:400;
@@ -109,35 +121,73 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   color:var(--ink);text-decoration:none;
   border-bottom:1px solid var(--line);padding-bottom:6px;
 }
+@media print{.contact-links a{border-bottom:0}}
 @media (max-width:768px){
   .page{min-height:0;padding:64px 32px}
   .page.compact{padding:40px 32px}
+  .page.compact[style]{padding-top:64px!important;padding-bottom:56px!important}
 }
 @media (max-width:480px){
   .cover .title{font-size:30px}
-  .cover .sub{font-size:17px}
+  .cover .sub{font-size:14px;letter-spacing:.18em}
   .page{padding:56px 22px}
   .page.compact{padding:36px 22px}
+  .page.compact[style]{padding-top:56px!important;padding-bottom:48px!important}
 }
+/* печать */
+@page{size:A4;margin:0}
+@media print{
+  body{font-size:12.5pt;padding:0}
+  body::after{display:none}
+  .photo-page:has(img.wide){height:297mm;min-height:297mm;display:block}
+  .photo-page:has(img.wide) picture{height:297mm;width:210mm}
+  .photo-page.fit{height:297mm;min-height:297mm;display:block}
+  .photo-page.fit picture,.photo-page.fit img{height:297mm;width:210mm;object-fit:cover}
+  .photo-page img.wide,.photo-page img.map{height:297mm;width:210mm;object-fit:contain;
+    -webkit-mask-image:none;mask-image:none}
+  .blk p,.day p,.byt p,.terms p{font-size:11pt;line-height:1.6}
+  .page{
+    max-width:none;min-height:auto;height:297mm;width:210mm;
+    margin:0;padding:26mm 24mm;page-break-after:always;
+  }
+  .photo-page{height:297mm;width:210mm;padding:0;page-break-after:always}
+  .photo-page picture,.photo-page img{height:297mm;width:210mm}
+  .page:last-child,.photo-page:last-child{page-break-after:auto}
+}
+
+/* плейсхолдеры вместо фотографий */
+.photo-page.ph{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:40px 24px}
+.photo-page.ph .tag{font-family:'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:var(--dim)}
+.photo-page.ph .txt{font-family:'Prata',serif;font-size:19px;line-height:1.5;color:#4A4338;max-width:30em}
+.photo-page.ph .spec{font-family:'Golos Text',sans-serif;font-size:12px;color:var(--dim)}
+/* суть: две колонки на десктопе */
+@media (min-width:900px){
+  .two{display:flex;gap:56px;align-items:flex-start}
+  .two>div{flex:1}
+  .two .blk{margin-bottom:0}
+  .two-rule{display:none}
+}
+.cover .len{font-family:'Golos Text',sans-serif;font-size:12px;letter-spacing:.06em;color:#F1EDE4;margin-top:8px;opacity:.85}
 </style>
 </head>
 <body>
 
-<!-- Хиро -->
-<section class="page cover">
-  <div class="coverphoto">
-    <picture>
-      <source media="(orientation: portrait)" srcset="/expeditions/tuna-chinook-2027/img/m/cover.jpg">
-      <img src="/expeditions/tuna-chinook-2027/img/cover.jpg" alt="Река Salmon у озера Онтарио в низком свете конца сентября" width="1600" height="900" fetchpriority="high" decoding="async">
-    </picture>
+<!-- 1 · Обложка -->
+<section class="photo-page cover">
+  <picture>
+    <source media="(orientation: portrait)" srcset="/expeditions/tuna-chinook-2027/img/m/cover.jpg">
+    <img src="/expeditions/tuna-chinook-2027/img/cover.jpg" alt="" style="object-position:50% 45%">
+  </picture>
+  <div class="overlay">
+    <div class="title">Тунец и Чавыча</div>
+    <div class="sub">Одноэтажная Америка</div>
+    <div class="caps" style="color:#F1EDE4">19–27 сентября 2027</div>
+    <div class="len">8 дней, день прилёта и день отлёта не считаем</div>
   </div>
-  <div class="title">Тунец и Чавыча</div>
-  <div class="sub">Одноэтажная Америка</div>
-  <div class="dates">19–27 сентября 2027</div>
-  <div class="len">8 дней, день прилёта и день отлёта не считаем</div>
 </section>
 
-<!-- Суть -->
+<!-- 2 · Суть -->
 <section class="page">
   <h1 class="lead">Две лучшие рыбалки Северо-востока США</h1>
 
@@ -148,9 +198,11 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
         <p>Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
       </div>
     </div>
-    <hr>
+
+    <hr class="two-rule" style="margin:0 0 44px">
+
     <div>
-      <div class="blk">
+      <div class="blk" style="margin-bottom:0">
         <h2 class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</h2>
         <p>Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
       </div>
@@ -159,8 +211,11 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
 </section>
 
 <!-- Карта -->
-<section class="mapwrap">
-  <img src="/expeditions/tuna-chinook-2027/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon">
+<section class="photo-page">
+  <picture>
+    <source media="(orientation: portrait)" srcset="/expeditions/tuna-chinook-2027/img/map-tuna-chinook-en.svg">
+    <img src="/expeditions/tuna-chinook-2027/img/map-tuna-chinook-en.svg" alt="Карта экспедиции: Кейп-Код, Атлантика и река Salmon" class="wide map">
+  </picture>
 </section>
 
 <!-- 19 сентября -->
@@ -173,12 +228,10 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   </div>
 </section>
 
-<section class="page compact">
-  <div class="ph ph-wide">
-    <div class="tag">Фото</div>
-    <div class="txt">Ретро-машина на дороге Новой Англии. Открытый кузов, низкое солнце, дорога вдоль воды.</div>
-    <div class="spec">Горизонтальный кадр на всю ширину.</div>
-  </div>
+<section class="photo-page ph">
+  <div class="tag">Фото</div>
+  <div class="txt">Ретро-машина на дороге Новой Англии. Открытый кузов, низкое солнце, дорога вдоль воды.</div>
+  <div class="spec">Горизонтальный кадр на весь экран. Нужен мобильный кроп.</div>
 </section>
 
 <!-- 20 сентября -->
@@ -193,22 +246,19 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   </div>
 </section>
 
-<section class="page compact">
-  <div class="ph ph-full">
-    <div class="tag">Фото</div>
-    <div class="txt">Трофейный синий тунец. Рыба у борта или на палубе, человек рядом для масштаба.</div>
-    <div class="spec">Вертикальный кадр. На десктопе без обрезки.</div>
-  </div>
+<section class="photo-page ph">
+  <div class="tag">Фото</div>
+  <div class="txt">Трофейный синий тунец. Рыба у борта или на палубе, человек рядом для масштаба.</div>
+  <div class="spec">Вертикальный кадр, на десктопе показывать целиком.</div>
 </section>
 
-<!-- 21 сентября -->
+<!-- 21–22 сентября -->
 <section class="page">
   <div class="day">
     <div class="d">21 сентября, вторник</div>
     <div class="w">По результатам первого дня</div>
     <p>Решаем по итогам первого дня: или снова за гигантом, или тунец на 30–100 килограммов спиннингом по птичьим котлам. Трофей или количество.</p>
   </div>
-
   <div class="day">
     <div class="d">22 сентября, среда</div>
     <div class="w">Резерв</div>
@@ -216,12 +266,10 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   </div>
 </section>
 
-<section class="page compact">
-  <div class="ph ph-wide">
-    <div class="tag">Фото</div>
-    <div class="txt">Флот в гавани Чатема на рассвете. Лодки под выход.</div>
-    <div class="spec">Горизонтальный кадр на всю ширину.</div>
-  </div>
+<section class="photo-page ph">
+  <div class="tag">Фото</div>
+  <div class="txt">Флот в гавани Чатема на рассвете. Лодки под выход.</div>
+  <div class="spec">Горизонтальный кадр на весь экран. Нужен мобильный кроп.</div>
 </section>
 
 <!-- 23 сентября -->
@@ -234,12 +282,10 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   </div>
 </section>
 
-<section class="page compact">
-  <div class="ph ph-full">
-    <div class="tag">Фото</div>
-    <div class="txt">Douglaston Manor. Дом со стороны реки или лужайки, общий план.</div>
-    <div class="spec">Горизонтальный кадр на всю ширину.</div>
-  </div>
+<section class="photo-page ph">
+  <div class="tag">Фото</div>
+  <div class="txt">Douglaston Manor. Дом со стороны реки или лужайки, общий план.</div>
+  <div class="spec">Горизонтальный кадр на весь экран. Нужен мобильный кроп.</div>
 </section>
 
 <!-- 24–26 сентября -->
@@ -253,12 +299,10 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   </div>
 </section>
 
-<section class="page compact">
-  <div class="ph ph-full">
-    <div class="tag">Фото</div>
-    <div class="txt">Чавыча из реки Salmon. Свежая, серебряная рыба в руках или в воде.</div>
-    <div class="spec">Вертикальный кадр.</div>
-  </div>
+<section class="photo-page ph">
+  <div class="tag">Фото</div>
+  <div class="txt">Чавыча из реки Salmon. Свежая, серебряная рыба в руках или в воде.</div>
+  <div class="spec">Вертикальный кадр.</div>
 </section>
 
 <!-- 27 сентября -->
@@ -278,16 +322,14 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   <p>Syracuse, NY → New York, NY или Boston, MA · 1 час, регулярные рейсы.</p>
 </section>
 
-<section class="page compact">
-  <div class="ph ph-wide">
-    <div class="tag">Фото</div>
-    <div class="txt">Финальный кадр. Река Salmon у Пуласки в конце сентября.</div>
-    <div class="spec">Горизонтальный кадр на всю ширину.</div>
-  </div>
+<section class="photo-page ph">
+  <div class="tag">Фото</div>
+  <div class="txt">Финальный кадр. Река Salmon у Пуласки в конце сентября.</div>
+  <div class="spec">Горизонтальный кадр на весь экран. Нужен мобильный кроп.</div>
 </section>
 
 <!-- Контакт -->
-<section class="page compact" style="align-items:center;text-align:center;padding-top:120px;padding-bottom:100px">
+<section class="page compact" style="align-items:center;text-align:center;padding-top:140px;padding-bottom:120px">
   <nav class="contact-links">
     <a href="https://wa.me/17788553539">WhatsApp</a>
     <a href="https://t.me/VadimRubinov">Telegram</a>
