@@ -164,25 +164,35 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 .photo-page.ph .txt{font-family:'Prata',serif;font-size:19px;line-height:1.5;color:#4A4338;max-width:30em}
 .photo-page.ph .spec{font-family:'Golos Text',sans-serif;font-size:12px;color:var(--dim)}
 /* суть: две колонки на десктопе */
-/* суть: два предложения */
-.two{display:grid;gap:0}
-.two-rule{display:none}
-.two .blk{margin:0;padding:22px 0 0;border-top:1px solid var(--line)}
-.two .blk+.blk{margin-top:40px}
-.two .num{font-family:'Prata',serif;font-size:15px;letter-spacing:.18em;color:var(--dim);
-  display:block;margin-bottom:16px}
-.two .hero{font-family:'Prata',serif;font-size:24px;line-height:1.4;margin:0 0 16px;text-wrap:balance}
-.two .acc{font-family:'Prata',serif;font-size:16px;line-height:1.8;color:#6A6255;margin:0;max-width:32em}
+/* суть: диптих, техника обложки */
+.lead-page{padding-top:clamp(72px,10vh,120px);padding-bottom:40px;text-align:center}
+.lead-page .lead{margin-bottom:0}
+.diptych{display:grid;grid-template-columns:1fr;gap:var(--edge);padding:0}
+.panel{position:relative;overflow:hidden;min-height:78svh;min-height:78vh;background:var(--ivory)}
+.panel picture,.panel img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.panel .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,10,.62) 0%,rgba(20,16,10,.25) 45%,rgba(20,16,10,0) 75%)}
+.panel .over{position:absolute;left:0;right:0;bottom:0;padding:36px 28px 34px;color:#F1EDE4;text-shadow:0 0 22px rgba(0,0,0,.35)}
+.panel .num{font-family:'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:11px;opacity:.8;display:block;margin-bottom:14px}
+.panel .hero{font-family:'Prata',serif;font-size:26px;line-height:1.35;margin:0 0 14px;text-wrap:balance;max-width:16em}
+.panel .acc{font-family:'Golos Text',sans-serif;font-size:13px;line-height:1.65;margin:0;max-width:34em;opacity:.88}
+/* пока фото нет: подложка слоновой кости, текст тёмный */
+.panel.nophoto{border:1px dashed var(--line)}
+.panel.nophoto .shade{display:none}
+.panel.nophoto .over{color:var(--ink);text-shadow:none}
+.panel.nophoto .num{color:var(--dim);opacity:1}
+.panel.nophoto .acc{color:#5A5347;opacity:1}
+.panel.nophoto .phn{position:absolute;top:24px;left:28px;right:28px;font-family:'Golos Text',sans-serif;font-size:12px;color:var(--dim)}
+.panel.nophoto .phn b{display:block;text-transform:uppercase;letter-spacing:.3em;font-size:10px;font-weight:400;margin-bottom:6px}
 @media (min-width:900px){
-  .two{grid-template-columns:1fr 1fr;column-gap:64px}
-  .two .blk+.blk{margin-top:0}
-  .two .hero{font-size:26px}
-  .two .acc{font-size:16px}
+  .diptych{grid-template-columns:1fr 1fr}
+  .panel{min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge))}
+  .panel .over{padding:48px 44px 46px}
+  .panel .hero{font-size:30px}
+  .panel .acc{font-size:14px}
 }
 @media (max-width:480px){
-  .two .hero{font-size:21px}
-  .two .acc{font-size:15px}
-  .two .blk+.blk{margin-top:34px}
+  .panel .over{padding:28px 22px 26px}
+  .panel .hero{font-size:22px}
 }
 </style>
 </head>
@@ -202,16 +212,34 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 </section>
 
 <!-- 2 · Суть -->
-<section class="page">
+<section class="page lead-page">
   <h1 class="lead">Две лучшие рыбалки Северо-востока США</h1>
+</section>
 
-  <div class="two">
-    <div class="blk">
+<section class="diptych">
+  <div class="panel nophoto">
+    <!-- когда появится фото: убрать class="nophoto" и .phn, вставить
+    <picture>
+      <source media="(orientation: portrait)" srcset="/expeditions/tuna-chinook-2027/img/m/chinook.jpg">
+      <img src="/expeditions/tuna-chinook-2027/img/chinook.jpg" alt="">
+    </picture> -->
+    <div class="phn"><b>Фото</b>Чавыча реки Salmon: рыба в воде или в руках, вертикальный кадр. Тёмный низ под текст.</div>
+    <div class="shade"></div>
+    <div class="over">
       <span class="num">I</span>
       <h2 class="hero">Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.</h2>
       <p class="acc">Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.</p>
     </div>
-    <div class="blk">
+  </div>
+  <div class="panel nophoto">
+    <!-- когда появится фото: убрать class="nophoto" и .phn, вставить
+    <picture>
+      <source media="(orientation: portrait)" srcset="/expeditions/tuna-chinook-2027/img/m/tuna.jpg">
+      <img src="/expeditions/tuna-chinook-2027/img/tuna.jpg" alt="">
+    </picture> -->
+    <div class="phn"><b>Фото</b>Гигантский синий тунец у борта или на палубе, вертикальный кадр. Тёмный низ под текст.</div>
+    <div class="shade"></div>
+    <div class="over">
       <span class="num">II</span>
       <h2 class="hero">Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.</h2>
       <p class="acc">Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.</p>
@@ -253,12 +281,6 @@ h3.sub{font-size:19px;margin:28px 0 12px}
     <p>И третье, берег. Вечер после океана проходит в городке новоанглийского побережья: рестораны, залив, сад у воды.</p>
     <p>В первый день выходим в пять утра на трёх лодках и работаем на гиганта. Заготовка живца, переход на банки, дальше якорь и ожидание. Десять-двенадцать часов на воде, одна-две поклёвки на лодку, вываживание от часа до трёх.</p>
   </div>
-</section>
-
-<section class="photo-page ph">
-  <div class="tag">Фото</div>
-  <div class="txt">Трофейный синий тунец. Рыба у борта или на палубе, человек рядом для масштаба.</div>
-  <div class="spec">Вертикальный кадр, на десктопе показывать целиком.</div>
 </section>
 
 <!-- 21–22 сентября -->
@@ -306,12 +328,6 @@ h3.sub{font-size:19px;margin:28px 0 12px}
     <p>Ход короткий, пик приходится на вторую половину сентября и первую половину октября. Рыба, только что вошедшая из озера, ещё не растратила силу в реке: первые же метры борьбы объясняют, почему её зовут king salmon.</p>
     <p>У самого устья лежат 2,5 мили частной воды, единственный закрытый участок на всех 17 милях реки. Рыба проходит здесь первой, прямо из озера, и вода целиком в распоряжении гостей дома. Ловля вброд, с гидами, обед на берегу. На воду выходим пешком, от дома до реки несколько сотен ярдов.</p>
   </div>
-</section>
-
-<section class="photo-page ph">
-  <div class="tag">Фото</div>
-  <div class="txt">Чавыча из реки Salmon. Свежая, серебряная рыба в руках или в воде.</div>
-  <div class="spec">Вертикальный кадр.</div>
 </section>
 
 <!-- 27 сентября -->
