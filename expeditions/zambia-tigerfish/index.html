@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Виктория + Тигр Нижнего Замбези | 7 Expeditions</title>
+<meta name="description" content="Частный тур: водопад Виктория и рыбалка на тигровую рыбу в Нижнем Замбези. Восемь дней, два лоджа, три коротких перелёта.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Виктория + Тигр Нижнего Замбези | 7 Expeditions">
+<meta property="og:description" content="Частный тур. Восемь дней, семь ночей. Конец сентября, начало октября 2027.">
+<meta property="og:image" content="https://7expeditions.com/expeditions/zambia-tigerfish/img/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF9F4; --ink:#221E18; --dim:#8A8071; --line:#CFC8BA;
+  --serif:'Prata',Georgia,serif; --sans:'Golos Text',system-ui,sans-serif;
+  --col:34rem; --gut:1.25rem;
+  --edge:clamp(10px,.9vw,14px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:var(--edge) var(--edge) 0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.7}
+body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.045}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+p{margin:0 0 1.35em;color:#4A4338}
+h1,h2{font-weight:400;margin:0}
+
+/* текстовая колонка */
+.col{max-width:var(--col);margin:0 auto;padding:0 var(--gut)}
+.block{position:relative;padding:3.2rem 0 1.4rem}
+.block .col{position:relative}
+
+/* ссылки в тексте */
+.col p a{border-bottom:1px solid var(--dim);transition:border-color .15s}
+.col p a:hover{border-color:var(--ink)}
+a:focus-visible{outline:2px solid var(--dim);outline-offset:3px}
+
+/* надзаголовок и служебные строки: Golos */
+.eyebrow{font-family:var(--sans);font-size:.6875rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin:0 0 .9rem}
+.meta{font-family:var(--sans);font-size:.8125rem;line-height:1.5;color:var(--dim)}
+h2{font-size:1.5rem;line-height:1.3;margin:0 0 .35rem}
+h2+.meta{margin:0 0 1.3rem}
+
+/* обложка */
+.hero{padding:0 0 1rem}
+.hero .photo{height:72vh;height:72svh;min-height:420px}
+.hero .photo img{object-position:50% 68%}
+.hero .col{padding-top:2.2rem}
+.hero h1{font-size:2.35rem;line-height:1.15;margin:0 0 .9rem}
+.hero .meta{margin-top:.4rem}
+
+/* фото */
+.photo{height:62vh;height:62svh;min-height:360px;overflow:hidden;margin:0 0 .9rem}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo picture{display:block;width:100%;height:100%}
+.photo.tall{height:78vh;height:78svh}
+.cap{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--dim);margin-bottom:2.4rem}
+.cap span{display:block}
+.cap a{border-bottom:1px solid var(--line)}
+
+/* три кадра в ряд: на телефоне в столбец */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--edge);margin:0 0 .9rem}
+.trio picture{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--line)}
+.trio img{width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){
+  .trio{grid-template-columns:1fr}
+  .trio picture{aspect-ratio:3/2}
+}
+
+/* карта */
+.map{padding:0 var(--gut)}
+.map .inner{max-width:60rem;margin:0 auto}
+.map img{width:100%;border:1px solid var(--line)}
+
+/* пометки на полях */
+.note{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--dim);margin:0 0 .55rem}
+.note b{font-weight:500;color:var(--ink)}
+.note+p{margin-top:0}
+
+/* ночёвка: служебная строка в потоке, под текстом дня */
+.stay{font-family:var(--sans);font-size:.8125rem;line-height:1.5;color:var(--dim);margin:-.5em 0 0}
+.stay b{font-weight:500;color:var(--ink)}
+
+/* участие и подвал */
+.contact{padding:4rem 0 2rem;border-top:1px solid var(--line);margin-top:3rem}
+.contact .links{font-family:var(--sans);font-size:.9375rem;margin-top:1.6rem}
+.contact .links a{display:inline-block;padding:.75rem 0;margin-right:1.6rem;border-bottom:1px solid var(--line)}
+footer{padding:2rem 0 3rem}
+footer .col{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer .meta{margin:0}
+
+/* десктоп: пометки уходят в левое поле колонки */
+@media (min-width:1000px){
+  :root{--col:36rem}
+  body{font-size:1.125rem}
+  .col{padding-left:0;padding-right:0}
+  .note{position:absolute;left:-12.5rem;width:10.5rem;text-align:right;margin:.35em 0 0}
+  .hero h1{font-size:3rem}
+  h2{font-size:1.75rem}
+}
+@media (min-width:1000px){ .photo.natural{height:auto;min-height:0} .photo.natural img{height:auto} }
+@media (min-width:1200px){ :root{--col:42rem} }
+@media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+</style>
+</head>
+<body>
+
+<!-- Фото временные, взяты из сети под приватную страницу. Источники: sources.txt -->
+
+<!-- ОБЛОЖКА -->
+<section class="hero">
+  <div class="photo">
+    <picture>
+      <source media="(orientation: portrait)" type="image/webp" srcset="/expeditions/zambia-tigerfish/img/cover-m-600.webp 600w, /expeditions/zambia-tigerfish/img/cover-m.webp 1000w" sizes="100vw">
+      <source media="(orientation: portrait)" srcset="/expeditions/zambia-tigerfish/img/cover-m-600.jpg 600w, /expeditions/zambia-tigerfish/img/cover-m.jpg 1000w" sizes="100vw">
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/cover-800.webp 1000w, /expeditions/zambia-tigerfish/img/cover.webp 2000w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/cover.jpg" srcset="/expeditions/zambia-tigerfish/img/cover-800.jpg 1000w, /expeditions/zambia-tigerfish/img/cover.jpg 2000w" sizes="100vw" alt="Водопад Виктория с вертолёта, граница Замбии и Зимбабве" width="2000" height="1333" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="col">
+    <p class="eyebrow">Частный тур</p>
+    <h1>Виктория + Тигр Нижнего Замбези</h1>
+    <p class="meta">Восемь дней, семь ночей. Конец сентября, начало октября 2027.</p>
+  </div>
+</section>
+
+<!-- КАРТА: плейсхолдер, карта готовится отдельно -->
+<section class="block" style="padding-top:1.6rem">
+  <div class="map"><div class="inner">
+    <div style="aspect-ratio:16/10;border:1px solid var(--line);display:flex;align-items:center;justify-content:center">
+      <p class="meta" style="margin:0">Карта маршрута готовится.</p>
+    </div>
+  </div></div>
+</section>
+
+<!-- ДЕНЬ 1 -->
+<section class="block" style="padding-top:1rem">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d01-cruise-800.webp 800w, /expeditions/zambia-tigerfish/img/d01-cruise.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d01-cruise.jpg" srcset="/expeditions/zambia-tigerfish/img/d01-cruise-800.jpg 800w, /expeditions/zambia-tigerfish/img/d01-cruise.jpg 1600w" sizes="100vw" alt="Закатный круиз по Замбези, Ливингстон" width="1600" height="1070" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Закатный круиз по Замбези. Ливингстон.</span></p>
+  <div class="col">
+    <h2>День 1</h2>
+    <p class="meta">Лусака, Ливингстон.</p>
+    <p>Прилёт в Лусаку, иммиграция, пересадка на <a href="https://proflight-zambia.com/" target="_blank" rel="noopener">Proflight</a> (регулярный, 1&nbsp;ч) или чартер в Ливингстон. Трансфер 20&nbsp;мин в <a href="https://www.anantara.com/en/royal-livingstone" target="_blank" rel="noopener">Royal Livingstone by Anantara</a>: отель на самом водопаде, свой вход, брызги видны с террас. Вечером закатный круиз по Замбези от отельного причала.</p>
+    <p class="stay"><b>Ночь.</b> Royal Livingstone by Anantara.</p>
+  </div>
+  <div class="photo natural" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d01-hotel-800.webp 800w, /expeditions/zambia-tigerfish/img/d01-hotel.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d01-hotel.jpg" srcset="/expeditions/zambia-tigerfish/img/d01-hotel-800.jpg 800w, /expeditions/zambia-tigerfish/img/d01-hotel.jpg 1600w" sizes="100vw" alt="Бассейн Royal Livingstone на берегу Замбези, Ливингстон" width="1600" height="1060" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Royal Livingstone by Anantara. Бассейн над рекой.</span></p>
+</section>
+
+<!-- ДЕНЬ 2 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d02-falls-800.webp 800w, /expeditions/zambia-tigerfish/img/d02-falls.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d02-falls.jpg" srcset="/expeditions/zambia-tigerfish/img/d02-falls-800.jpg 800w, /expeditions/zambia-tigerfish/img/d02-falls.jpg 1600w" sizes="100vw" alt="Водопад Виктория и радуга, вид с зимбабвийской стороны" width="1600" height="1125" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Водопад Виктория. Зимбабвийская сторона.</span></p>
+  <div class="col">
+    <h2>День 2</h2>
+    <p class="meta">Водопад Виктория, полный день.</p>
+    <p>Утро: вертолётный облёт водопада и ущелья Батока. Затем переход по мосту в Зимбабве, пешая прогулка вдоль полноводной стороны, 2&nbsp;часа, дорожки сухие. Обед в Lookout Cafe над каньоном. К 15:00 в отеле, бассейн, SPA у реки. По желанию Livingstone Island на кромке водопада (с сентября по декабрь, лодка от причала отеля).</p>
+    <p class="stay"><b>Ночь.</b> Royal Livingstone by Anantara.</p>
+  </div>
+  <div class="trio" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d02-heli-800.webp 800w, /expeditions/zambia-tigerfish/img/d02-heli.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d02-heli.jpg" srcset="/expeditions/zambia-tigerfish/img/d02-heli-800.jpg 800w, /expeditions/zambia-tigerfish/img/d02-heli.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Водопад Виктория, ущелье и мост с вертолёта" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d02-bridge-800.webp 800w, /expeditions/zambia-tigerfish/img/d02-bridge.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d02-bridge.jpg" srcset="/expeditions/zambia-tigerfish/img/d02-bridge-800.jpg 800w, /expeditions/zambia-tigerfish/img/d02-bridge.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Мост через ущелье Замбези между Замбией и Зимбабве" width="1600" height="956" loading="lazy" decoding="async">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d02-gorge-800.webp 800w, /expeditions/zambia-tigerfish/img/d02-gorge.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d02-gorge.jpg" srcset="/expeditions/zambia-tigerfish/img/d02-gorge-800.jpg 800w, /expeditions/zambia-tigerfish/img/d02-gorge.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Водопад Виктория и мост, вид со стороны Зимбабве" width="1600" height="861" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>С вертолёта. Мост в Зимбабве. Первое ущелье.</span></p>
+</section>
+
+<!-- ДЕНЬ 3 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d03-charter-800.webp 800w, /expeditions/zambia-tigerfish/img/d03-charter.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d03-charter.jpg" srcset="/expeditions/zambia-tigerfish/img/d03-charter-800.jpg 800w, /expeditions/zambia-tigerfish/img/d03-charter.jpg 1600w" sizes="100vw" alt="Лёгкий самолёт на грунтовой полосе в долине Замбези" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Грунтовая полоса в долине Замбези.</span></p>
+  <div class="col">
+    <h2>День 3</h2>
+    <p class="meta">Ливингстон, Royal Zambezi Lodge.</p>
+    <p>Утро свободное. Чартер из Ливингстона на Royal Airstrip (около 1&nbsp;ч 45&nbsp;мин), трансфер 10&nbsp;мин. Размещение в 10 синглах, обед, инструктаж рыболовных гидов. Вечером закатный круиз по реке всей группой.</p>
+    <p class="stay"><b>Ночь.</b> <a href="https://www.royalzambezilodge.com/" target="_blank" rel="noopener">Royal Zambezi Lodge</a>.</p>
+  </div>
+  <div class="photo natural" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d03-lodge-800.webp 800w, /expeditions/zambia-tigerfish/img/d03-lodge.webp 1280w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d03-lodge.jpg" srcset="/expeditions/zambia-tigerfish/img/d03-lodge-800.jpg 800w, /expeditions/zambia-tigerfish/img/d03-lodge.jpg 1280w" sizes="100vw" alt="Бассейн Royal Zambezi Lodge над Замбези на закате" width="1280" height="854" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Royal Zambezi Lodge. Бассейн над рекой. Фото лоджа.</span></p>
+</section>
+
+<!-- ДЕНЬ 4 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d04-tigerfish-800.webp 800w, /expeditions/zambia-tigerfish/img/d04-tigerfish.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d04-tigerfish.jpg" srcset="/expeditions/zambia-tigerfish/img/d04-tigerfish-800.jpg 800w, /expeditions/zambia-tigerfish/img/d04-tigerfish.jpg 1600w" sizes="100vw" alt="Тигровая рыба крупным планом, пасть с зубами" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Тигровая рыба.</span></p>
+  <div class="col">
+    <h2>День 4</h2>
+    <p class="meta">Рыбалка, первый день.</p>
+    <p>Рыбаки: с 06:00 до 11:00 и с 15:30 до 18:30, лодки по два-три человека с гидом, спиннинг/нахлыст.</p>
+    <p>Альтернативы: утренний сафари&#8209;драйв в нацпарк, SPA, вечером ночной драйв.</p>
+    <p class="stay"><b>Ночь.</b> Royal Zambezi Lodge.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d04-river-800.webp 800w, /expeditions/zambia-tigerfish/img/d04-river.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d04-river.jpg" srcset="/expeditions/zambia-tigerfish/img/d04-river-800.jpg 800w, /expeditions/zambia-tigerfish/img/d04-river.jpg 1600w" sizes="100vw" alt="Слон на водопое у Замбези, эскарпмент на дальнем берегу" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Замбези. Эскарпмент на дальнем берегу.</span></p>
+</section>
+
+<!-- ДЕНЬ 5 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d05-valley-800.webp 800w, /expeditions/zambia-tigerfish/img/d05-valley.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d05-valley.jpg" srcset="/expeditions/zambia-tigerfish/img/d05-valley-800.jpg 800w, /expeditions/zambia-tigerfish/img/d05-valley.jpg 1600w" sizes="100vw" alt="Долина Замбези, деревья на острове и горы эскарпмента" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Долина Замбези. Острова и эскарпмент.</span></p>
+  <div class="col">
+    <h2>День 5</h2>
+    <p class="meta">Рыбалка, второй день.</p>
+    <p>Рыбаки: протоки и косы выше лоджа, вунду на тяжёлую снасть по желанию.</p>
+    <p>Альтернативы: вертолётный облёт эскарпмента и долины Мана&#8209;Пулс, лодочное фотосафари, SPA.</p>
+    <p class="stay"><b>Ночь.</b> Royal Zambezi Lodge.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 6: три кадра в ряд -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d06-crossing-800.webp 800w, /expeditions/zambia-tigerfish/img/d06-crossing.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d06-crossing.jpg" srcset="/expeditions/zambia-tigerfish/img/d06-crossing-800.jpg 800w, /expeditions/zambia-tigerfish/img/d06-crossing.jpg 1600w" sizes="100vw" alt="Стадо слонов переходит сухое русло у Royal Zambezi Lodge" width="1600" height="1082" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Слоны у лоджа. Фото Royal Zambezi Lodge.</span></p>
+  <div class="col">
+    <h2>День 6</h2>
+    <p class="meta">Сафари&#8209;день для всей группы.</p>
+    <p>05:30 выезд в Нижний Замбези на трёх машинах: слон, буйвол, лев, дикие собаки. Бушевой завтрак. Днём бассейн. 16:00 лодочное сафари по каналам к устью Чонгве, закат на воде. Ужин на острове посреди реки.</p>
+    <p class="stay"><b>Ночь.</b> Royal Zambezi Lodge.</p>
+  </div>
+  <div class="trio" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d06-elephants-800.webp 800w, /expeditions/zambia-tigerfish/img/d06-elephants.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d06-elephants.jpg" srcset="/expeditions/zambia-tigerfish/img/d06-elephants-800.jpg 800w, /expeditions/zambia-tigerfish/img/d06-elephants.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Слоны купаются в Замбези" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d06-dogs-800.webp 800w, /expeditions/zambia-tigerfish/img/d06-dogs.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d06-dogs.jpg" srcset="/expeditions/zambia-tigerfish/img/d06-dogs-800.jpg 800w, /expeditions/zambia-tigerfish/img/d06-dogs.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Дикие собаки на песке, Зимбабве" width="1600" height="1066" loading="lazy" decoding="async">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d06-lion-800.webp 800w, /expeditions/zambia-tigerfish/img/d06-lion.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d06-lion.jpg" srcset="/expeditions/zambia-tigerfish/img/d06-lion-800.jpg 800w, /expeditions/zambia-tigerfish/img/d06-lion.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Львица под деревом, Замбия" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Слоны в реке. Дикие собаки. Львица.</span></p>
+</section>
+
+<!-- ДЕНЬ 7 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d07-river-800.webp 800w, /expeditions/zambia-tigerfish/img/d07-river.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d07-river.jpg" srcset="/expeditions/zambia-tigerfish/img/d07-river-800.jpg 800w, /expeditions/zambia-tigerfish/img/d07-river.jpg 1600w" sizes="100vw" alt="Нижний Замбези, широкое русло и грозовое небо" width="1600" height="1064" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Нижний Замбези.</span></p>
+  <div class="col">
+    <h2>День 7</h2>
+    <p class="meta">Рыбалка, третий день.</p>
+    <p>Рыбаки: дальний выход вниз к границе парка, полный день с обедом на острове.</p>
+    <p>Альтернативы: полнодневный драйв с бушевым завтраком, закатный круиз.</p>
+    <p class="stay"><b>Ночь.</b> Royal Zambezi Lodge.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 8 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/zambia-tigerfish/img/d08-sunset-800.webp 800w, /expeditions/zambia-tigerfish/img/d08-sunset.webp 1600w" sizes="100vw">
+      <img src="/expeditions/zambia-tigerfish/img/d08-sunset.jpg" srcset="/expeditions/zambia-tigerfish/img/d08-sunset-800.jpg 800w, /expeditions/zambia-tigerfish/img/d08-sunset.jpg 1600w" sizes="100vw" alt="Закат над Замбези, эскарпмент на горизонте" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Закат над Замбези.</span></p>
+  <div class="col">
+    <h2>День 8</h2>
+    <p class="meta">Рыбалка, четвёртый день. Вылет.</p>
+    <p>Утренняя сессия с 06:00 до 10:00, последний шанс на трофей. Обед, чартер 35&nbsp;мин в Лусаку, международный вылет вечером.</p>
+  </div>
+</section>
+
+<!-- РАННИЙ ОТЪЕЗД -->
+<section class="block">
+  <div class="col">
+    <h2>Ранний отъезд</h2>
+    <p>Кто уходит раньше: из Royal чартер в Лусаку в любой день (35&nbsp;мин), стыковка на вечерние рейсы Emirates и Qatar. Без ломки программы для остальных.</p>
+  </div>
+</section>
+
+<!-- КЛЮЧЕВЫЕ ТОЧКИ -->
+<section class="block" style="padding-top:1rem">
+  <div class="col">
+    <h2>Ключевые точки</h2>
+    <p>Два лоджа, три коротких перелёта, ноль ночных переездов.</p>
+    <p>Ежедневный выбор лодка/машина/SPA: штатный формат Royal.</p>
+    <p>Проверить до брони: KAZA UniVisa для казахстанских паспортов (иначе зимбабвийская виза на границе), синглы без доплаты в обоих отелях.</p>
+    <p>Оба отеля работают без алкоголя под запрос группы.</p>
+  </div>
+</section>
+
+<!-- УЧАСТИЕ -->
+<section class="contact">
+  <div class="col">
+    <p class="links"><a href="https://wa.me/17788553539">WhatsApp</a><a href="https://t.me/VadimRubinov">Telegram</a><a href="mailto:explore@7expeditions.com">explore@7expeditions.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="col">
+    <p class="meta">© 7 Expeditions, 2009-2026<br>Vancouver, Canada</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+Фото: Wikimedia Commons и веб, только для приватной страницы. Файл -> название на Commons -> страница.
+
+cover	File:Victoria Falls, Zimbabwe 06.jpg	https://commons.wikimedia.org/wiki/File:Victoria_Falls,_Zimbabwe_06.jpg
+cover-m	File:Victoria Falls - VicFalls3457.jpg	https://commons.wikimedia.org/wiki/File:Victoria_Falls_-_VicFalls3457.jpg
+d01-cruise	File:Zambezi sunset cruise.jpg	https://commons.wikimedia.org/wiki/File:Zambezi_sunset_cruise.jpg
+d01-hotel	File:AHI Treasures of Southern Africa 3-07 0763 N (665188760).jpg	https://commons.wikimedia.org/wiki/File:AHI_Treasures_of_Southern_Africa_3-07_0763_N_(665188760).jpg
+d02-falls	File:Cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 30-34 PAN (cropped).jpg	https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN_(cropped).jpg
+d02-heli	File:Victoria Falls from the helicopter.jpg	https://commons.wikimedia.org/wiki/File:Victoria_Falls_from_the_helicopter.jpg
+d02-bridge	File:Puente de las cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 10.jpg	https://commons.wikimedia.org/wiki/File:Puente_de_las_cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_10.jpg
+d02-gorge	File:Cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 21.jpg	https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_21.jpg
+d03-charter	File:Light aircraft at Chikwenya Camp near Mana Pools.jpg	https://commons.wikimedia.org/wiki/File:Light_aircraft_at_Chikwenya_Camp_near_Mana_Pools.jpg
+d03-lodge	Royal Zambezi Lodge, сайт лоджа	https://www.royalzambezilodge.com/wp-content/uploads/2022/02/RoyalZambezi-33.jpg
+d04-tigerfish	File:Tigerfisch Okavango.jpg	https://commons.wikimedia.org/wiki/File:Tigerfisch_Okavango.jpg
+d04-river	File:Zambezi-at-Mutsango.JPG	https://commons.wikimedia.org/wiki/File:Zambezi-at-Mutsango.JPG
+d05-valley	File:Island in the Zambezi River at Mana Pools National Park-1.jpg	https://commons.wikimedia.org/wiki/File:Island_in_the_Zambezi_River_at_Mana_Pools_National_Park-1.jpg
+d06-crossing	Royal Zambezi Lodge, сайт лоджа	https://www.royalzambezilodge.com/wp-content/uploads/2024/09/Elephants-crossing-dry-river_WM24076-scaled.jpg
+d06-elephants	File:Zambezi – Elephants crossing the river- 1 ca 12.11.2009.jpg	https://commons.wikimedia.org/wiki/File:Zambezi_%E2%80%93_Elephants_crossing_the_river-_1_ca_12.11.2009.jpg
+d06-dogs	File:Painted Dogs (48031793577).jpg	https://commons.wikimedia.org/wiki/File:Painted_Dogs_(48031793577).jpg
+d06-lion	File:Lioness Watchful Luangwa Zambia Jul23 A7C 06316.jpg	https://commons.wikimedia.org/wiki/File:Lioness_Watchful_Luangwa_Zambia_Jul23_A7C_06316.jpg
+d07-river	File:Lower Zambezi, Zambia (2518076209).jpg	https://commons.wikimedia.org/wiki/File:Lower_Zambezi,_Zambia_(2518076209).jpg
+d08-sunset	File:ZmbziRvr.jpg	https://commons.wikimedia.org/wiki/File:ZmbziRvr.jpg
