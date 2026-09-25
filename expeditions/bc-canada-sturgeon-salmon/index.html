@@ -204,14 +204,18 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   .panel .over{padding:28px 22px 26px}
   .panel .hero{font-size:22px}
 }
-/* обложка на телефоне: фото целиком, без обрезки; заголовок под фото */
+/* обложка на телефоне: первый экран целиком, фото без обрезки, заголовок в свободной части экрана */
 @media (orientation: portrait){
-  .cover{min-height:0;height:auto}
-  .cover picture,.cover img{height:auto;object-fit:contain}
-  .cover .overlay{position:static;align-items:center;text-align:center;padding:30px 20px 6px;color:var(--ink);text-shadow:none}
+  .cover{height:auto;min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge));display:flex;flex-direction:column;justify-content:center;background:var(--bg)}
+  .cover picture,.cover img{height:auto;object-fit:contain;flex:0 0 auto}
+  .cover .overlay{position:static;flex:1 1 auto;justify-content:center;align-items:center;text-align:center;padding:24px 20px;color:var(--ink);text-shadow:none}
   .cover .title{font-size:34px;margin-bottom:12px}
   .cover .sub{font-size:16px;letter-spacing:.2em;margin-bottom:14px}
   .cover .overlay .caps{color:var(--dim)!important}
+}
+@media (orientation: portrait) and (max-width:375px){
+  .cover .title{font-size:29px}
+  .cover .sub{font-size:14px;letter-spacing:.16em}
 }
 /* вступление под заголовком: как текст дня */
 .lead-page .intro{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;text-align:left;margin-top:36px;max-width:34em}
