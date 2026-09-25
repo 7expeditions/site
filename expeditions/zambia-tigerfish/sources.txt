@@ -1,6 +1,7 @@
 Фото: Wikimedia Commons, сайты отелей и Facebook, только для приватной страницы. Файл -> источник.
 
-cover, cover-m	Facebook, тайгерфиш	https://scontent.fyvr3-1.fna.fbcdn.net/v/t1.6435-9/78422930_620020145410297_7493674138502955008_n.jpg
+cover (десктоп)	Facebook, тайгерфиш	https://scontent.fyvr3-1.fna.fbcdn.net/v/t39.30808-6/481660805_1050246467149545_8737798584202300905_n.jpg
+cover-m (мобила)	Facebook, тайгерфиш	https://scontent.fyvr3-1.fna.fbcdn.net/v/t1.6435-9/78422930_620020145410297_7493674138502955008_n.jpg
 d01-angling	Royal Zambezi Lodge, сайт лоджа	https://www.royalzambezilodge.com/wp-content/uploads/2022/02/angling-new-1-1024x683-1.jpg
 d01-hotel	Royal Livingstone by Anantara, сайт отеля	https://www.anantara.com/en/royal-livingstone (gallery: the_royal_livingstone_by_anantara_lawn_1920x1037.jpg)
 d02-falls	File:Cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 30-34 PAN (cropped).jpg	https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN_(cropped).jpg
@@ -17,6 +18,6 @@ d06-lodge	Royal Zambezi Lodge, сайт лоджа	https://www.royalzambezilodge
 d06-elephants	File:Zambezi – Elephants crossing the river- 1 ca 12.11.2009.jpg	https://commons.wikimedia.org/wiki/File:Zambezi_%E2%80%93_Elephants_crossing_the_river-_1_ca_12.11.2009.jpg
 d06-dogs	File:Painted Dogs (48031793577).jpg	https://commons.wikimedia.org/wiki/File:Painted_Dogs_(48031793577).jpg
 d06-lion	File:Lioness Watchful Luangwa Zambia Jul23 A7C 06316.jpg	https://commons.wikimedia.org/wiki/File:Lioness_Watchful_Luangwa_Zambia_Jul23_A7C_06316.jpg
-d08-tiger	Facebook, тайгерфиш	https://scontent.fyvr3-1.fna.fbcdn.net/v/t39.30808-6/481660805_1050246467149545_8737798584202300905_n.jpg
+d08-tiger	Facebook, тайгерфиш	https://scontent.fyvr3-1.fna.fbcdn.net/v/t1.6435-9/78422930_620020145410297_7493674138502955008_n.jpg
 d08-sunset	File:ZmbziRvr.jpg	https://commons.wikimedia.org/wiki/File:ZmbziRvr.jpg
 map	карта 7 Expeditions, map-zambezi-ru.jpg
