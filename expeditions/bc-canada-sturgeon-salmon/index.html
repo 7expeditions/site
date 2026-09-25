@@ -215,6 +215,17 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   .cover .title{font-size:30px}
   .cover .sub{font-size:14px;letter-spacing:.16em}
 }
+/* панели I и II: фото целиком, без обрезки; текст под фото */
+.diptych .panel{min-height:0;display:flex;flex-direction:column;overflow:visible}
+.diptych .panel picture,.diptych .panel img{position:static;height:auto;width:100%}
+.diptych .panel .shade{display:none}
+.diptych .panel .over{position:static;padding:26px 24px 36px;color:var(--ink);text-shadow:none}
+.diptych .panel .num{color:var(--dim);opacity:1}
+.diptych .panel .acc{color:#5A5347;opacity:1}
+@media (min-width:900px){
+  .diptych .panel{min-height:0;justify-content:center}
+  .diptych .panel .over{padding:30px 32px 40px}
+}
 /* вступление под заголовком: как текст дня */
 .lead-page .intro{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;text-align:left;margin-top:36px;max-width:34em}
 /* плейсхолдеры на время вёрстки: ниже полного экрана, обложка полная */
@@ -246,8 +257,7 @@ h3.sub{font-size:19px;margin:28px 0 12px}
 <section class="diptych">
   <div class="panel">
     <picture>
-      <source media="(orientation: portrait)" srcset="/expeditions/bc-canada-sturgeon-salmon/img/m/sturgeon.jpg">
-      <img src="/expeditions/bc-canada-sturgeon-salmon/img/sturgeon.jpg" alt="Белый осётр на реке Фрейзер" style="object-position:50% 50%">
+      <img src="/expeditions/bc-canada-sturgeon-salmon/img/sturgeon.jpg" alt="Белый осётр на реке Фрейзер">
     </picture>
     <div class="shade"></div>
     <div class="over">
@@ -258,8 +268,7 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   </div>
   <div class="panel">
     <picture>
-      <source media="(orientation: portrait)" srcset="/expeditions/bc-canada-sturgeon-salmon/img/m/salmon.jpg">
-      <img src="/expeditions/bc-canada-sturgeon-salmon/img/salmon.jpg" alt="Чавыча на причале в Тофино" style="object-position:50% 40%">
+      <img src="/expeditions/bc-canada-sturgeon-salmon/img/salmon.jpg" alt="Чавыча на причале в Тофино">
     </picture>
     <div class="shade"></div>
     <div class="over">
