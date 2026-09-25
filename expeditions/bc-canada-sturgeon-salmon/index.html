@@ -204,17 +204,15 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   .panel .over{padding:28px 22px 26px}
   .panel .hero{font-size:22px}
 }
-/* обложка на телефоне: первый экран целиком, фото без обрезки, заголовок в свободной части экрана */
+/* обложка на телефоне: фото на весь экран, заголовок сверху на небе */
 @media (orientation: portrait){
-  .cover{height:auto;min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge));display:flex;flex-direction:column;justify-content:center;background:var(--bg)}
-  .cover picture,.cover img{height:auto;object-fit:contain;flex:0 0 auto}
-  .cover .overlay{position:static;flex:1 1 auto;justify-content:center;align-items:center;text-align:center;padding:24px 20px;color:var(--ink);text-shadow:none}
-  .cover .title{font-size:34px;margin-bottom:12px}
-  .cover .sub{font-size:16px;letter-spacing:.2em;margin-bottom:14px}
-  .cover .overlay .caps{color:var(--dim)!important}
+  .cover picture img{object-position:50% 50%!important}
+  .cover .overlay{justify-content:flex-start!important;align-items:center!important;text-align:center!important;padding:72px 20px 24px!important}
+  .cover .title{font-size:34px;white-space:nowrap}
+  .cover .sub{font-size:16px;letter-spacing:.2em;white-space:nowrap}
 }
 @media (orientation: portrait) and (max-width:375px){
-  .cover .title{font-size:29px}
+  .cover .title{font-size:30px}
   .cover .sub{font-size:14px;letter-spacing:.16em}
 }
 /* вступление под заголовком: как текст дня */
