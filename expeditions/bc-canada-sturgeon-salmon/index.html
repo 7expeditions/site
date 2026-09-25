@@ -204,10 +204,14 @@ h3.sub{font-size:19px;margin:28px 0 12px}
   .panel .over{padding:28px 22px 26px}
   .panel .hero{font-size:22px}
 }
-/* обложка на телефоне: полный вертикальный кадр, заголовок по центру как в шаблоне */
-@media (max-width:768px){
-  .cover picture img{object-position:50% 50%!important}
-  .cover .overlay{justify-content:flex-start!important;align-items:center!important;text-align:center!important;padding:88px 24px 24px!important}
+/* обложка на телефоне: фото целиком, без обрезки; заголовок под фото */
+@media (orientation: portrait){
+  .cover{min-height:0;height:auto}
+  .cover picture,.cover img{height:auto;object-fit:contain}
+  .cover .overlay{position:static;align-items:center;text-align:center;padding:30px 20px 6px;color:var(--ink);text-shadow:none}
+  .cover .title{font-size:34px;margin-bottom:12px}
+  .cover .sub{font-size:16px;letter-spacing:.2em;margin-bottom:14px}
+  .cover .overlay .caps{color:var(--dim)!important}
 }
 /* вступление под заголовком: как текст дня */
 .lead-page .intro{font-family:'Prata',serif;font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75;color:#4A4338;text-align:left;margin-top:36px;max-width:34em}
