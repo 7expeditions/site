@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Альберта, Юкон и Аляска | 7 Expeditions</title>
+<meta name="description" content="Частный тур по Альберте, Юкону и Аляске: юг Альберты и история коренных народов, национальные парки Скалистых гор, день в резервации Стоуни; тлинкиты побережья, атабаски внутренних районов, арктическая деревня инупиатов, Клуэйн, Денали и полуостров Кенай. Двадцать два дня, из Калгари в Анкоридж.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Альберта, Юкон и Аляска | 7 Expeditions">
+<meta property="og:description" content="Частный тур. Двадцать два дня, из Калгари в Анкоридж, 22 мая – 12 июня.">
+<meta property="og:image" content="https://7expeditions.com/expeditions/alberta-rockies-alaska-indigenous/img/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF9F4; --ink:#221E18; --dim:#8A8071; --line:#CFC8BA;
+  --serif:'Prata',Georgia,serif; --sans:'Golos Text',system-ui,sans-serif;
+  --col:34rem; --gut:1.25rem;
+  --edge:clamp(10px,.9vw,14px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:var(--edge) var(--edge) 0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.7}
+body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.045}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+p{margin:0 0 1.35em;color:#4A4338}
+h1,h2{font-weight:400;margin:0}
+
+/* текстовая колонка */
+.col{max-width:var(--col);margin:0 auto;padding:0 var(--gut)}
+.block{position:relative;padding:3.2rem 0 1.4rem}
+.block .col{position:relative}
+
+/* ссылки в тексте */
+.col p a{border-bottom:1px solid var(--dim);transition:border-color .15s}
+.col p a:hover{border-color:var(--ink)}
+a:focus-visible{outline:2px solid var(--dim);outline-offset:3px}
+
+/* надзаголовок и служебные строки: Golos */
+.eyebrow{font-family:var(--sans);font-size:.6875rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin:0 0 .9rem}
+.meta{font-family:var(--sans);font-size:.8125rem;line-height:1.5;color:var(--dim)}
+h2{font-size:1.5rem;line-height:1.3;margin:0 0 .35rem}
+h2+.meta{margin:0 0 1.3rem}
+
+/* обложка */
+.hero{padding:0 0 1rem}
+.hero .photo{height:72vh;height:72svh;min-height:420px}
+.hero .photo img{object-position:50% 68%}
+.hero .col{padding-top:2.2rem}
+.hero h1{font-size:2.35rem;line-height:1.15;margin:0 0 .9rem}
+.hero .meta{margin-top:.4rem}
+
+/* фото */
+.photo{height:62vh;height:62svh;min-height:360px;overflow:hidden;margin:0 0 .9rem}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo picture{display:block;width:100%;height:100%}
+.photo.tall{height:78vh;height:78svh}
+.cap{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--dim);margin-bottom:2.4rem}
+.cap span{display:block}
+.cap a{border-bottom:1px solid var(--line)}
+
+/* три кадра в ряд: на телефоне в столбец */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--edge);margin:0 0 .9rem}
+.trio picture{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--line)}
+.trio img{width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){
+  .trio{grid-template-columns:1fr}
+  .trio picture{aspect-ratio:3/2}
+}
+
+/* дата у номера дня */
+h2 .dt{font-family:var(--sans);font-size:.8125rem;letter-spacing:.04em;color:var(--dim);margin-left:.7rem;white-space:nowrap}
+
+/* заголовок второй части тура */
+h2.part{font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+@media (min-width:1000px){ h2.part{font-size:2.5rem} }
+
+/* два кадра в ряд: на телефоне в столбец */
+.duo{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--edge);margin:0 0 .9rem}
+.duo picture{display:block;aspect-ratio:1/1;overflow:hidden;background:var(--line)}
+.duo img{width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){ .duo{grid-template-columns:1fr} }
+
+/* карта */
+.map{padding:0 var(--gut)}
+.map .inner{max-width:60rem;margin:0 auto}
+.map img{width:100%;border:1px solid var(--line)}
+
+/* пометки на полях */
+.note{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--dim);margin:0 0 .55rem}
+.note b{font-weight:500;color:var(--ink)}
+.note+p{margin-top:0}
+
+/* ночёвка: служебная строка в потоке, под текстом дня */
+.stay{font-family:var(--sans);font-size:.8125rem;line-height:1.5;color:var(--dim);margin:-.5em 0 0}
+.stay b{font-weight:500;color:var(--ink)}
+
+/* участие и подвал */
+.contact{padding:4rem 0 2rem;border-top:1px solid var(--line);margin-top:3rem}
+.contact .links{font-family:var(--sans);font-size:.9375rem;margin-top:1.6rem}
+.contact .links a{display:inline-block;padding:.75rem 0;margin-right:1.6rem;border-bottom:1px solid var(--line)}
+footer{padding:2rem 0 3rem}
+footer .col{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer .meta{margin:0}
+
+/* десктоп: пометки уходят в левое поле колонки */
+@media (min-width:1000px){
+  :root{--col:36rem}
+  body{font-size:1.125rem}
+  .col{padding-left:0;padding-right:0}
+  .note{position:absolute;left:-12.5rem;width:10.5rem;text-align:right;margin:.35em 0 0}
+  .hero h1{font-size:3rem}
+  h2{font-size:1.75rem}
+}
+@media (min-width:1000px){ .photo.natural{height:auto;min-height:0} .photo.natural img{height:auto} }
+@media (min-width:1200px){ :root{--col:42rem} }
+@media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+</style>
+</head>
+<body>
+
+<!-- Фото временные, взяты из сети под приватную страницу. Источники: sources.txt -->
+
+<!-- ОБЛОЖКА -->
+<section class="hero">
+  <div class="photo">
+    <picture>
+      <source media="(orientation: portrait)" type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/cover-m-600.webp 600w, /expeditions/alberta-rockies-alaska-indigenous/img/cover-m.webp 1000w" sizes="100vw">
+      <source media="(orientation: portrait)" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/cover-m-600.jpg 600w, /expeditions/alberta-rockies-alaska-indigenous/img/cover-m.jpg 1000w" sizes="100vw">
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/cover-800.webp 1000w, /expeditions/alberta-rockies-alaska-indigenous/img/cover.webp 2000w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/cover.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/cover-800.jpg 1000w, /expeditions/alberta-rockies-alaska-indigenous/img/cover.jpg 2000w" sizes="100vw" alt="Озеро Морейн и Долина десяти пиков, Банф" width="2000" height="1333" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="col">
+    <p class="eyebrow">Частный тур</p>
+    <h1>Альберта, Юкон и Аляска</h1>
+    <p class="meta">Двадцать два дня, из Калгари в Анкоридж.<br>22&nbsp;мая&nbsp;– 12&nbsp;июня.</p>
+  </div>
+</section>
+
+<!-- ВСТУПЛЕНИЕ -->
+<section class="block" style="padding-top:1.6rem">
+  <div class="col">
+    <p>Тур объединяет два лица Альберты. На юге провинции история коренных народов читается в петроглифах, охотничьих обрывах и местах подписания договоров; на западе поднимаются знаменитые национальные парки Скалистых гор: Кутеней, Банф, Йохо и Джаспер. Между ними день в резервации Стоуни&#8209;Накода в гостях у семьи вождя Сноу, а финал в Эдмонтоне, где работает лучшая в стране экспозиция о коренных народах.</p>
+  </div>
+</section>
+
+<!-- КАРТА -->
+<section class="block" style="padding-top:.5rem">
+  <div class="map"><div class="inner">
+    <a href="/expeditions/alberta-rockies-alaska-indigenous/img/map-full.jpg" target="_blank" rel="noopener">
+      <picture>
+        <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/map-800.webp 900w, /expeditions/alberta-rockies-alaska-indigenous/img/map.webp 1600w" sizes="(min-width:1000px) 60rem, 100vw">
+        <img src="/expeditions/alberta-rockies-alaska-indigenous/img/map.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/map-800.jpg 900w, /expeditions/alberta-rockies-alaska-indigenous/img/map.jpg 1600w" sizes="(min-width:1000px) 60rem, 100vw" alt="Карта маршрута: Калгари, юг Альберты, Уотертон, Ферни, Кутеней, Банф, Лейк-Луиз, Джаспер, Хинтон, Эдмонтон" width="1600" height="1546" loading="lazy" decoding="async">
+      </picture>
+    </a>
+  </div></div>
+  <p class="cap col" style="margin-top:.8rem"><span>Маршрут. Цифрами отмечены дни.</span><span><a href="/expeditions/alberta-rockies-alaska-indigenous/img/map-full.jpg" target="_blank" rel="noopener">Открыть карту крупно</a></span></p>
+</section>
+
+<!-- ДЕНЬ 1 -->
+<section class="block" style="padding-top:1rem">
+  <div class="col">
+    <h2>День 1<span class="dt">22&nbsp;мая</span></h2>
+    <p class="meta">Прилёт в Калгари.</p>
+    <p>Прилёт днём, трансфер в отель, прогулка по центру Калгари, отдых после перелёта.</p>
+    <p class="stay"><b>Ночь.</b> Le Germain Calgary.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 2 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d02-tyrrell-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d02-tyrrell.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d02-tyrrell.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d02-tyrrell-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d02-tyrrell.jpg 1600w" sizes="100vw" alt="Скелеты динозавров в зале Королевского музея Тиррелла" width="1600" height="1104" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Королевский музей Тиррелла. Драмхеллер.</span></p>
+  <div class="col">
+    <h2>День 2<span class="dt">23&nbsp;мая</span></h2>
+    <p class="meta">Калгари, Драмхеллер, Blackfoot Crossing, Летбридж. 403&nbsp;км.</p>
+    <p>Бэдлендс долины Ред&#8209;Дир и <a href="https://tyrrellmuseum.com/" target="_blank" rel="noopener">Королевский музей Тиррелла</a>: одна из крупнейших в мире коллекций динозавров, 130&nbsp;000 экспонатов, скелеты найдены в этих же холмах. <a href="https://blackfootcrossing.ca/" target="_blank" rel="noopener">Blackfoot Crossing Historical Park</a>: музей на месте, где в 1877 году Конфедерация чёрноногих и племена стоуни и цуутина подписали договор с британской Короной, уступив ей юг Альберты; могила вождя Кроуфута, экскурсию ведёт гид из народа сиксика. Летбридж: Indian Battle Park, место последней межплеменной битвы в Северной Америке (1870), и <a href="https://fort.galtmuseum.com/" target="_blank" rel="noopener">форт Whoop&#8209;Up</a>, торговый пост эпохи виски и бизоньих шкур.</p>
+    <p class="stay"><b>Ночь.</b> Paradise Canyon Golf Resort.</p>
+  </div>
+  <div class="photo natural" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d02-blackfoot.webp">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d02-blackfoot.jpg" alt="Blackfoot Crossing Historical Park с высоты на закате, долина реки Боу" width="960" height="540" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Blackfoot Crossing.</span></p>
+</section>
+
+<!-- ДЕНЬ 3 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d03-petroglyph-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d03-petroglyph.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d03-petroglyph.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d03-petroglyph-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d03-petroglyph.jpg 1600w" sizes="100vw" alt="Петроглифы на песчанике, Writing-on-Stone" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Writing&#8209;on&#8209;Stone. Петроглифы чёрноногих на песчанике.</span></p>
+  <div class="col">
+    <h2>День 3<span class="dt">24&nbsp;мая</span></h2>
+    <p class="meta">Летбридж, Writing&#8209;on&#8209;Stone, Уотертон. 337&nbsp;км.</p>
+    <p><a href="https://www.albertaparks.ca/parks/south/writing-on-stone-pp/" target="_blank" rel="noopener">Writing&#8209;on&#8209;Stone</a> (ЮНЕСКО): крупнейшее в Северной Америке собрание петроглифов и пиктографов, всё в натуральном виде, на песчаниковых обрывах долины Милк&#8209;Ривер, где их вырезали и рисовали охрой; главные панели в закрытом заповеднике, куда пускают только с гидом парка. До сих пор священное место чёрноногих. Национальный парк Уотертон&#8209;Лейкс, где прерии упираются прямо в горы; самое глубокое озеро Скалистых гор.</p>
+    <p class="stay"><b>Ночь.</b> Исторический Prince of Wales Hotel (1927) над озером.</p>
+  </div>
+  <div class="photo natural" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d03-waterton-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d03-waterton.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d03-waterton.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d03-waterton-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d03-waterton.jpg 1600w" sizes="100vw" alt="Prince of Wales Hotel на фоне гор Уотертона" width="1600" height="1142" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Prince of Wales Hotel. С 1927 года.</span></p>
+</section>
+
+<!-- ДЕНЬ 4 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d04-buffalo-jump-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d04-buffalo-jump.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d04-buffalo-jump.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d04-buffalo-jump-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d04-buffalo-jump.jpg 1600w" sizes="100vw" alt="Обрыв Head-Smashed-In снизу" width="1600" height="1201" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Head&#8209;Smashed&#8209;In. Обрыв, куда шесть тысяч лет загоняли бизонов.</span></p>
+  <div class="col">
+    <h2>День 4<span class="dt">25&nbsp;мая</span></h2>
+    <p class="meta">Уотертон, Fort Macleod, Head&#8209;Smashed&#8209;In, Frank Slide, Ферни. 287&nbsp;км.</p>
+    <p><a href="https://www.nwmpmuseum.com/" target="_blank" rel="noopener">Fort Museum</a>: первый форт Северо&#8209;Западной конной полиции, галерея коренных народов. <a href="https://headsmashedin.ca/" target="_blank" rel="noopener">Head&#8209;Smashed&#8209;In Buffalo Jump</a> (ЮНЕСКО): обрыв, где чёрноногие 6000 лет загоняли бизонов; интерпретационный центр с экскурсией гида&#8209;пиикани. <a href="https://frankslide.ca/" target="_blank" rel="noopener">Frank Slide</a>: крупнейший оползень в истории Канады (1903), 110&nbsp;млн тонн камня за 100 секунд. Перевал Кроуснест, въезд в Британскую Колумбию.</p>
+    <p class="stay"><b>Ночь.</b> Горнолыжный курорт Ферни.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 5 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d05-paint-pots-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d05-paint-pots.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d05-paint-pots.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d05-paint-pots-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d05-paint-pots.jpg 1600w" sizes="100vw" alt="Охристый ключ Paint Pots, Кутеней" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Paint Pots. Охра, которую веками добывали для наскальной живописи.</span></p>
+  <div class="col">
+    <h2>День 5<span class="dt">26&nbsp;мая</span></h2>
+    <p class="meta">Ферни, Fairmont Hot Springs, Банф. 356&nbsp;км.</p>
+    <p>Национальный парк Кутеней: Radium Hot Springs, каньон Марбл, Paint Pots (охристые ключи, где веками добывали краску для наскальной живописи и церемоний). Перевал Вермилион, въезд в Банф.</p>
+    <p class="stay"><b>Ночь.</b> Fairmont Banff Springs.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d05-banff-springs-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d05-banff-springs.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d05-banff-springs.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d05-banff-springs-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d05-banff-springs.jpg 1600w" sizes="100vw" alt="Fairmont Banff Springs в лесу, над отелем туман" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Banff Springs. Две ночи.</span></p>
+</section>
+
+<!-- ДЕНЬ 6: три кадра в ряд -->
+<section class="block" style="padding-top:0">
+  <div class="trio">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Остовы типи на фоне Скалистых гор" width="1600" height="1022" loading="lazy" decoding="async">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Гора Ямнушка на закате, отражение в воде" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-fire-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-fire.webp 1440w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-fire.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-fire-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-fire.jpg 1440w" sizes="(min-width:761px) 33vw, 100vw" alt="Костёр в лесу у палатки, готовят обед" width="1440" height="1080" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Стоуни&#8209;Накода. Типи, священная гора Ямнушка, обед у костра.</span></p>
+  <div class="col">
+    <h2>День 6<span class="dt">27&nbsp;мая</span></h2>
+    <p class="meta">Банф, резервация Стоуни, Банф. Около 140&nbsp;км.</p>
+    <p>Этой поездки нет ни в одном путеводителе и ни у одного туроператора: она возможна благодаря личным связям нашего партнёра с семьёй легендарного вождя Сноу. Резервация Стоуни&#8209;Накода, полчаса от Банфа. Знакомство с семьёй, церемония в типи (по традиции гостю нужно подарить хозяину табак). Поездка на квадроциклах Can&#8209;Am к горному озеру Broken Leg, куда стоуни столетиями уходили за видениями; можно управлять квадроциклом самому, снаряжение выдают на месте. Ланч у ручья с видом на священную гору Ямнушка: дикое мясо (лось, олень, бизон) и травяной чай у костра. Затем легенды племени, танцы в традиционных нарядах, выделка шкур, барабанные практики; на память личный амулет. Возвращение в Банф.</p>
+    <p class="stay"><b>Ночь.</b> Fairmont Banff Springs.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 7 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d07-bow-valley-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d07-bow-valley.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d07-bow-valley.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d07-bow-valley-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d07-bow-valley.jpg 1600w" sizes="100vw" alt="Долина Боу с Sulphur Mountain" width="1600" height="1060" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Долина Боу с Sulphur Mountain. Банф внизу.</span></p>
+  <div class="col">
+    <h2>День 7<span class="dt">28&nbsp;мая</span></h2>
+    <p class="meta">Банф, парк Йохо, Лейк&#8209;Луиз. Около 160&nbsp;км.</p>
+    <p>Гондола на Sulphur Mountain, прогулка по городу, водопад Боу, смотровая Surprise Corner. Парк Йохо: Изумрудное озеро, водопад Такаккау (373&nbsp;м, второй по высоте в Канаде), спиральные туннели, железнодорожные петли внутри гор.</p>
+    <p class="stay"><b>Ночь.</b> Fairmont Chateau Lake Louise.</p>
+  </div>
+  <div class="photo tall" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d07-takakkaw-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d07-takakkaw.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d07-takakkaw.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d07-takakkaw-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d07-takakkaw.jpg 1600w" sizes="100vw" alt="Водопад Такаккау в парке Йохо" width="1600" height="1102" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Такаккау. 373 метра.</span></p>
+</section>
+
+<!-- ДЕНЬ 8 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d08-peyto-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d08-peyto.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d08-peyto.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d08-peyto-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d08-peyto.jpg 1600w" sizes="100vw" alt="Озеро Пейто с перевала Боу" width="1600" height="951" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Пейто. Со смотровой на перевале Боу.</span></p>
+  <div class="col">
+    <h2>День 8<span class="dt">29&nbsp;мая</span></h2>
+    <p class="meta">Лейк&#8209;Луиз, Джаспер, Icefields Parkway. 233&nbsp;км.</p>
+    <p>Смотровая на озеро Пейто. Ледник Атабаска: выезд на лёд Колумбийского ледового поля на гигантских вездеходах Ice Explorer; Skywalk, стеклянная смотровая над каньоном Санвапта. Водопад Атабаска.</p>
+    <p class="stay"><b>Ночь.</b> Fairmont Jasper Park Lodge.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d08-glacier-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d08-glacier.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d08-glacier.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d08-glacier-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d08-glacier.jpg 1600w" sizes="100vw" alt="Вездеход Ice Explorer на леднике Атабаска" width="1600" height="1104" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Ледник Атабаска. Ice Explorer на льду.</span></p>
+</section>
+
+<!-- ДЕНЬ 9 -->
+<section class="block" style="padding-top:0">
+  <div class="photo tall">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d09-spirit-island-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d09-spirit-island.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d09-spirit-island.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d09-spirit-island-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d09-spirit-island.jpg 1600w" sizes="100vw" alt="Spirit Island на озере Малин" width="1600" height="989" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Озеро Малин. Spirit Island.</span></p>
+  <div class="col">
+    <h2>День 9<span class="dt">30&nbsp;мая</span></h2>
+    <p class="meta">Джаспер, Хинтон. Около 210&nbsp;км.</p>
+    <p>Озеро Медицин, озеро Малин и круиз к Spirit Island. Miette Hot Springs, самые горячие источники Скалистых гор (54&nbsp;°C). Хинтон: Beaver Boardwalk, 3&nbsp;км променада над бобровыми запрудами.</p>
+    <p class="stay"><b>Ночь.</b> Velora Hinton.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 10 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d10-legislature-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d10-legislature.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d10-legislature.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d10-legislature-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d10-legislature.jpg 1600w" sizes="100vw" alt="Здание Законодательного собрания Альберты на закате" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Законодательное собрание Альберты. 1913.</span></p>
+  <div class="col">
+    <h2>День 10<span class="dt">31&nbsp;мая</span></h2>
+    <p class="meta">Хинтон, Эдмонтон. 288&nbsp;км.</p>
+    <p>Здание Законодательного собрания Альберты (1913). <a href="https://www.fortedmontonpark.ca/" target="_blank" rel="noopener">Fort Edmonton Park</a>: крупнейший в Канаде музей живой истории; Indigenous Peoples Experience, иммерсивная экспозиция о культуре коренных народов и метисов, созданная вместе с ними.</p>
+    <p class="stay"><b>Ночь.</b> Fairmont Hotel Macdonald.</p>
+  </div>
+</section>
+
+<!-- ЮКОН И АЛЯСКА -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/ak-denali-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/ak-denali.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/ak-denali.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/ak-denali-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/ak-denali.jpg 1600w" sizes="100vw" alt="Гора Денали над долиной и дорогой Парк-роуд" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Гора Денали с дороги Парк&#8209;роуд.</span></p>
+  <div class="col">
+    <h2 class="part">Юкон и Аляска</h2>
+    <p class="meta">Двенадцать дней, из Уайтхорса в Анкоридж.</p>
+    <p>Продолжение тура по Альберте: утренний рейс Air North из Эдмонтона в Уайтхорс. Маршрут связывает три мира коренных народов Севера: тлинкитов побережья с их клановыми домами и резчиками, атабасков внутренних районов от Клуэйна до реки Кенай и арктическую деревню инупиатов за Полярным кругом. Между ними два горных перевала, паром по самому длинному фьорду Северной Америки, ледники Клуэйна, Денали и русские церкви Кенайского полуострова. Начало июня: самое сухое время года на побережье, световой день двадцать часов, туристов ещё нет.</p>
+  </div>
+</section>
+
+<!-- КАРТА АЛЯСКИ -->
+<section class="block" style="padding-top:.5rem">
+  <div class="map"><div class="inner">
+    <a href="/expeditions/alberta-rockies-alaska-indigenous/img/map-ak-full.jpg" target="_blank" rel="noopener">
+      <picture>
+        <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/map-ak-800.webp 900w, /expeditions/alberta-rockies-alaska-indigenous/img/map-ak.webp 1600w" sizes="(min-width:1000px) 60rem, 100vw">
+        <img src="/expeditions/alberta-rockies-alaska-indigenous/img/map-ak.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/map-ak-800.jpg 900w, /expeditions/alberta-rockies-alaska-indigenous/img/map-ak.jpg 1600w" sizes="(min-width:1000px) 60rem, 100vw" alt="Карта маршрута: Уайтхорс, Скагуэй, Хейнс, Клуэйн, Фэрбанкс, Анактувук-Пасс, Денали, Анкоридж, Сьюард, полуостров Кенай" width="1600" height="1442" loading="lazy" decoding="async">
+      </picture>
+    </a>
+  </div></div>
+  <p class="cap col" style="margin-top:.8rem"><span>Маршрут. Цифрами отмечены дни.</span><span><a href="/expeditions/alberta-rockies-alaska-indigenous/img/map-ak-full.jpg" target="_blank" rel="noopener">Открыть карту крупно</a></span></p>
+</section>
+
+<!-- ДЕНЬ 11 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d11-kwanlin-dun-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d11-kwanlin-dun.webp 1537w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d11-kwanlin-dun.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d11-kwanlin-dun-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d11-kwanlin-dun.jpg 1537w" sizes="100vw" alt="Здание культурного центра Kwanlin Dün в Уайтхорсе" width="1537" height="747" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Kwanlin Dün. Берег Юкона.</span></p>
+  <div class="col">
+    <h2>День 11<span class="dt">1&nbsp;июня</span></h2>
+    <p class="meta">Эдмонтон, Уайтхорс.</p>
+    <p>Рейс Air North, два с половиной часа над Северными Скалистыми горами. Уайтхорс, столица Юкона на берегу реки, по которой в 1898 году шли на Клондайк. <a href="https://www.kwanlindunculturalcentre.com/" target="_blank" rel="noopener">Культурный центр Kwanlin Dün</a> на набережной: первая нация Уайтхорса, выставки, мастерские, программы старейшин. <a href="https://macbridemuseum.com/" target="_blank" rel="noopener">Музей MacBride</a>: история Юкона от коренных народов до золотой лихорадки. Колёсный пароход SS Klondike.</p>
+    <p class="stay"><b>Ночь.</b> Raven Inn.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 12 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d12-white-pass-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d12-white-pass.webp 1343w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d12-white-pass.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d12-white-pass-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d12-white-pass.jpg 1343w" sizes="100vw" alt="Заснеженные горы у перевала Уайт-Пасс на границе Канады и США" width="1343" height="886" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Уайт&#8209;Пасс. Граница Канады и США.</span></p>
+  <div class="col">
+    <h2>День 12<span class="dt">2&nbsp;июня</span></h2>
+    <p class="meta">Уайтхорс, Каркросс, Уайт&#8209;Пасс, Скагуэй, паром, Хейнс. 177&nbsp;км.</p>
+    <p>Изумрудное озеро. Каркросская пустыня, самая маленькая в мире. Каркросс: тотемные столбы и мастерская резчиков Carcross/Tagish First Nation в Carcross Commons; здесь жил Скукум Джим, чья находка в 1896 году начала Клондайкскую лихорадку. Перевал Уайт&#8209;Пасс, 1&nbsp;000&nbsp;м: гранит, снег, озёра, граница США. Скагуэй, город золотой лихорадки, <a href="https://www.nps.gov/klgo/" target="_blank" rel="noopener">национальный исторический парк Klondike Gold Rush</a>. Паром через Линн&#8209;Канал, самый длинный и глубокий фьорд Северной Америки, час хода, горбатые киты.</p>
+    <p class="stay"><b>Ночь.</b> Aspen Suites Haines.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d12-lynn-canal-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d12-lynn-canal.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d12-lynn-canal.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d12-lynn-canal-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d12-lynn-canal.jpg 1600w" sizes="100vw" alt="Линн-Канал: горы над водой на подходе к Хейнсу" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Линн&#8209;Канал. Паром Скагуэй, Хейнс.</span></p>
+</section>
+
+<!-- ДЕНЬ 13 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d13-whale-house-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d13-whale-house.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d13-whale-house.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d13-whale-house-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d13-whale-house.jpg 1600w" sizes="100vw" alt="Интерьер Whale House в Клукване: резной экран и столбы, 1895 год" width="1600" height="1233" loading="lazy" decoding="async" style="object-position:50% 40%">
+    </picture>
+  </div>
+  <p class="cap col"><span>Клукван. Whale House.</span></p>
+  <div class="col">
+    <h2>День 13<span class="dt">3&nbsp;июня</span></h2>
+    <p class="meta">Хейнс, Клукван, перевал Чилкат, Хейнс&#8209;Джанкшен. 238&nbsp;км.</p>
+    <p>Форт Сьюард (1904), первая постоянная военная база Аляски; в бывшем госпитале работает Alaska Indian Arts, мастерская резчиков тотемов. Музей Sheldon: тлинкитские одеяла чилкат и предметы клановых домов. Клукван, деревня чилкатских тлинкитов, «Мать деревень». Jilkaat Kwaan Heritage Center: коллекция Whale House, резной экран и столбы 1830&#8209;х годов, одно из главных собраний искусства северо&#8209;западного побережья; лагерь традиционных знаний с коптильней и каноэ. Экскурсию ведёт житель деревни. Перевал Чилкат, 1&nbsp;070&nbsp;м, въезд в Британскую Колумбию и Юкон, парк Татшеншини&#8209;Алсек.</p>
+    <p class="stay"><b>Ночь.</b> Mount Logan Lodge, семь номеров под горами Клуэйна, сауна и купель.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d13-chilkat-pass-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d13-chilkat-pass.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d13-chilkat-pass.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d13-chilkat-pass-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d13-chilkat-pass.jpg 1600w" sizes="100vw" alt="Дорога Хейнс-Хайвей на перевале Чилкат, снег на склонах" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Перевал Чилкат. Дорога Хейнс&#8209;Хайвей.</span></p>
+</section>
+
+<!-- ДЕНЬ 14 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d14-kaskawulsh-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d14-kaskawulsh.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d14-kaskawulsh.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d14-kaskawulsh-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d14-kaskawulsh.jpg 1600w" sizes="100vw" alt="Ледник Кэскавулш в Клуэйне с воздуха" width="1600" height="1010" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Клуэйн. Ледник Кэскавулш с воздуха.</span></p>
+  <div class="col">
+    <h2>День 14<span class="dt">4&nbsp;июня</span></h2>
+    <p class="meta">Хейнс&#8209;Джанкшен, Клуэйн, озеро Клуэйн, Койдерн. Около 240&nbsp;км.</p>
+    <p>Культурный центр Da Kų народа Champagne and Aishihik, южные тутчоне. <a href="https://parks.canada.ca/pn-np/yt/kluane" target="_blank" rel="noopener">Национальный парк Клуэйн</a> (ЮНЕСКО): гора Логан, 5&nbsp;959&nbsp;м, высшая точка Канады, и крупнейшее неполярное ледниковое поле мира. Облёт ледников на малом самолёте. Tachäl Dhäl, Баранья гора: бараны Далла в бинокль со смотровой. Озеро Клуэйн, самое большое в Юконе. Бурваш&#8209;Лендинг, Kluane First Nation, музей естественной истории. Аляскинское шоссе, построенное за восемь месяцев 1942 года.</p>
+    <p class="stay"><b>Ночь.</b> Discovery Yukon Lodgings, бревенчатый домик у подножия гор.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d14-dall-sheep-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d14-dall-sheep.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d14-dall-sheep.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d14-dall-sheep-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d14-dall-sheep.jpg 1600w" sizes="100vw" alt="Стадо баранов Далла на склоне в Клуэйне" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Tachäl Dhäl. Бараны Далла.</span></p>
+</section>
+
+<!-- ДЕНЬ 15 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d15-wrangell-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d15-wrangell.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d15-wrangell.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d15-wrangell-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d15-wrangell.jpg 1600w" sizes="100vw" alt="Шоссе в лесу и гора Сэнфорд хребта Врангеля" width="1600" height="1200" loading="lazy" decoding="async" style="object-position:50% 22%">
+    </picture>
+  </div>
+  <p class="cap col"><span>Аляскинское шоссе. Хребет Врангеля.</span></p>
+  <div class="col">
+    <h2>День 15<span class="dt">5&nbsp;июня</span></h2>
+    <p class="meta">Койдерн, Бивер&#8209;Крик, граница, Ток, Делта&#8209;Джанкшен, Фэрбанкс. Около 560&nbsp;км.</p>
+    <p>Самый длинный переезд. Бивер&#8209;Крик, самый западный посёлок Канады. Граница США на посту Алкан. <a href="https://www.fws.gov/refuge/tetlin" target="_blank" rel="noopener">Заказник Тетлин</a>: визит&#8209;центр верхнетананских атабасков, озёра и болота под хребтом Врангеля. Ток, перекрёсток Аляски. Делта&#8209;Джанкшен, официальный конец Аляскинского шоссе, миля 1422. Река Танана, Фэрбанкс.</p>
+    <p class="stay"><b>Ночь.</b> Pike’s Waterfront Lodge на берегу Чены.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 16 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d16-brooks-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d16-brooks.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d16-brooks.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d16-brooks-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d16-brooks.jpg 1600w" sizes="100vw" alt="Хребет Брукса и тундра под полуночным солнцем" width="1600" height="1067" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Анактувук&#8209;Пасс. Хребет Брукса, полночь.</span></p>
+  <div class="col">
+    <h2>День 16<span class="dt">6&nbsp;июня</span></h2>
+    <p class="meta">Фэрбанкс. Вечером Анактувук&#8209;Пасс.</p>
+    <p><a href="https://morristhompsoncenter.org/" target="_blank" rel="noopener">Центр Морриса Томпсона</a>: экспозиция о жизни атабасков внутренних районов по временам года. <a href="https://www.uaf.edu/museum/" target="_blank" rel="noopener">Музей Севера</a> Университета Аляски: галерея искусства коренных народов, степной бизон Blue Babe, пролежавший в мерзлоте 36&nbsp;000&nbsp;лет. Вечером перелёт за Полярный круг: Анактувук&#8209;Пасс, единственная деревня нунамиутов, горных инупиатов, в сердце хребта Брукса. Прогулка с местным гидом, музей Simon Paneak, возвращение под полуночным солнцем.</p>
+    <p class="stay"><b>Ночь.</b> Pike’s Waterfront Lodge.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 17 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d17-nenana-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d17-nenana.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d17-nenana.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d17-nenana-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d17-nenana.jpg 1600w" sizes="100vw" alt="Бревенчатая миссионерская церковь St. Mark’s в Ненане" width="1600" height="1200" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Ненана. Церковь St. Mark’s.</span></p>
+  <div class="col">
+    <h2>День 17<span class="dt">7&nbsp;июня</span></h2>
+    <p class="meta">Фэрбанкс, Ненана, Денали. 195&nbsp;км.</p>
+    <p>Ненана, атабаскская деревня на слиянии Танана и Ненаны: миссионерская церковь St. Mark’s (1905), знаменитая лотерея на вскрытие льда. <a href="https://www.nps.gov/dena/" target="_blank" rel="noopener">Национальный парк Денали</a>, визит&#8209;центр, единственный в системе национальных парков питомник ездовых собак. Вечером первые километры Парк&#8209;роуд до реки Сэвидж.</p>
+    <p class="stay"><b>Ночь.</b> Tonglen Lake Lodge, домики с видом на Аляскинский хребет.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 18 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d18-polychrome-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d18-polychrome.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d18-polychrome.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d18-polychrome-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d18-polychrome.jpg 1600w" sizes="100vw" alt="Автобус на серпантине Парк-роуд у перевала Поликром" width="1600" height="1092" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Поликром. Автобус на Парк&#8209;роуд.</span></p>
+  <div class="col">
+    <h2>День 18<span class="dt">8&nbsp;июня</span></h2>
+    <p class="meta">Денали.</p>
+    <p>Целый день в глубине парка. Автобус по Парк&#8209;роуд через перевал Поликром до визит&#8209;центра Eielson, миля 66: сезон 2027 первый за шесть лет, когда дорога за оползнем Pretty Rocks снова открыта. Гризли, лоси, карибу, бараны Далла, волки; при ясной погоде гора Денали, 6&nbsp;190&nbsp;м, во всю ширину долины.</p>
+    <p class="stay"><b>Ночь.</b> Tonglen Lake Lodge.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d18-eielson-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d18-eielson.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d18-eielson.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d18-eielson-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d18-eielson.jpg 1600w" sizes="100vw" alt="Гора Денали в облаках, вид от визит-центра Eielson" width="1600" height="1062" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Денали с Eielson.</span></p>
+</section>
+
+<!-- ДЕНЬ 19 -->
+<section class="block" style="padding-top:0">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d19-ruth-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d19-ruth.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d19-ruth.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d19-ruth-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d19-ruth.jpg 1600w" sizes="100vw" alt="Красный самолёт на снегу ледника Рут под скальной вершиной" width="1600" height="1064" loading="lazy" decoding="async" style="object-position:82% 85%">
+    </picture>
+  </div>
+  <p class="cap col"><span>Ледник Рут. Посадка.</span></p>
+  <div class="col">
+    <h2>День 19<span class="dt">9&nbsp;июня</span></h2>
+    <p class="meta">Денали, Талкитна, Анкоридж. Около 430&nbsp;км.</p>
+    <p>Смотровые на Денали с юга. Талкитна, база альпинистов: облёт горы на малом самолёте с посадкой на ледник Рут в амфитеатре Шелдона, гранитные стены в километр. Долина Матануска&#8209;Суситна, Анкоридж.</p>
+    <p class="stay"><b>Ночь.</b> Hotel Captain Cook.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 20 -->
+<section class="block">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-eklutna-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-eklutna.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d20-eklutna.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-eklutna-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-eklutna.jpg 1600w" sizes="100vw" alt="Разноцветные домики духов на кладбище в Эклутне" width="1600" height="1193" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Эклутна. Домики духов.</span></p>
+  <div class="col">
+    <h2>День 20<span class="dt">10&nbsp;июня</span></h2>
+    <p class="meta">Анкоридж, Эклутна, залив Тернагейн, Сьюард. Около 290&nbsp;км.</p>
+    <p>Эклутна, деревня денаина: православная церковь Св. Николая, старейшее здание в окрестностях Анчориджа, и кладбище с домиками духов, где сошлись атабаскская традиция и русское православие. Залив Тернагейн: белухи у Beluga Point, приливная волна. Центр охраны дикой природы Аляски: бизоны, овцебыки, медведи. Сьюард. Ледник Экзит, единственная доступная по дороге часть <a href="https://www.nps.gov/kefj/" target="_blank" rel="noopener">парка Кенай&#8209;Фьордс</a>; таблички с годами показывают, куда он отступил.</p>
+    <p class="stay"><b>Ночь.</b> Harbor 360, номер с видом на гавань.</p>
+  </div>
+  <div class="photo" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-exit-glacier-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-exit-glacier.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d20-exit-glacier.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-exit-glacier-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-exit-glacier.jpg 1600w" sizes="100vw" alt="Ледник Экзит над руслом талой реки" width="1600" height="1068" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Ледник Экзит.</span></p>
+</section>
+
+<!-- ДЕНЬ 21 -->
+<section class="block" style="padding-top:0">
+  <div class="duo">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-ninilchik-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-ninilchik.webp 1600w" sizes="(min-width:761px) 50vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d21-ninilchik.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-ninilchik-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-ninilchik.jpg 1600w" sizes="(min-width:761px) 50vw, 100vw" alt="Преображенская церковь в Нинильчике, за заливом Кука вулкан" width="1600" height="1101" loading="lazy" decoding="async" style="object-position:40% 50%">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.webp 1600w" sizes="(min-width:761px) 50vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.jpg 1600w" sizes="(min-width:761px) 50vw, 100vw" alt="Свято-Успенская церковь в Кенае за белой оградой" width="1600" height="1612" loading="lazy" decoding="async" style="object-position:50% 50%">
+    </picture>
+  </div>
+  <p class="cap col"><span>Нинильчик. Церковь над заливом Кука.</span><span>Кенай. Свято&#8209;Успенская церковь.</span></p>
+  <div class="col">
+    <h2>День 21<span class="dt">11&nbsp;июня</span></h2>
+    <p class="meta">Сьюард, Купер&#8209;Лендинг, Кенай, Нинильчик, Купер&#8209;Лендинг. Около 370&nbsp;км.</p>
+    <p>K’beq’, стоянка кенайских денаина на реке Кенай: землянки, рыбные ямы, экскурсия ведётся представителями племени Kenaitze. Город Кенай: Свято&#8209;Успенская церковь (1895), старейшая действующая православная церковь Аляски, на месте русского форта 1791 года. Нинильчик, деревня русских креолов 1847 года: Преображенская церковь на холме над заливом Кука, напротив вулканы Редаут и Илиамна. Возвращение вверх по реке Кенай.</p>
+    <p class="stay"><b>Ночь.</b> Kenai Princess Wilderness Lodge над рекой.</p>
+  </div>
+</section>
+
+<!-- ДЕНЬ 22 -->
+<section class="block">
+  <div class="col">
+    <h2>День 22<span class="dt">12&nbsp;июня</span></h2>
+    <p class="meta">Купер&#8209;Лендинг, Анкоридж. 160&nbsp;км.</p>
+    <p><a href="https://www.alaskanative.net/" target="_blank" rel="noopener">Alaska Native Heritage Center</a>: одиннадцать культур Аляски, деревенские усадьбы вокруг озера, танцы и игры. <a href="https://www.anchoragemuseum.org/" target="_blank" rel="noopener">Музей Анкориджа</a> с залом Смитсоновского центра арктических исследований: 600 предметов из национальных коллекций.</p>
+    <p class="stay"><b>Вылет</b> из Анкориджа.</p>
+  </div>
+</section>
+
+<!-- УЧАСТИЕ -->
+<section class="contact">
+  <div class="col">
+    <p class="links"><a href="https://wa.me/17788553539">WhatsApp</a><a href="https://t.me/VadimRubinov">Telegram</a><a href="mailto:explore@7expeditions.com">explore@7expeditions.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="col">
+    <p class="meta">© 7 Expeditions, 2009-2026<br>Vancouver, Canada</p>
+  </div>
+</footer>
+
+</body>
+</html>

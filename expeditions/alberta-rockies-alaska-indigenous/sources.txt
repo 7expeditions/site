@@ -1,0 +1,52 @@
+Фото: Wikimedia Commons и веб, только для приватной страницы. Файл -> название на Commons -> страница.
+
+cover	File:Prairies to Peaks.jpg	https://commons.wikimedia.org/wiki/File:Prairies_to_Peaks.jpg
+d02-badlands	File:Horseshoe Canyon, Drumheller (5860923036).jpg	https://commons.wikimedia.org/wiki/File:Horseshoe_Canyon,_Drumheller_(5860923036).jpg
+d02-blackfoot	File:Blackfoot Crossing (7316112302).jpg	https://commons.wikimedia.org/wiki/File:Blackfoot_Crossing_(7316112302).jpg
+d03-hoodoos	File:Writing-on-stone Hoodoos.jpg	https://commons.wikimedia.org/wiki/File:Writing-on-stone_Hoodoos.jpg
+d03-waterton	File:Prince of Wales Hotel - Waterton Lakes National Park.jpg	https://commons.wikimedia.org/wiki/File:Prince_of_Wales_Hotel_-_Waterton_Lakes_National_Park.jpg
+d04-buffalo-jump	File:Head-Smashed-In Buffalo Jump.jpg	https://commons.wikimedia.org/wiki/File:Head-Smashed-In_Buffalo_Jump.jpg
+d04-frank-slide	File:Frank Slide, Canada.jpg	https://commons.wikimedia.org/wiki/File:Frank_Slide,_Canada.jpg
+d05-paint-pots	File:Kootenay National Park - Paint Pots 1.jpg	https://commons.wikimedia.org/wiki/File:Kootenay_National_Park_-_Paint_Pots_1.jpg
+d05-banff-springs	File:Fairmont Banff Springs Hotel, north view 20240821 1.jpg	https://commons.wikimedia.org/wiki/File:Fairmont_Banff_Springs_Hotel,_north_view_20240821_1.jpg
+d06-tipi	File:Teepee Town - panoramio.jpg	https://commons.wikimedia.org/wiki/File:Teepee_Town_-_panoramio.jpg
+d06-yamnuska	File:Mount-Yamnuska2-Szmurlo.jpg	https://commons.wikimedia.org/wiki/File:Mount-Yamnuska2-Szmurlo.jpg
+d06-fire	Robin Esrock / Canadian Geographic	https://canadiangeographic.ca/articles/aim-right-in-the-rockies-a-visit-to-painted-warriors/
+d07-takakkaw	File:Takakkaw Falls, west view 20240825 3.jpg	https://commons.wikimedia.org/wiki/File:Takakkaw_Falls,_west_view_20240825_3.jpg
+d07-bow-valley	File:Montane valley in Banff National Park.jpg	https://commons.wikimedia.org/wiki/File:Montane_valley_in_Banff_National_Park.jpg
+d08-glacier	File:'Ice Explorers' Approaching the Athabasca Glacier -- Jasper National Park Alberta September 2019 (49421973251).jpg	https://commons.wikimedia.org/wiki/File:%27Ice_Explorers%27_Approaching_the_Athabasca_Glacier_--_Jasper_National_Park_Alberta_September_2019_(49421973251).jpg
+d08-peyto	File:Lac Peyto - Panoramique (4163380668).jpg	https://commons.wikimedia.org/wiki/File:Lac_Peyto_-_Panoramique_(4163380668).jpg
+d09-spirit-island	File:Spirit Island on Maligne Lake1.jpg	https://commons.wikimedia.org/wiki/File:Spirit_Island_on_Maligne_Lake1.jpg
+d10-fort-edmonton	File:Fort Edmonton park (7104554847).jpg	https://commons.wikimedia.org/wiki/File:Fort_Edmonton_park_(7104554847).jpg
+d02-tyrrell	File:We're looking good, buddy (5085439560).jpg	https://commons.wikimedia.org/wiki/File:We%27re_looking_good,_buddy_(5085439560).jpg
+d03-petroglyph	File:Writing on stone990.jpg	https://commons.wikimedia.org/wiki/File:Writing_on_stone990.jpg
+d03-waterton	File:Prince of Wales Hotel Waterton (8047361077).jpg	https://commons.wikimedia.org/wiki/File:Prince_of_Wales_Hotel_Waterton_(8047361077).jpg
+d04-buffalo-jump	File:Head-Smashed-In Buffalo Jump 02 (15264077432).jpg	https://commons.wikimedia.org/wiki/File:Head-Smashed-In_Buffalo_Jump_02_(15264077432).jpg
+d05-paint-pots	File:Kootenay National Park - Paint Pots 2.jpg	https://commons.wikimedia.org/wiki/File:Kootenay_National_Park_-_Paint_Pots_2.jpg
+d08-peyto	File:Peyto Lake-Banff NP-Canada.jpg	https://commons.wikimedia.org/wiki/File:Peyto_Lake-Banff_NP-Canada.jpg
+d10-legislature	File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg	https://commons.wikimedia.org/wiki/File:Alberta-Provincial-Legislature-Building-Edmonton-Alberta-Canada-01.jpg
+cover (v2)	File:Moraine Lake 1.jpg	https://commons.wikimedia.org/wiki/File:Moraine_Lake_1.jpg
+d02-blackfoot (v2)	Facebook, Blackfoot Crossing Historical Park	
+cover	File:Moraine Lake - 36964910112.jpg	https://commons.wikimedia.org/wiki/File:Moraine_Lake_-_36964910112.jpg
+d02-blackfoot	Facebook, Blackfoot Crossing Historical Park (960x540)
+
+# Юкон и Аляска
+ak-denali	File:Mount McKinley and Denali National Park Road 2048px.jpg	https://commons.wikimedia.org/wiki/File:Mount_McKinley_and_Denali_National_Park_Road_2048px.jpg
+d11-kwanlin-dun	File:Kwanlin Dün Cultural Centre.jpg	https://commons.wikimedia.org/wiki/File:Kwanlin_D%C3%BCn_Cultural_Centre.jpg
+d12-white-pass	File:US-Canada border mountains near White Pass.jpeg	https://commons.wikimedia.org/wiki/File:US-Canada_border_mountains_near_White_Pass.jpeg
+d12-lynn-canal	File:Approaching Haines.jpg	https://commons.wikimedia.org/wiki/File:Approaching_Haines.jpg
+d13-whale-house	File:Interior of Chief Klart-Reech's house. Chilkat, Alaska. Chief in dancing costume LCCN2005684854.jpg	https://commons.wikimedia.org/wiki/File:Interior_of_Chief_Klart-Reech%27s_house._Chilkat,_Alaska._Chief_in_dancing_costume_LCCN2005684854.jpg
+d13-chilkat-pass	File:Chilkat Pass.jpg	https://commons.wikimedia.org/wiki/File:Chilkat_Pass.jpg
+d14-kaskawulsh	File:Kaskawulsh Glacier.jpg	https://commons.wikimedia.org/wiki/File:Kaskawulsh_Glacier.jpg
+d14-dall-sheep	File:Dall sheep in Kluane National Park.JPG	https://commons.wikimedia.org/wiki/File:Dall_sheep_in_Kluane_National_Park.JPG
+d15-wrangell	File:Mount Sandford.jpg	https://commons.wikimedia.org/wiki/File:Mount_Sandford.jpg
+d16-brooks	File:Midnight sun in the Brooks Range (51358523439).jpg	https://commons.wikimedia.org/wiki/File:Midnight_sun_in_the_Brooks_Range_(51358523439).jpg
+d17-nenana	File:St Marks Mission 43.jpg	https://commons.wikimedia.org/wiki/File:St_Marks_Mission_43.jpg
+d18-polychrome	File:A tour bus travels east along the park road near Polychrome Pass on Thursday, August 24, 2017. (8a459367-7e9b-4e42-b0c2-f6085deb551d).JPG	https://commons.wikimedia.org/wiki/File:A_tour_bus_travels_east_along_the_park_road_near_Polychrome_Pass_on_Thursday,_August_24,_2017._(8a459367-7e9b-4e42-b0c2-f6085deb551d).JPG
+d18-eielson	File:Eielson- Denali, fall morning (5728254288).jpg	https://commons.wikimedia.org/wiki/File:Eielson-_Denali,_fall_morning_(5728254288).jpg
+d19-ruth	File:Ruth Glacier, United States (Unsplash).jpg	https://commons.wikimedia.org/wiki/File:Ruth_Glacier,_United_States_(Unsplash).jpg
+d20-eklutna	File:Eklutna Spirit Houses.jpg	https://commons.wikimedia.org/wiki/File:Eklutna_Spirit_Houses.jpg
+d20-exit-glacier	File:Exit Glacier from across the outwash plain.jpg	https://commons.wikimedia.org/wiki/File:Exit_Glacier_from_across_the_outwash_plain.jpg
+d21-ninilchik	File:Ninilchik Russian church.jpg	https://commons.wikimedia.org/wiki/File:Ninilchik_Russian_church.jpg
+d21-kenai	File:Russian Orthodox Church, Alaska.jpg	https://commons.wikimedia.org/wiki/File:Russian_Orthodox_Church,_Alaska.jpg
+map-ak	собственная сборка: OSRM, OSM (Denali Park Road), Natural Earth, Terrarium DEM	
