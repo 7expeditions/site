@@ -40,7 +40,6 @@ d13-chilkat-pass	File:Chilkat Pass.jpg	https://commons.wikimedia.org/wiki/File:C
 d14-kaskawulsh	File:Kaskawulsh Glacier.jpg	https://commons.wikimedia.org/wiki/File:Kaskawulsh_Glacier.jpg
 d14-dall-sheep	File:Dall sheep in Kluane National Park.JPG	https://commons.wikimedia.org/wiki/File:Dall_sheep_in_Kluane_National_Park.JPG
 d15-wrangell	File:Mount Sandford.jpg	https://commons.wikimedia.org/wiki/File:Mount_Sandford.jpg
-d16-brooks	File:Midnight sun in the Brooks Range (51358523439).jpg	https://commons.wikimedia.org/wiki/File:Midnight_sun_in_the_Brooks_Range_(51358523439).jpg
 d17-nenana	File:St Marks Mission 43.jpg	https://commons.wikimedia.org/wiki/File:St_Marks_Mission_43.jpg
 d18-polychrome	File:A tour bus travels east along the park road near Polychrome Pass on Thursday, August 24, 2017. (8a459367-7e9b-4e42-b0c2-f6085deb551d).JPG	https://commons.wikimedia.org/wiki/File:A_tour_bus_travels_east_along_the_park_road_near_Polychrome_Pass_on_Thursday,_August_24,_2017._(8a459367-7e9b-4e42-b0c2-f6085deb551d).JPG
 d18-eielson	File:Eielson- Denali, fall morning (5728254288).jpg	https://commons.wikimedia.org/wiki/File:Eielson-_Denali,_fall_morning_(5728254288).jpg
