@@ -41,11 +41,14 @@ d14-kaskawulsh	File:Kaskawulsh Glacier.jpg	https://commons.wikimedia.org/wiki/Fi
 d14-dall-sheep	File:Dall sheep in Kluane National Park.JPG	https://commons.wikimedia.org/wiki/File:Dall_sheep_in_Kluane_National_Park.JPG
 d15-wrangell	File:Mount Sandford.jpg	https://commons.wikimedia.org/wiki/File:Mount_Sandford.jpg
 d17-nenana	File:St Marks Mission 43.jpg	https://commons.wikimedia.org/wiki/File:St_Marks_Mission_43.jpg
-d18-polychrome	File:A tour bus travels east along the park road near Polychrome Pass on Thursday, August 24, 2017. (8a459367-7e9b-4e42-b0c2-f6085deb551d).JPG	https://commons.wikimedia.org/wiki/File:A_tour_bus_travels_east_along_the_park_road_near_Polychrome_Pass_on_Thursday,_August_24,_2017._(8a459367-7e9b-4e42-b0c2-f6085deb551d).JPG
-d18-eielson	File:Eielson- Denali, fall morning (5728254288).jpg	https://commons.wikimedia.org/wiki/File:Eielson-_Denali,_fall_morning_(5728254288).jpg
-d19-ruth	File:Ruth Glacier, United States (Unsplash).jpg	https://commons.wikimedia.org/wiki/File:Ruth_Glacier,_United_States_(Unsplash).jpg
 d20-eklutna	File:Eklutna Spirit Houses.jpg	https://commons.wikimedia.org/wiki/File:Eklutna_Spirit_Houses.jpg
-d20-exit-glacier	File:Exit Glacier from across the outwash plain.jpg	https://commons.wikimedia.org/wiki/File:Exit_Glacier_from_across_the_outwash_plain.jpg
 d21-ninilchik	File:Ninilchik Russian church.jpg	https://commons.wikimedia.org/wiki/File:Ninilchik_Russian_church.jpg
 d21-kenai	File:Russian Orthodox Church, Alaska.jpg	https://commons.wikimedia.org/wiki/File:Russian_Orthodox_Church,_Alaska.jpg
+d18-denali-south	File:Denali Viewpoint South - panoramio.jpg	https://commons.wikimedia.org/wiki/File:Denali_Viewpoint_South_-_panoramio.jpg
+d20-otters	File:Sea Otter - Flickr - Kenai Fjords National Park.jpg	https://commons.wikimedia.org/wiki/File:Sea_Otter_-_Flickr_-_Kenai_Fjords_National_Park.jpg
+d21-alyeska	File:Mt. Alyeska summit, looking back over Max's and Turnagain Arm (36329849160).jpg	https://commons.wikimedia.org/wiki/File:Mt._Alyeska_summit,_looking_back_over_Max%27s_and_Turnagain_Arm_(36329849160).jpg
+d22-anhc	File:Replica house - Alaska Native Heritage Center Museum.jpg	https://commons.wikimedia.org/wiki/File:Replica_house_-_Alaska_Native_Heritage_Center_Museum.jpg
+d17-ermine-lake	сайт	https://www.alaskavisit.com/listing/historic-chulitna-river-lodge/25560/
+d18-musk-ox	сайт	https://muskoxfarm.org/farmtours
+d19-dog-sled	сайт	https://alaskatours.com/day-tours/knik-river-lodge-glacier-helicopter-adventures/
 map-ak	собственная сборка: OSRM, OSM (Denali Park Road), Natural Earth, Terrarium DEM	
