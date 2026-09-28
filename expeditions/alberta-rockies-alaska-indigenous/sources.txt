@@ -49,5 +49,5 @@ d21-alyeska	File:Mt. Alyeska summit, looking back over Max's and Turnagain Arm (
 d22-anhc	File:Replica house - Alaska Native Heritage Center Museum.jpg	https://commons.wikimedia.org/wiki/File:Replica_house_-_Alaska_Native_Heritage_Center_Museum.jpg
 d17-ermine-lake	сайт лоджа	https://hcrl.lodgify.com/
 d18-musk-ox	File:Musk-Ox2.JPG	https://commons.wikimedia.org/wiki/File:Musk-Ox2.JPG
-d18-knik-sauna	сайт оператора	https://www.alaskahelicoptertours.com/ (Glacier Cold Plunge & Sauna)
+d18-knik-sauna	FareHarbor, Alaska Helicopter Tours, Glacier Cold Plunge & Sauna	https://cdn.filestackcontent.com/0itmii69Q3esrAg0xfix
 map-ak	собственная сборка: OSRM, OSM (Denali Park Road), Natural Earth, Terrarium DEM	
