@@ -31,7 +31,6 @@ cover	File:Moraine Lake - 36964910112.jpg	https://commons.wikimedia.org/wiki/Fil
 d02-blackfoot	Facebook, Blackfoot Crossing Historical Park (960x540)
 
 # Юкон и Аляска
-ak-denali	File:Mount McKinley and Denali National Park Road 2048px.jpg	https://commons.wikimedia.org/wiki/File:Mount_McKinley_and_Denali_National_Park_Road_2048px.jpg
 d11-kwanlin-dun	File:Kwanlin Dün Cultural Centre.jpg	https://commons.wikimedia.org/wiki/File:Kwanlin_D%C3%BCn_Cultural_Centre.jpg
 d12-white-pass	File:US-Canada border mountains near White Pass.jpeg	https://commons.wikimedia.org/wiki/File:US-Canada_border_mountains_near_White_Pass.jpeg
 d12-lynn-canal	File:Approaching Haines.jpg	https://commons.wikimedia.org/wiki/File:Approaching_Haines.jpg
@@ -48,7 +47,7 @@ d18-denali-south	File:Denali Viewpoint South - panoramio.jpg	https://commons.wik
 d20-otters	File:Sea Otter - Flickr - Kenai Fjords National Park.jpg	https://commons.wikimedia.org/wiki/File:Sea_Otter_-_Flickr_-_Kenai_Fjords_National_Park.jpg
 d21-alyeska	File:Mt. Alyeska summit, looking back over Max's and Turnagain Arm (36329849160).jpg	https://commons.wikimedia.org/wiki/File:Mt._Alyeska_summit,_looking_back_over_Max%27s_and_Turnagain_Arm_(36329849160).jpg
 d22-anhc	File:Replica house - Alaska Native Heritage Center Museum.jpg	https://commons.wikimedia.org/wiki/File:Replica_house_-_Alaska_Native_Heritage_Center_Museum.jpg
-d17-ermine-lake	сайт	https://www.alaskavisit.com/listing/historic-chulitna-river-lodge/25560/
-d18-musk-ox	сайт	https://muskoxfarm.org/farmtours
-d19-dog-sled	сайт	https://alaskatours.com/day-tours/knik-river-lodge-glacier-helicopter-adventures/
+d17-ermine-lake	сайт лоджа	https://hcrl.lodgify.com/
+d18-musk-ox	File:Musk-Ox2.JPG	https://commons.wikimedia.org/wiki/File:Musk-Ox2.JPG
+d19-dog-sled	сайт оператора	https://www.alaskahelicoptertours.com/glacier-dogsledding/
 map-ak	собственная сборка: OSRM, OSM (Denali Park Road), Natural Earth, Terrarium DEM	
