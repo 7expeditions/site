@@ -51,3 +51,4 @@ d17-ermine-lake	сайт лоджа	https://hcrl.lodgify.com/
 d18-musk-ox	File:Musk-Ox2.JPG	https://commons.wikimedia.org/wiki/File:Musk-Ox2.JPG
 d18-knik-sauna	FareHarbor, Alaska Helicopter Tours, Glacier Cold Plunge & Sauna	https://cdn.filestackcontent.com/0itmii69Q3esrAg0xfix
 map-ak	собственная сборка: OSRM, OSM (Denali Park Road), Natural Earth, Terrarium DEM	
+d07-emerald	File:Emerald Lake - Yoho National Park.JPG	https://commons.wikimedia.org/wiki/File:Emerald_Lake_-_Yoho_National_Park.JPG
