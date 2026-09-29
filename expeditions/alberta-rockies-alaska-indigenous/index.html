@@ -72,6 +72,8 @@ h2+.meta{margin:0 0 1.3rem}
   .trio{grid-template-columns:1fr}
   .trio picture{aspect-ratio:3/2}
 }
+.trio.tall picture{aspect-ratio:3/4}
+@media (max-width:760px){ .trio.tall picture{aspect-ratio:4/5} }
 
 /* дата у номера дня */
 h2 .dt{font-family:var(--sans);font-size:.8125rem;letter-spacing:.04em;color:var(--dim);margin-left:.7rem;white-space:nowrap}
@@ -222,7 +224,7 @@ footer .meta{margin:0}
     <p>Парк <a href="https://www.albertaparks.ca/parks/south/writing-on-stone-pp/" target="_blank" rel="noopener">Writing&#8209;on&#8209;Stone</a>, у чёрноногих Айсинайпи, внесён в список ЮНЕСКО в 2019 году. Это крупнейшее в Северной Америке собрание петроглифов и пиктографов: тысячи изображений воинов, лошадей, щитов и сцен битв, выбитых в песчанике и нарисованных охрой. Самые старые оставлены тысячи лет назад, самые поздние уже с ружьями и лошадьми. Главные панели находятся в закрытом заповеднике, туда пускают только с гидом парка. Для чёрноногих это место до сих пор священное: считается, что изображения появляются на камне сами, и духи через них говорят с людьми.</p>
     <p>Переезд на запад, в Уотертон (217&nbsp;км, около 3&nbsp;часов). Национальный парк Уотертон&#8209;Лейкс начинается там, где прерия без предгорий упирается прямо в стену гор. Вместе с американским парком Глейшер он образует первый в мире международный парк мира (1932). Верхнее Уотертонское озеро глубиной 135&nbsp;м, самое глубокое в Канадских Скалистых горах, заходит южным концом в США.</p>
     <p>Отель Prince of Wales построила в 1927 году Великая Северная железная дорога. Деревянное шато стоит один на холме над озером, из окон видно всё озеро до американского берега.</p>
-    <p class="stay"><b>Ночь.</b> Prince of Wales Hotel.<br><b>Питание.</b> Не включено.</p>
+    <p class="stay"><b>Ночь.</b> Bayshore Inn &amp; Spa.<br><b>Питание.</b> Не включено.</p>
   </div>
   <div class="photo natural" style="margin-top:1.6rem">
     <picture>
@@ -249,7 +251,7 @@ footer .meta{margin:0}
     <p>В 18&nbsp;км от города <a href="https://headsmashedin.ca/" target="_blank" rel="noopener">Head&#8209;Smashed&#8209;In Buffalo Jump</a>, объект ЮНЕСКО. Около 6000&nbsp;лет чёрноногие загоняли сюда стада бизонов и сбрасывали их с обрыва. Под скалой лежит слой костей толщиной до 10&nbsp;метров. Интерпретационный центр встроен прямо в обрыв, экскурсию ведёт гид из народа пикани. Он объясняет, как устраивали загонные линии из камней, как «приманивали» стадо и как за несколько дней разделывали сотни туш на зиму.</p>
     <p>Дальше на запад по трассе 3, к перевалу Кроуснест (110&nbsp;км, 1,5&nbsp;часа). 29&nbsp;апреля 1903 года вершина горы Тартл обрушилась на шахтёрский посёлок Фрэнк: 110&nbsp;миллионов тонн известняка за 100&nbsp;секунд. Это крупнейший оползень в истории Канады, каменное поле до сих пор лежит по обе стороны дороги. Центр <a href="https://frankslide.ca/" target="_blank" rel="noopener">Frank Slide</a> стоит на самом завале.</p>
     <p>Перевал Кроуснест, въезд в Британскую Колумбию. Ферни (70&nbsp;км), старый угольный город, отстроенный в кирпиче после пожара 1908 года.</p>
-    <p class="stay"><b>Ночь.</b> Fernie Alpine Resort.<br><b>Питание.</b> Не включено.</p>
+    <p class="stay"><b>Ночь.</b> Lizard Creek Lodge.<br><b>Питание.</b> Не включено.</p>
   </div>
 </section>
 
@@ -281,33 +283,42 @@ footer .meta{margin:0}
   <p class="cap col"><span>Banff Springs. Две ночи.</span></p>
 </section>
 
-<!-- ДЕНЬ 6: три кадра в ряд -->
+<!-- ДЕНЬ 6: три вертикальных кадра в ряд -->
 <section class="block" style="padding-top:0">
-  <div class="trio">
+  <div class="trio tall">
     <picture>
-      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
-      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-tipi.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Остовы типи на фоне Скалистых гор" width="1600" height="1022" loading="lazy" decoding="async">
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-chief-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-chief.webp 1156w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-chief.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-chief-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-chief.jpg 1156w" sizes="(min-width:761px) 33vw, 100vw" alt="Член семьи Сноу в головном уборе из перьев, с церемониальным жезлом, на фоне гор" width="1156" height="1870" style="object-position:50% 30%" loading="lazy" decoding="async">
     </picture>
     <picture>
-      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska.webp 1600w" sizes="(min-width:761px) 33vw, 100vw">
-      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-yamnuska.jpg 1600w" sizes="(min-width:761px) 33vw, 100vw" alt="Гора Ямнушка на закате, отражение в воде" width="1600" height="1067" loading="lazy" decoding="async">
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-regalia-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-regalia.webp 1179w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-regalia.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-regalia-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-regalia.jpg 1179w" sizes="(min-width:761px) 33vw, 100vw" alt="Регалии семьи Сноу, шкуры бизона и жилеты, вышитые бисером, на берегу озера под горами" width="1179" height="1672" style="object-position:50% 60%" loading="lazy" decoding="async">
     </picture>
     <picture>
-      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-fire-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-fire.webp 1440w" sizes="(min-width:761px) 33vw, 100vw">
-      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-fire.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-fire-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-fire.jpg 1440w" sizes="(min-width:761px) 33vw, 100vw" alt="Костёр в лесу у палатки, готовят обед" width="1440" height="1080" loading="lazy" decoding="async">
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-beadwork-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-beadwork.webp 1179w" sizes="(min-width:761px) 33vw, 100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-beadwork.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-beadwork-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-beadwork.jpg 1179w" sizes="(min-width:761px) 33vw, 100vw" alt="Вышивка бисером: жилет, сумка и рамка с бисерными портретами" width="1179" height="1463" style="object-position:50% 40%" loading="lazy" decoding="async">
     </picture>
   </div>
-  <p class="cap col"><span>Стоуни&#8209;Накода. Типи, священная гора Ямнушка, обед у костра.</span></p>
+  <p class="cap col"><span>Семья вождя Сноу. Регалии и вышивка бисером.</span></p>
   <div class="col">
     <h2>День 6<span class="dt">27&nbsp;мая, чт</span></h2>
     <p class="meta">Банф, резервация Стоуни&#8209;Накода, Банф. Около 140&nbsp;км.</p>
     <p>Этой поездки нет ни в одном путеводителе и ни у одного туроператора. Она возможна благодаря личным связям нашего партнёра с семьёй легендарного вождя Сноу.</p>
     <p>Стоуни&#8209;накода говорят на сиуанском языке и родственны ассинибойнам равнин. Их три общины (Бэрспо, Чиники и Уэсли) живут в резервации у выхода долины Боу из гор, в получасе от Банфа. Стоуни знали эти горы лучше всех и водили по ним первых европейских путешественников и строителей железной дороги.</p>
-    <p>Знакомство с семьёй, церемония в типи. По традиции гость дарит хозяину табак. Поездка на квадроциклах Can&#8209;Am к горному озеру Broken Leg, куда стоуни столетиями уходили за видениями. Квадроциклом можно управлять самому, снаряжение выдают на месте.</p>
-    <p>Ланч у ручья с видом на священную гору Ямнушку: дикое мясо (лось, олень, бизон) и травяной чай на костре. Затем легенды племени, танцы в традиционных нарядах, выделка шкур, барабанные практики. На память личный амулет.</p>
-    <p>Вечером возвращение в Банф.</p>
+    <p>В 9:30 выезд из Банфа, до резервации 30&nbsp;минут. В 10:30 знакомство с семьёй Сноу и церемония в типи. По традиции гость дарит хозяину типи табак в знак уважения.</p>
+    <p>Инструктаж по безопасности и поездка на квадроциклах Can&#8209;Am Outlander к горному озеру Broken Leg, куда стоуни столетиями уходили за видениями и для духовных практик. У озера хорошие места для фотосессии. Маршрут для начинающих. Участники старше 18&nbsp;лет с правами категории B могут вести квадроцикл сами, мотоциклетные права в Канаде не нужны. Снаряжение, шлемы и дождевые комбинезоны выдают на месте.</p>
+    <p>В 13:00 возвращение к типи и ланч с семьёй у ручья с видом на священную гору Ямнушку: дикое мясо, добытое самими стоуни (лось, изюбрь, олень, бизон), и травяной чай на костре.</p>
+    <p>После обеда легенды и традиции племени, танцы в традиционных нарядах, выделка шкур, барабанные практики. Каждый участник получает на память личный амулет.</p>
+    <p>В 16:00 возвращение в Банф.</p>
     <p class="stay"><b>Ночь.</b> Fairmont Banff Springs.<br><b>Питание.</b> Ланч в резервации.</p>
   </div>
+  <div class="photo natural" style="margin-top:1.6rem">
+    <picture>
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-earrings-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-earrings.webp 1179w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d06-earrings.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d06-earrings-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d06-earrings.jpg 1179w" sizes="100vw" alt="Серьги, вышитые бисером, на шкуре бизона" width="1179" height="777" style="object-position:50% 50%" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <p class="cap col"><span>Серьги из бисера и кожи.</span></p>
 </section>
 
 <!-- ДЕНЬ 7 -->
