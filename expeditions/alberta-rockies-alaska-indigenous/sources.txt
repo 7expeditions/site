@@ -52,3 +52,8 @@ d18-musk-ox	File:Musk-Ox2.JPG	https://commons.wikimedia.org/wiki/File:Musk-Ox2.J
 d18-knik-sauna	FareHarbor, Alaska Helicopter Tours, Glacier Cold Plunge & Sauna	https://cdn.filestackcontent.com/0itmii69Q3esrAg0xfix
 map-ak	собственная сборка: OSRM, OSM (Denali Park Road), Natural Earth, Terrarium DEM	
 d07-emerald	File:Emerald Lake - Yoho National Park.JPG	https://commons.wikimedia.org/wiki/File:Emerald_Lake_-_Yoho_National_Park.JPG
+
+# День 6 (Банф и Кананаскис)
+d06-grassi	File:Grassi Lakes Canmore Alberta Canada (10278951956).jpg	https://commons.wikimedia.org/wiki/File:Grassi_Lakes_Canmore_Alberta_Canada_(10278951956).jpg
+d06-luxton	File:Entrance -- Buffalo Nations Luxton Museum Banff, Alberta (Canada) September 2019 (49279086353).jpg	https://commons.wikimedia.org/wiki/File:Entrance_--_Buffalo_Nations_Luxton_Museum_Banff,_Alberta_(Canada)_September_2019_(49279086353).jpg
+d06-nordic-spa	Kananaskis Nordic Spa, раздел для прессы (warmpool4)	https://knordicspa.com/press-information/
