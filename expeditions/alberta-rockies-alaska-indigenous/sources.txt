@@ -57,3 +57,8 @@ d07-emerald	File:Emerald Lake - Yoho National Park.JPG	https://commons.wikimedia
 d06-grassi	File:Canmore by Grassi Lakes.jpg	https://commons.wikimedia.org/wiki/File:Canmore_by_Grassi_Lakes.jpg
 d06-luxton	File:Entrance -- Buffalo Nations Luxton Museum Banff, Alberta (Canada) September 2019 (49279086353).jpg	https://commons.wikimedia.org/wiki/File:Entrance_--_Buffalo_Nations_Luxton_Museum_Banff,_Alberta_(Canada)_September_2019_(49279086353).jpg
 d06-nordic-spa	Kananaskis Nordic Spa, раздел для прессы (warmpool4)	https://knordicspa.com/press-information/
+
+# День 7 (Лейк-Луиз и Морейн)
+d07-moraine	File:Moraine Lake, north view from Rockpiles 20240823 1.jpg	https://commons.wikimedia.org/wiki/File:Moraine_Lake,_north_view_from_Rockpiles_20240823_1.jpg
+d07-lake-louise	File:Reflections in Lake Louise.jpg	https://commons.wikimedia.org/wiki/File:Reflections_in_Lake_Louise.jpg
+d07-morant	File:1 morants curve 2019.jpg	https://commons.wikimedia.org/wiki/File:1_morants_curve_2019.jpg
