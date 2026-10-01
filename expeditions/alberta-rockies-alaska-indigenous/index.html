@@ -122,6 +122,31 @@ footer .meta{margin:0}
 @media (min-width:1000px){ .photo.natural{height:auto;min-height:0} .photo.natural img{height:auto} }
 @media (min-width:1200px){ :root{--col:42rem} }
 @media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+/* меню-якоря: прилипает к верху после обложки */
+.toc{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);margin:0 calc(-1*var(--edge))}
+.toc .in{display:flex;gap:1.6rem;overflow-x:auto;scrollbar-width:none;padding:.85rem var(--gut);max-width:calc(var(--col) + 2*var(--gut));margin:0 auto;font-family:var(--sans);font-size:.8125rem;white-space:nowrap}
+.toc .in::-webkit-scrollbar{display:none}
+.toc a{color:var(--dim)}
+.toc a:hover{color:var(--ink)}
+[id]{scroll-margin-top:3.6rem}
+
+/* сводка под обложкой */
+.facts{font-family:var(--sans);font-size:.875rem;line-height:1.5;margin:1.4rem 0 0;display:grid;grid-template-columns:auto 1fr;gap:.45rem 1.4rem}
+.facts dt{color:var(--dim)}
+.facts dd{margin:0;color:var(--ink)}
+.facts a{border-bottom:1px solid var(--dim)}
+
+/* стоимость, включено, что взять */
+.incl{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:1.6rem 0 0}
+@media (max-width:760px){ .incl{grid-template-columns:1fr;gap:1.2rem} }
+.incl h3{font-family:var(--sans);font-size:.6875rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);font-weight:400;margin:0 0 .8rem}
+.incl ul{margin:0;padding:0;list-style:none}
+.incl li{font-size:.9375rem;line-height:1.5;color:#4A4338;padding:.45rem 0;border-top:1px solid var(--line)}
+.price{font-size:1.75rem;line-height:1.3;margin:.6rem 0 .3rem}
+
+/* ВРЕМЕННО: всё переменное красным, убрать после подстановки */
+.tbd{color:#C0392B}
+
 </style>
 </head>
 <body>
@@ -142,21 +167,34 @@ footer .meta{margin:0}
     <p class="eyebrow">Частный тур</p>
     <h1>Великий Север: Альберта, Юкон, Аляска</h1>
     <p class="meta">Двадцать два дня, из Калгари в Анкоридж.<br>22&nbsp;мая&nbsp;– 12&nbsp;июня.</p>
+    <dl class="facts">
+      <dt>Даты</dt><dd>22&nbsp;мая&nbsp;– 12&nbsp;июня 2027</dd>
+      <dt>Продолжительность</dt><dd>22&nbsp;дня, 21&nbsp;ночь</dd>
+      <dt>Маршрут</dt><dd>Калгари&nbsp;– Анкоридж</dd>
+      <dt>Участники</dt><dd>Один участник и частный гид</dd>
+      <dt>Стоимость</dt><dd><span class="tbd">CAD XX&nbsp;XXX</span> · <a href="#price">что входит</a></dd>
+    </dl>
   </div>
 </section>
+
+<nav class="toc" aria-label="Разделы">
+  <div class="in">
+    <a href="#route">Маршрут</a><a href="#alberta">Альберта</a><a href="#north">Юкон и Аляска</a><a href="#price">Стоимость</a><a href="#pack">Что взять с собой</a>
+  </div>
+</nav>
 
 <!-- ВСТУПЛЕНИЕ -->
 <section class="block" style="padding-top:1.6rem">
   <div class="col">
     <p class="eyebrow">Часть 1</p>
-    <h2 class="part">Альберта</h2>
+    <h2 class="part" id="alberta">Альберта</h2>
     <p class="meta">Десять дней, из Калгари в Эдмонтон.</p>
     <p>Тур объединяет два лица Альберты. На юге провинции история коренных народов читается в петроглифах, охотничьих обрывах и местах подписания договоров; на западе поднимаются знаменитые национальные парки Скалистых гор: Кутеней, Банф и Джаспер. Между ними день в Банфе и Кананаскисе, а завершает часть Эдмонтон, где работает лучшая в стране экспозиция о коренных народах.</p>
   </div>
 </section>
 
 <!-- КАРТА -->
-<section class="block" style="padding-top:.5rem">
+<section class="block" id="route" style="padding-top:.5rem">
   <div class="map"><div class="inner">
     <a href="/expeditions/alberta-rockies-alaska-indigenous/img/map-full.jpg" target="_blank" rel="noopener">
       <picture>
@@ -433,7 +471,7 @@ footer .meta{margin:0}
 <section class="block">
   <div class="col">
     <p class="eyebrow">Часть 2</p>
-    <h2 class="part">Юкон и Аляска</h2>
+    <h2 class="part" id="north">Юкон и Аляска</h2>
     <p class="meta">Двенадцать дней, из Уайтхорса в Анкоридж.</p>
     <p>Маршрут связывает три мира коренных народов Севера: тлинкитов побережья с их клановыми домами и резчиками, атабасков внутренних районов от Клуэйна до Танана и денаина залива Кука, у которых атабаскская традиция сошлась с православием Русской Америки: домики духов Эклутны, церкви Кеная и Нинильчика. Между ними два горных перевала, паром по одному из самых длинных и глубоких фьордов Северной Америки, ледники Клуэйна и Денали. Начало июня: самое сухое время года на побережье, световой день двадцать часов, туристов ещё нет.</p>
   </div>
@@ -736,6 +774,60 @@ footer .meta{margin:0}
     <p><a href="https://www.anchoragemuseum.org/" target="_blank" rel="noopener">Музей Анкориджа</a> с залом Смитсоновского центра арктических исследований: сотни предметов коренных народов Аляски, переданных из Смитсоновского института.</p>
     <p>Обед и трансфер в аэропорт.</p>
     <p class="stay"><b>Питание.</b> Не включено.<br><b>Рейсы.</b> Вылет из Анкориджа во второй половине дня 12&nbsp;июня.</p>
+  </div>
+</section>
+
+<!-- СТОИМОСТЬ -->
+<section class="block" id="price">
+  <div class="col">
+    <h2 class="part">Стоимость</h2>
+    <p class="price tbd">CAD XX&nbsp;XXX</p>
+    <p class="meta">За одного участника с частным гидом на всём маршруте.</p>
+    <div class="incl">
+      <div>
+        <h3>Включено</h3>
+        <ul>
+        <li>Частный гид на всём маршруте, 22&nbsp;дня</li>
+        <li>Автомобиль, топливо и парковки</li>
+        <li>Встреча в аэропорту Калгари и трансфер в аэропорт Анкориджа</li>
+        <li>Проживание по программе, 21&nbsp;ночь</li>
+        <li><span class="tbd">Перелёт Эдмонтон&nbsp;– Уайтхорс</span></li>
+        <li>Поезд White Pass &amp; Yukon Route, Каркросс&nbsp;– Скагуэй</li>
+        <li><span class="tbd">Паром с машиной Скагуэй&nbsp;– Хейнс</span></li>
+        <li>Вход в национальные парки Канады и США</li>
+        <li>Входные билеты в музеи и исторические центры по программе</li>
+        <li>Экскурсия с гидом парка в Writing&#8209;on&#8209;Stone</li>
+        <li>Гондола на гору Салфер</li>
+        <li>Kananaskis Nordic Spa</li>
+        <li>Электровелосипеды в Лейк&#8209;Луиз</li>
+        <li>Ice Explorer и Skywalk на Колумбийском ледовом поле</li>
+        <li>Круиз Premium на озере Малин</li>
+        <li>Radium Hot Springs и Miette Hot Springs</li>
+        <li>Облёт ледников Клуэйна на малом самолёте</li>
+        <li>Катер по Воскресенской бухте</li>
+        <li>Alyeska Nordic Spa</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Не включено</h3>
+        <ul>
+        <li>Международные перелёты: прилёт в Калгари, вылет из Анкориджа</li>
+        <li>Питание, кроме ланч&#8209;бокса в поезде</li>
+        <li>Визы в Канаду и США</li>
+        <li><span class="tbd">Медицинская страховка</span></li>
+        <li><span class="tbd">Вертолёт на ледник Ник и баня на льду</span></li>
+        <li>Личные расходы</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЧТО ВЗЯТЬ С СОБОЙ -->
+<section class="block" id="pack">
+  <div class="col">
+    <h2 class="part">Что взять с собой</h2>
+    <p class="tbd">Список готовится.</p>
   </div>
 </section>
 
