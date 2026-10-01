@@ -64,3 +64,4 @@ d07-lake-louise	File:Reflections in Lake Louise.jpg	https://commons.wikimedia.or
 d07-morant	File:1 morants curve 2019.jpg	https://commons.wikimedia.org/wiki/File:1_morants_curve_2019.jpg
 car-tahoe	File:2021 Chevrolet Tahoe High Country, front 12.24.20.jpg	https://commons.wikimedia.org/wiki/File:2021_Chevrolet_Tahoe_High_Country,_front_12.24.20.jpg
 car-f150	File:2021 Ford F-150 SuperCrew, front 4.28.21.jpg	https://commons.wikimedia.org/wiki/File:2021_Ford_F-150_SuperCrew,_front_4.28.21.jpg
+d18-knik-swim	Alaska Helicopter Tours, страница Glacier Swim & Explore	https://www.alaskahelicoptertours.com/glacier-swim-explore/
