@@ -128,6 +128,18 @@ footer .meta{margin:0}
 .toc .in::-webkit-scrollbar{display:none}
 .toc a{color:var(--dim)}
 .toc a:hover{color:var(--ink)}
+.toc .m{display:none}
+@media (max-width:760px){
+  .toc .in{display:none}
+  .toc .m{display:block;position:relative}
+  .toc summary{list-style:none;cursor:pointer;padding:.85rem var(--gut);font-family:var(--sans);font-size:.8125rem;color:var(--ink);display:flex;justify-content:space-between;align-items:center}
+  .toc summary::-webkit-details-marker{display:none}
+  .toc summary::after{content:"";width:.45rem;height:.45rem;border-right:1px solid var(--dim);border-bottom:1px solid var(--dim);transform:rotate(45deg) translateY(-2px);transition:transform .15s}
+  .toc details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+  .toc .list{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--sans);font-size:.9375rem}
+  .toc .list a{display:block;padding:.8rem var(--gut);color:var(--ink);border-top:1px solid var(--line)}
+  .toc .list a:first-child{border-top:0}
+}
 [id]{scroll-margin-top:3.6rem}
 
 /* сводка под обложкой */
@@ -177,10 +189,16 @@ footer .meta{margin:0}
   </div>
 </section>
 
-<nav class="toc" aria-label="Разделы">
+<nav class="toc" aria-label="Разделы" onclick="if(event.target.closest('a')){var d=this.querySelector('details');if(d)d.open=false}">
   <div class="in">
     <a href="#alberta">Альберта</a><a href="#north">Юкон и Аляска</a><a href="#price">Что входит</a><a href="#pack">Что взять с собой</a>
   </div>
+  <details class="m">
+    <summary>Разделы</summary>
+    <div class="list">
+      <a href="#alberta">Альберта</a><a href="#north">Юкон и Аляска</a><a href="#price">Что входит</a><a href="#pack">Что взять с собой</a>
+    </div>
+  </details>
 </nav>
 
 <!-- ВСТУПЛЕНИЕ -->
