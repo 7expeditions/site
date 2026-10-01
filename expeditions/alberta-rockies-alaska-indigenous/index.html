@@ -165,11 +165,12 @@ footer .meta{margin:0}
 
 .rows{margin:1.4rem 0 0;padding:0;list-style:none}
 .rows li{display:grid;grid-template-columns:9.5rem 1fr;gap:1rem;padding:.55rem 0;border-top:1px solid var(--line);font-size:.9375rem;line-height:1.5;color:#4A4338}
-.rows li span:first-child{font-family:var(--sans);font-size:.8125rem;color:var(--dim);padding-top:.15em}
+.rows li > span:first-child{font-family:var(--sans);font-size:.8125rem;color:var(--dim);padding-top:.15em}
 @media (max-width:760px){ .rows li{grid-template-columns:1fr;gap:.1rem} }
 .rows li.one{grid-template-columns:1fr}
+.rows .st{font-family:var(--sans);font-size:.75rem;color:var(--dim);letter-spacing:.02em;margin-left:.15em;white-space:nowrap}
 .rows .thumb img{width:13rem;margin:.6rem 0 .15rem;border:1px solid var(--line)}
-.rows li.one span:first-child{font-family:inherit;font-size:inherit;color:inherit;padding-top:0}
+.rows li.one > span:first-child{font-family:inherit;font-size:inherit;color:inherit;padding-top:0}
 
 
 </style>
@@ -877,26 +878,26 @@ footer .meta{margin:0}
   <div class="col">
     <h2 class="part">Отели</h2>
     <ul class="rows">
-      <li><span>22&nbsp;мая · Калгари</span><span>Le Germain Calgary 4★</span></li>
-      <li><span>23&nbsp;мая · Летбридж</span><span>Holiday Inn Express Lethbridge Southeast 3★</span></li>
-      <li><span>24&nbsp;мая · Уотертон</span><span>Bayshore Inn &amp; Spa 3★</span></li>
-      <li><span>25&nbsp;мая · Ферни</span><span>Lizard Creek Lodge 4★</span></li>
-      <li><span>26–27&nbsp;мая · Банф</span><span>Fairmont Banff Springs 5★, 2&nbsp;ночи</span></li>
-      <li><span>28&nbsp;мая · Лейк&#8209;Луиз</span><span>Fairmont Chateau Lake Louise 5★, номер с видом на озеро</span></li>
-      <li><span>29&nbsp;мая · Джаспер</span><span>Fairmont Jasper Park Lodge 4,5★</span></li>
-      <li><span>30&nbsp;мая · Хинтон</span><span>Velora Hinton 3★</span></li>
-      <li><span>31&nbsp;мая · Эдмонтон</span><span>Fairmont Hotel Macdonald 4,5★</span></li>
-      <li><span>1&nbsp;июня · Уайтхорс</span><span>Raven Inn 3★</span></li>
-      <li><span>2&nbsp;июня · Скагуэй</span><span>Pack Train Inn 3★</span></li>
-      <li><span>3&nbsp;июня · Хейнс</span><span>Aspen Suites Haines 3★</span></li>
-      <li><span>4&nbsp;июня · Хейнс&#8209;Джанкшен</span><span>Alcan Motor Inn 2★ или Mount Logan Lodge 3★</span></li>
-      <li><span>5&nbsp;июня · Ток</span><span>Roberts Lodge 3★</span></li>
-      <li><span>6&nbsp;июня · Фэрбанкс</span><span>SpringHill Suites Fairbanks 3★</span></li>
-      <li><span>7&nbsp;июня · Госпарк Денали</span><span>Historic Chulitna River Lodge 3★ или McKinley Princess Wilderness Lodge 3★</span></li>
-      <li><span>8&nbsp;июня · Палмер</span><span>Eagle Hotel 3★ или Alaska Glacier Lodge 3★</span></li>
-      <li><span>9&nbsp;июня · Сьюард</span><span>Hotel Seward by Aspen Hotels 3★</span></li>
-      <li><span>10&nbsp;июня · Хомер</span><span>Land’s End Resort 3★</span></li>
-      <li><span>11&nbsp;июня · Гирдвуд</span><span>Alyeska Resort 4★</span></li>
+      <li><span>22&nbsp;мая · Калгари</span><span>Le Germain Calgary <span class="st">4★</span></span></li>
+      <li><span>23&nbsp;мая · Летбридж</span><span>Holiday Inn Express Lethbridge Southeast <span class="st">3★</span></span></li>
+      <li><span>24&nbsp;мая · Уотертон</span><span>Bayshore Inn &amp; Spa <span class="st">3★</span></span></li>
+      <li><span>25&nbsp;мая · Ферни</span><span>Lizard Creek Lodge <span class="st">4★</span></span></li>
+      <li><span>26–27&nbsp;мая · Банф</span><span>Fairmont Banff Springs <span class="st">5★</span>, 2&nbsp;ночи</span></li>
+      <li><span>28&nbsp;мая · Лейк&#8209;Луиз</span><span>Fairmont Chateau Lake Louise <span class="st">5★</span>, номер с видом на озеро</span></li>
+      <li><span>29&nbsp;мая · Джаспер</span><span>Fairmont Jasper Park Lodge <span class="st">4,5★</span></span></li>
+      <li><span>30&nbsp;мая · Хинтон</span><span>Velora Hinton <span class="st">3★</span></span></li>
+      <li><span>31&nbsp;мая · Эдмонтон</span><span>Fairmont Hotel Macdonald <span class="st">4,5★</span></span></li>
+      <li><span>1&nbsp;июня · Уайтхорс</span><span>Raven Inn <span class="st">3★</span></span></li>
+      <li><span>2&nbsp;июня · Скагуэй</span><span>Pack Train Inn <span class="st">3★</span></span></li>
+      <li><span>3&nbsp;июня · Хейнс</span><span>Aspen Suites Haines <span class="st">3★</span></span></li>
+      <li><span>4&nbsp;июня · Хейнс&#8209;Джанкшен</span><span>Alcan Motor Inn <span class="st">2★</span><br>или Mount Logan Lodge <span class="st">3★</span></span></li>
+      <li><span>5&nbsp;июня · Ток</span><span>Roberts Lodge <span class="st">3★</span></span></li>
+      <li><span>6&nbsp;июня · Фэрбанкс</span><span>SpringHill Suites Fairbanks <span class="st">3★</span></span></li>
+      <li><span>7&nbsp;июня · Госпарк Денали</span><span>Historic Chulitna River Lodge <span class="st">3★</span><br>или McKinley Princess Wilderness Lodge <span class="st">3★</span></span></li>
+      <li><span>8&nbsp;июня · Палмер</span><span>Eagle Hotel <span class="st">3★</span><br>или Alaska Glacier Lodge <span class="st">3★</span></span></li>
+      <li><span>9&nbsp;июня · Сьюард</span><span>Hotel Seward by Aspen Hotels <span class="st">3★</span></span></li>
+      <li><span>10&nbsp;июня · Хомер</span><span>Land’s End Resort <span class="st">3★</span></span></li>
+      <li><span>11&nbsp;июня · Гирдвуд</span><span>Alyeska Resort <span class="st">4★</span></span></li>
     </ul>
   </div>
 </section>
