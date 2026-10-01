@@ -87,6 +87,10 @@ h2.part{font-size:2rem;line-height:1.2;margin:0 0 .5rem}
 .duo picture{display:block;aspect-ratio:1/1;overflow:hidden;background:var(--line)}
 .duo img{width:100%;height:100%;object-fit:cover}
 @media (max-width:760px){ .duo{grid-template-columns:1fr} }
+.duo figure{margin:0}
+.duo figcaption{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--dim);margin:.55rem 0 0;padding:0 var(--gut)}
+.duo.duo-cap{margin-bottom:2.4rem}
+@media (max-width:760px){ .duo.duo-cap figure+figure{margin-top:.9rem} }
 
 /* карта */
 .map{padding:0 var(--gut)}
@@ -215,7 +219,7 @@ footer .meta{margin:0}
     <p class="eyebrow" id="alberta">Часть 1</p>
     <h2 class="part">Альберта</h2>
     <p class="meta">Десять дней, из Калгари в Эдмонтон.</p>
-    <p>Тур объединяет два лица Альберты. На юге провинции история коренных народов читается в петроглифах, охотничьих обрывах и местах подписания договоров; на западе поднимаются знаменитые национальные парки Скалистых гор: Кутеней, Банф и Джаспер. Между ними день в Банфе и Кананаскисе, а завершает часть Эдмонтон, где работает лучшая в стране экспозиция о коренных народах.</p>
+    <p>Тур объединяет два лица Альберты. На юге провинции история коренных народов читается в петроглифах, охотничьих обрывах и местах подписания договоров; на западе поднимаются знаменитые национальные парки Скалистых гор: Кутеней, Банф и Джаспер. Между ними день в Банфе и Кананаскисе.</p>
   </div>
 </section>
 
@@ -403,7 +407,6 @@ footer .meta{margin:0}
     <p>Рано утром переезд в Лейк&#8209;Луиз (60&nbsp;км, около 45&nbsp;минут). В деревне берём электровелосипеды.</p>
     <p>Дорога к озеру Морейн для машин закрыта всегда, а для шаттлов её открывают только 1&nbsp;июня. Мы же сможем проехать по ней на велосипедах ещё до открытия дороги.</p>
     <p>Морейн лежит в Долине десяти пиков, под стеной трёхтысячников. Название озеру дали, приняв каменный завал у его выхода за ледниковую морену, хотя на деле это след древнего обвала. Вид с этого завала один из самых узнаваемых в Канаде: он был на обороте двадцатидолларовой купюры 1969 и 1979 годов. В конце мая озеро ещё может стоять подо льдом, а вершины в снегу. Прогулка по берегу и подъём на завал.</p>
-    <p>Если дорогу ещё не расчистят, по пути из Банфа проедем Bow Valley Parkway: гора Касл и изгиб Моранта, где фотограф Канадской Тихоокеанской железной дороги Николас Морант снимал поезда над рекой Боу.</p>
     <p>После этого возвращаемся в деревню Лейк&#8209;Луиз.</p>
     <p>Лейк&#8209;Луиз, озеро под ледником Виктория. Стоуни называли его озером Маленьких рыб, современное имя дано в честь принцессы Луизы, дочери королевы Виктории. Прогулка по тропе вдоль берега к подножию ледника.</p>
     <p>По желанию поездка в Йохо: смотровая на Спиральные туннели 1909 года, где поезд выходит из горы над собственным хвостом, посёлок Филд, Изумрудное озеро.</p>
@@ -674,11 +677,11 @@ footer .meta{margin:0}
   </div>
   <div class="photo" style="margin-top:1.6rem">
     <picture>
-      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d17-ermine-lake-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d17-ermine-lake.webp 1600w" sizes="100vw">
-      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d17-ermine-lake.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d17-ermine-lake-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d17-ermine-lake.jpg 1600w" sizes="100vw" alt="Причал на озере Эрмин, лодка и бревенчатые домики на берегу" width="1600" height="1200" loading="lazy" decoding="async">
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d17-sled-dogs-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d17-sled-dogs.webp 1600w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d17-sled-dogs.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d17-sled-dogs-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d17-sled-dogs.jpg 1600w" sizes="100vw" alt="Рейнджер с упряжкой ездовых собак на летней тренировке в питомнике национального парка Денали" width="1600" height="1178" loading="lazy" decoding="async">
     </picture>
   </div>
-  <p class="cap col"><span>Озеро Эрмин.</span></p>
+  <p class="cap col"><span>Денали. Питомник ездовых собак.</span></p>
 </section>
 
 <!-- ДЕНЬ 18 -->
@@ -744,11 +747,11 @@ footer .meta{margin:0}
 <section class="block" style="padding-top:0">
   <div class="photo">
     <picture>
-      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-otters-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-otters.webp 1600w" sizes="100vw">
-      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d20-otters.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-otters-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-otters.jpg 1600w" sizes="100vw" alt="Калан плывёт на спине в Воскресенской бухте" width="1600" height="1062" loading="lazy" decoding="async">
+      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-resurrection-bay-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-resurrection-bay.webp 1200w" sizes="100vw">
+      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d20-resurrection-bay.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d20-resurrection-bay-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d20-resurrection-bay.jpg 1200w" sizes="100vw" alt="Скалистые останцы и поросшие лесом утёсы Воскресенской бухты, Сьюард, Аляска" width="1200" height="800" loading="lazy" decoding="async">
     </picture>
   </div>
-  <p class="cap col"><span>Воскресенская бухта. Каланы.</span></p>
+  <p class="cap col"><span>Воскресенская бухта.</span></p>
   <div class="col">
     <h2>День 20<span class="dt">10&nbsp;июня, чт</span></h2>
     <p class="meta">Сьюард, Нинильчик, Хомер. Около 280&nbsp;км, около 4,5&nbsp;часов в пути.</p>
@@ -768,17 +771,22 @@ footer .meta{margin:0}
 
 <!-- ДЕНЬ 21 -->
 <section class="block" style="padding-top:0">
-  <div class="duo">
-    <picture>
-      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.webp 1600w" sizes="(min-width:761px) 50vw, 100vw">
-      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.jpg 1600w" sizes="(min-width:761px) 50vw, 100vw" alt="Свято-Успенская церковь в Кенае за белой оградой" width="1600" height="1612" loading="lazy" decoding="async" style="object-position:50% 50%">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska.webp 1600w" sizes="(min-width:761px) 50vw, 100vw">
-      <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska.jpg 1600w" sizes="(min-width:761px) 50vw, 100vw" alt="Вид с горы Алиеска на залив Тернагейн и горы" width="1600" height="1068" loading="lazy" decoding="async" style="object-position:50% 50%">
-    </picture>
+  <div class="duo duo-cap">
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.webp 1600w" sizes="(min-width:761px) 50vw, 100vw">
+        <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-kenai.jpg 1600w" sizes="(min-width:761px) 50vw, 100vw" alt="Свято-Успенская церковь в Кенае за белой оградой" width="1600" height="1612" loading="lazy" decoding="async" style="object-position:50% 50%">
+      </picture>
+      <figcaption>Кенай. Свято&#8209;Успенская церковь.</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska-800.webp 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska.webp 1600w" sizes="(min-width:761px) 50vw, 100vw">
+        <img src="/expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska.jpg" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska-800.jpg 800w, /expeditions/alberta-rockies-alaska-indigenous/img/d21-alyeska.jpg 1600w" sizes="(min-width:761px) 50vw, 100vw" alt="Вид с горы Алиеска на залив Тернагейн и горы" width="1600" height="1068" loading="lazy" decoding="async" style="object-position:50% 50%">
+      </picture>
+      <figcaption>Алиеска. Вид с горы.</figcaption>
+    </figure>
   </div>
-  <p class="cap col"><span>Кенай. Свято&#8209;Успенская церковь.</span><span>Алиеска. Вид с горы.</span></p>
   <div class="col">
     <h2>День 21<span class="dt">11&nbsp;июня, пт</span></h2>
     <p class="meta">Хомер, Кенай, Купер&#8209;Лендинг, Алиеска. Около 345&nbsp;км, около 5&nbsp;часов в пути.</p>
@@ -827,6 +835,7 @@ footer .meta{margin:0}
       <li class="one"><span>Альберта: полноразмерный внедорожник Chevrolet Tahoe или аналог<picture class="thumb"><source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/car-tahoe.webp"><img src="/expeditions/alberta-rockies-alaska-indigenous/img/car-tahoe.jpg" alt="Полноразмерный внедорожник Chevrolet Tahoe" width="600" height="359" loading="lazy" decoding="async"></picture></span></li>
       <li class="one"><span>Юкон и Аляска: полноприводный пикап Ford F&#8209;150 или аналог<picture class="thumb"><source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/car-f150.webp"><img src="/expeditions/alberta-rockies-alaska-indigenous/img/car-f150.jpg" alt="Полноприводный пикап Ford F-150" width="600" height="359" loading="lazy" decoding="async"></picture></span></li>
       <li class="one"><span>Все транспортные расходы</span></li>
+      <li class="one"><span>Спутниковый интернет Starlink</span></li>
       <li class="one"><span>Встреча в аэропорту Калгари и трансфер в аэропорт Анкориджа</span></li>
       <li class="one"><span>Проживание, 21&nbsp;ночь: в каждом месте маршрута лучший из доступных отелей</span></li>
       <li class="one"><span>Перелёт Эдмонтон&nbsp;– Уайтхорс</span></li>
@@ -843,7 +852,7 @@ footer .meta{margin:0}
       <li class="one"><span>Вход в горячие источники Radium и Miette</span></li>
       <li class="one"><span>Облёт на малом самолёте: или гора Логан в Клуэйне, или Денали. Одно из двух, решаем на месте по погоде. Облёты обычно выполняются минимум с двумя пассажирами, поэтому возможны перенос или отмена</span></li>
       <li class="one"><span>Морская прогулка на катере по Воскресенской бухте в Сьюарде</span></li>
-      <li class="one"><span>Вертолётная программа на леднике Ник у Палмера: прогулка по леднику и купание в талом озере. Если удастся заменить её на баню на леднике, цена может измениться</span></li>
+      <li class="one"><span>Вертолётная программа на леднике Ник у Палмера: прогулка по леднику и купание в талом озере. Замена на баню на леднике возможна с доплатой, её размер согласуем до поездки</span></li>
       <li class="one"><span>Вход в Alyeska Nordic Spa или подъём на гондоле на гору Алиеска</span></li>
     </ul>
   </div>
@@ -868,26 +877,26 @@ footer .meta{margin:0}
   <div class="col">
     <h2 class="part">Отели</h2>
     <ul class="rows">
-      <li><span>22&nbsp;мая · Калгари</span><span>Le Germain Calgary</span></li>
-      <li><span>23&nbsp;мая · Летбридж</span><span>Holiday Inn Express Lethbridge Southeast</span></li>
-      <li><span>24&nbsp;мая · Уотертон</span><span>Bayshore Inn &amp; Spa</span></li>
-      <li><span>25&nbsp;мая · Ферни</span><span>Lizard Creek Lodge</span></li>
-      <li><span>26–27&nbsp;мая · Банф</span><span>Fairmont Banff Springs, 2&nbsp;ночи</span></li>
-      <li><span>28&nbsp;мая · Лейк&#8209;Луиз</span><span>Fairmont Chateau Lake Louise, номер с видом на озеро</span></li>
-      <li><span>29&nbsp;мая · Джаспер</span><span>Fairmont Jasper Park Lodge</span></li>
-      <li><span>30&nbsp;мая · Хинтон</span><span>Velora Hinton</span></li>
-      <li><span>31&nbsp;мая · Эдмонтон</span><span>Fairmont Hotel Macdonald</span></li>
-      <li><span>1&nbsp;июня · Уайтхорс</span><span>Raven Inn</span></li>
-      <li><span>2&nbsp;июня · Скагуэй</span><span>Pack Train Inn</span></li>
-      <li><span>3&nbsp;июня · Хейнс</span><span>Aspen Suites Haines</span></li>
-      <li><span>4&nbsp;июня · Хейнс&#8209;Джанкшен</span><span>Alcan Motor Inn (возможна замена на Mount Logan Lodge)</span></li>
-      <li><span>5&nbsp;июня · Ток</span><span>Roberts Lodge</span></li>
-      <li><span>6&nbsp;июня · Фэрбанкс</span><span>SpringHill Suites Fairbanks</span></li>
-      <li><span>7&nbsp;июня · Госпарк Денали</span><span>Historic Chulitna River Lodge (возможна замена на McKinley Princess Wilderness Lodge)</span></li>
-      <li><span>8&nbsp;июня · Палмер</span><span>Eagle Hotel (возможна замена на Alaska Glacier Lodge)</span></li>
-      <li><span>9&nbsp;июня · Сьюард</span><span>Hotel Seward by Aspen Hotels</span></li>
-      <li><span>10&nbsp;июня · Хомер</span><span>Land’s End Resort</span></li>
-      <li><span>11&nbsp;июня · Гирдвуд</span><span>Alyeska Resort</span></li>
+      <li><span>22&nbsp;мая · Калгари</span><span>Le Germain Calgary 4★</span></li>
+      <li><span>23&nbsp;мая · Летбридж</span><span>Holiday Inn Express Lethbridge Southeast 3★</span></li>
+      <li><span>24&nbsp;мая · Уотертон</span><span>Bayshore Inn &amp; Spa 3★</span></li>
+      <li><span>25&nbsp;мая · Ферни</span><span>Lizard Creek Lodge 4★</span></li>
+      <li><span>26–27&nbsp;мая · Банф</span><span>Fairmont Banff Springs 5★, 2&nbsp;ночи</span></li>
+      <li><span>28&nbsp;мая · Лейк&#8209;Луиз</span><span>Fairmont Chateau Lake Louise 5★, номер с видом на озеро</span></li>
+      <li><span>29&nbsp;мая · Джаспер</span><span>Fairmont Jasper Park Lodge 4,5★</span></li>
+      <li><span>30&nbsp;мая · Хинтон</span><span>Velora Hinton 3★</span></li>
+      <li><span>31&nbsp;мая · Эдмонтон</span><span>Fairmont Hotel Macdonald 4,5★</span></li>
+      <li><span>1&nbsp;июня · Уайтхорс</span><span>Raven Inn 3★</span></li>
+      <li><span>2&nbsp;июня · Скагуэй</span><span>Pack Train Inn 3★</span></li>
+      <li><span>3&nbsp;июня · Хейнс</span><span>Aspen Suites Haines 3★</span></li>
+      <li><span>4&nbsp;июня · Хейнс&#8209;Джанкшен</span><span>Alcan Motor Inn 2★ или Mount Logan Lodge 3★</span></li>
+      <li><span>5&nbsp;июня · Ток</span><span>Roberts Lodge 3★</span></li>
+      <li><span>6&nbsp;июня · Фэрбанкс</span><span>SpringHill Suites Fairbanks 3★</span></li>
+      <li><span>7&nbsp;июня · Госпарк Денали</span><span>Historic Chulitna River Lodge 3★ или McKinley Princess Wilderness Lodge 3★</span></li>
+      <li><span>8&nbsp;июня · Палмер</span><span>Eagle Hotel 3★ или Alaska Glacier Lodge 3★</span></li>
+      <li><span>9&nbsp;июня · Сьюард</span><span>Hotel Seward by Aspen Hotels 3★</span></li>
+      <li><span>10&nbsp;июня · Хомер</span><span>Land’s End Resort 3★</span></li>
+      <li><span>11&nbsp;июня · Гирдвуд</span><span>Alyeska Resort 4★</span></li>
     </ul>
   </div>
 </section>

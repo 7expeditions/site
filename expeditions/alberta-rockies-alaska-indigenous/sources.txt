@@ -65,3 +65,5 @@ d07-morant	File:1 morants curve 2019.jpg	https://commons.wikimedia.org/wiki/File
 car-tahoe	File:2021 Chevrolet Tahoe High Country, front 12.24.20.jpg	https://commons.wikimedia.org/wiki/File:2021_Chevrolet_Tahoe_High_Country,_front_12.24.20.jpg
 car-f150	File:2021 Ford F-150 SuperCrew, front 4.28.21.jpg	https://commons.wikimedia.org/wiki/File:2021_Ford_F-150_SuperCrew,_front_4.28.21.jpg
 d18-knik-swim	Alaska Helicopter Tours, страница Glacier Swim & Explore	https://www.alaskahelicoptertours.com/glacier-swim-explore/
+d17-sled-dogs	File:Sled dogs illustrate how much they love running during a demonstration in the Denali kennels (953457b3-edf9-4fbc-876d-c8ef3649a9d7).jpg	https://commons.wikimedia.org/wiki/File:Sled_dogs_illustrate_how_much_they_love_running_during_a_demonstration_in_the_Denali_kennels_(953457b3-edf9-4fbc-876d-c8ef3649a9d7).jpg
+d20-resurrection-bay	Kenai Fjords Tours, галерея Resurrection Bay Express (GIL-Rock-Pillars-Moody-Sky)	https://www.alaskacollection.com/day-tours/kenai-fjords-tours/tours/resurrection-bay-express-tour/
