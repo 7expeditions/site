@@ -62,3 +62,4 @@ d06-nordic-spa	Kananaskis Nordic Spa, раздел для прессы (warmpool
 d07-moraine	File:Moraine Lake, north view from Rockpiles 20240823 1.jpg	https://commons.wikimedia.org/wiki/File:Moraine_Lake,_north_view_from_Rockpiles_20240823_1.jpg
 d07-lake-louise	File:Reflections in Lake Louise.jpg	https://commons.wikimedia.org/wiki/File:Reflections_in_Lake_Louise.jpg
 d07-morant	File:1 morants curve 2019.jpg	https://commons.wikimedia.org/wiki/File:1_morants_curve_2019.jpg
+car-tahoe	File:2021 Chevrolet Tahoe High Country, front 12.24.20.jpg	https://commons.wikimedia.org/wiki/File:2021_Chevrolet_Tahoe_High_Country,_front_12.24.20.jpg

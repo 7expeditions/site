@@ -164,11 +164,9 @@ footer .meta{margin:0}
 .rows li span:first-child{font-family:var(--sans);font-size:.8125rem;color:var(--dim);padding-top:.15em}
 @media (max-width:760px){ .rows li{grid-template-columns:1fr;gap:.1rem} }
 .rows li.one{grid-template-columns:1fr}
+.rows .thumb img{width:13rem;margin:.6rem 0 .15rem;border:1px solid var(--line)}
 .rows li.one span:first-child{font-family:inherit;font-size:inherit;color:inherit;padding-top:0}
-.rows li span.tbd{color:#C0392B}
 
-/* ВРЕМЕННО: всё переменное красным, убрать после подстановки */
-.tbd,.rows .tbd{color:#C0392B!important}
 
 </style>
 </head>
@@ -207,7 +205,7 @@ footer .meta{margin:0}
       <dt>Продолжительность</dt><dd>22&nbsp;дня, 21&nbsp;ночь</dd>
       <dt>Маршрут</dt><dd>Калгари&nbsp;– Анкоридж</dd>
       <dt>Участники</dt><dd>Один участник и частный гид</dd>
-      <dt>Стоимость</dt><dd><span class="tbd">CAD XX&nbsp;XXX</span></dd>
+      <dt>Стоимость</dt><dd>CAD XX&nbsp;XXX</dd>
     </dl>
   </div>
 </section>
@@ -810,7 +808,7 @@ footer .meta{margin:0}
   <div class="col">
     <h2 class="part">Стоимость</h2>
     <ul class="rows">
-      <li><span>Один участник и частный гид</span><span class="tbd">CAD XX&nbsp;XXX</span></li>
+      <li><span>Один участник и частный гид</span>CAD XX&nbsp;XXX</li>
     </ul>
   </div>
 </section>
@@ -821,24 +819,24 @@ footer .meta{margin:0}
     <h2 class="part">Включено</h2>
     <ul class="rows">
       <li class="one"><span>Частный гид на всём маршруте, 22&nbsp;дня</span></li>
-      <li class="one"><span>Автомобиль, топливо и парковки</span></li>
+      <li class="one"><span>Полноразмерный внедорожник Chevrolet Tahoe или аналог, топливо и парковки<picture class="thumb"><source type="image/webp" srcset="/expeditions/alberta-rockies-alaska-indigenous/img/car-tahoe.webp"><img src="/expeditions/alberta-rockies-alaska-indigenous/img/car-tahoe.jpg" alt="Полноразмерный внедорожник Chevrolet Tahoe" width="600" height="359" loading="lazy" decoding="async"></picture></span></li>
       <li class="one"><span>Встреча в аэропорту Калгари и трансфер в аэропорт Анкориджа</span></li>
-      <li class="one"><span>Проживание по программе, 21&nbsp;ночь</span></li>
-      <li class="one"><span><span class="tbd">Перелёт Эдмонтон&nbsp;– Уайтхорс</span></span></li>
+      <li class="one"><span>Проживание, 21&nbsp;ночь: в каждом месте маршрута лучший из доступных отелей. В Банфе, Лейк&#8209;Луизе, Джаспере и Эдмонтоне это исторические отели&#8209;замки Fairmont</span></li>
+      <li class="one"><span>Перелёт Эдмонтон&nbsp;– Уайтхорс</span></li>
       <li class="one"><span>Поезд White Pass &amp; Yukon Route, Каркросс&nbsp;– Скагуэй</span></li>
-      <li class="one"><span><span class="tbd">Паром с машиной Скагуэй&nbsp;– Хейнс</span></span></li>
+      <li class="one"><span>Паром с машиной Скагуэй&nbsp;– Хейнс</span></li>
       <li class="one"><span>Вход в национальные парки Канады и США</span></li>
       <li class="one"><span>Входные билеты в музеи и исторические центры по программе</span></li>
       <li class="one"><span>Экскурсия с гидом парка в Writing&#8209;on&#8209;Stone</span></li>
-      <li class="one"><span>Гондола на гору Салфер</span></li>
-      <li class="one"><span>Kananaskis Nordic Spa</span></li>
-      <li class="one"><span>Электровелосипеды в Лейк&#8209;Луиз</span></li>
-      <li class="one"><span>Ice Explorer и Skywalk на Колумбийском ледовом поле</span></li>
-      <li class="one"><span>Круиз Premium на озере Малин</span></li>
-      <li class="one"><span>Radium Hot Springs и Miette Hot Springs</span></li>
-      <li class="one"><span>Облёт ледников Клуэйна на малом самолёте</span></li>
-      <li class="one"><span>Катер по Воскресенской бухте</span></li>
-      <li class="one"><span>Alyeska Nordic Spa или подъём на гондоле на гору Алиеска</span></li>
+      <li class="one"><span>Подъём на гондоле в Банфе</span></li>
+      <li class="one"><span>Вход в Kananaskis Nordic Spa</span></li>
+      <li class="one"><span>Аренда электровелосипедов в Лейк&#8209;Луизе</span></li>
+      <li class="one"><span>Выезд на вездеходах на ледник Атабаска, Колумбийское ледовое поле, и стеклянная смотровая площадка Skywalk</span></li>
+      <li class="one"><span>Прогулка на катере по озеру Малин к острову Спирит</span></li>
+      <li class="one"><span>Вход в горячие источники Radium и Miette</span></li>
+      <li class="one"><span>Облёт на малом самолёте: или гора Логан в Клуэйне, или Денали. Одно из двух, решаем на месте по погоде</span></li>
+      <li class="one"><span>Морская прогулка на катере по Воскресенской бухте</span></li>
+      <li class="one"><span>Вход в Alyeska Nordic Spa или подъём на гондоле на гору Алиеска</span></li>
     </ul>
   </div>
 </section>
@@ -851,8 +849,8 @@ footer .meta{margin:0}
       <li class="one"><span>Международные перелёты: прилёт в Калгари, вылет из Анкориджа</span></li>
       <li class="one"><span>Питание, кроме ланч&#8209;бокса в поезде</span></li>
       <li class="one"><span>Визы в Канаду и США</span></li>
-      <li class="one"><span><span class="tbd">Медицинская страховка</span></span></li>
-      <li class="one"><span><span class="tbd">Вертолёт на ледник Ник и баня на льду</span></span></li>
+      <li class="one"><span>Медицинская страховка</span></li>
+      <li class="one"><span>Вертолёт на ледник Ник и баня на льду</span></li>
       <li class="one"><span>Личные расходы</span></li>
     </ul>
   </div>
@@ -903,7 +901,7 @@ footer .meta{margin:0}
   <div class="col">
     <h2 class="part">Памятка</h2>
     <ul class="rows">
-      <li class="one"><span class="tbd">Список готовится.</span></li>
+      <li class="one">Список готовится.</li>
     </ul>
   </div>
 </section>
