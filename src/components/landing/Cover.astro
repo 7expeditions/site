@@ -1,0 +1,12 @@
+---
+import Pic from '../Pic.astro';
+const { b } = Astro.props;
+---
+<section class:list={['photo-page', 'cover', { top: b.mobileTop }]}>
+  <Pic pic={b.pic} eager />
+  <div class:list={['overlay', { left: b.align === 'left' }]}>
+    <div class="title" set:html={b.title} />
+    {b.sub && <div class="sub" set:html={b.sub} />}
+    {b.caps && <div class="caps" set:html={b.caps} />}
+  </div>
+</section>

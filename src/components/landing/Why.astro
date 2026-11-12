@@ -1,0 +1,10 @@
+---
+const { b } = Astro.props;
+---
+<section class="page why">
+  <h2 class="section" style="margin-bottom:28px" set:html={b.title} />
+  {b.items.map((it: any) => (<>
+    <h3 class="sub" set:html={it.h} />
+    {it.html.split('\n').map((p: string) => <p set:html={p} />)}
+  </>))}
+</section>

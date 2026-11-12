@@ -1,0 +1,265 @@
+head: |-
+  <title>Тунец, Редфиш и Тарпон — Атлантическое побережье США, 21–29 сентября 2027</title>
+  <meta property="og:image" content="https://7expeditions.com/expeditions/tuna-redfish-2027/img/og-tuna.jpg">
+blocks:
+- type: cover
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/cover.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/cover.jpg
+    pos: 50% 45%
+  title: Тунец, Редфиш и Тарпон
+  sub: Атлантическое побережье США
+  caps: 21–29 сентября 2027
+- type: lead
+  text: Две лучшие рыбалки Атлантического побережья США
+- type: diptych
+  panels:
+  - pic:
+      src: /expeditions/tuna-redfish-2027/img/tuna.jpg
+      m: /expeditions/tuna-redfish-2027/img/m/tuna.jpg
+      alt: Гигантский синий тунец на борту, Атлантика у Чатема
+      pos: 55% 50%
+    num: I
+    hero: Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.
+    acc: >-
+      Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.
+  - pic:
+      src: /expeditions/tuna-redfish-2027/img/bull-red.jpg
+      m: /expeditions/tuna-redfish-2027/img/m/bull-red.jpg
+      alt: Крупный редфиш в руках рыболова, побережье Джорджии
+      pos: 22% 40%
+    num: II
+    hero: Редфиш до 50 фунтов и тарпон до 160 в заливах Джорджии.
+    acc: >-
+      Размещение в Sea Island, Джорджия — единственный курорт Атлантического побережья с тремя пятизвёздочными отметками Forbes: отель The Cloister, The Lodge и спа. Причал яхт-клуба курорта — на реке, у самого отеля.
+- type: map
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/map-tuna-redfish-en.svg
+    m: /expeditions/tuna-redfish-2027/img/m/map-tuna-redfish-en-m.svg
+    alt: 'Карта экспедиции: Кейп-Код и Golden Isles, Джорджия'
+  href: /expeditions/tuna-redfish-2027/img/map-tuna-redfish-en.svg
+- type: day
+  d: 21 сентября, вторник
+  w: Бостон → Чатем
+  paras:
+  - >-
+    Трансфер из Бостона в Чатем. Едем за рулём на трёх-четырёх ретро-машинах шестидесятых и семидесятых, багаж идёт отдельной машиной. Дорога занимает столько, сколько нужно: останавливаемся у воды, в старых городках по пути, где захочется выйти.
+  - >-
+    Живём в A Little Inn on Pleasant Bay: девять номеров на первой линии залива, между Чатемом и Орлеаном. На эти дни гостиница целиком наша, с садом и террасой, других гостей нет.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/car.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/car.jpg
+    pos: 50% 60%
+  mods:
+  - fit
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/inn.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/inn.jpg
+    pos: 50% 55%
+- type: day
+  d: 22–23 сентября, среда, четверг
+  w: Гигантский синий тунец · два рыболовных дня
+  paras:
+  - >-
+    Синий тунец стоит у Чатема с июня по ноябрь. Гигант, самая крупная рыба, какую берут на удочку в Атлантике, ходит здесь же, в двух часах от бостонского аэропорта. Рекорд штата Массачусетс — 1&nbsp;228 фунтов, рыба поймана в заливе Кейп-Код в сентябре 1984 года. Каждый сезон у Кейп-Кода берут рыбу за 700 и 900 фунтов, а тунца на 1&nbsp;000 фунтов поднимали здесь на лодке, которую бронируют как любую другую.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/giant.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/giant.jpg
+    alt: Гигантский синий тунец на причале, Кейп-Код
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: day
+  paras:
+  - >-
+    Гиганта ждём в дрейфе с живцом. Тунец поменьше, от 30 до 100 килограммов, ходит по птичьим котлам, и его берут спиннингом и джигом. Такого разрешено забирать, две рыбы на лодку.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/boatside.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/boatside.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/rod.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/rod.jpg
+    pos: 40% 50%
+- type: day
+  paras:
+  - >-
+    Выходим на трёх лодках. Первый день — за большим трофеем. Второй день решаем по итогам первого: снова за гигантом или на спиннинг по котлам. Трофей или количество.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/tail.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/tail.jpg
+    pos: 50% 55%
+- type: day
+  paras:
+  - Вечер после океана проходит в городке на берегу залива, с ресторанами и садом у воды.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/sunset.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/sunset.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: day
+  d: 24 сентября, пятница
+  w: Чатем → Brunswick → Sea Island
+  paras:
+  - >-
+    Чартерный рейс из Chatham, MA в Brunswick, GA, два с половиной часа. От аэропорта до курорта — пятнадцать минут.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/jet.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/jet.jpg
+    pos: 50% 60%
+  mods:
+  - fit
+- type: day
+  paras:
+  - >-
+    Sea Island открыт в 1928 году, и в первое же Рождество здесь отдыхал президент Кулидж. В 2004 году на острове три дня шёл саммит G8. Сегодня это единственный курорт Атлантического побережья с тремя пятизвёздочными отметками Forbes: отель The Cloister, The Lodge и спа. The Cloister стоит на реке Black Banks, между океаном и маршем; у отеля — причал яхт-клуба, с которого уходят лодки. Слотовую рыбу, которую привозим с воды, вечером готовят в Tavola, итальянском ресторане курорта.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/cloister.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/cloister.jpg
+    alt: The Cloister и причал яхт-клуба на реке Black Banks, Sea Island, Джорджия
+    pos: 55% 60%
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/cloister-evening.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/cloister-evening.jpg
+    alt: Въезд в The Cloister, Sea Island, Джорджия
+    pos: 50% 60%
+- type: day
+  d: 25–28 сентября, суббота, воскресенье, понедельник, вторник
+  w: Sea Island · четыре рыболовных дня
+  paras:
+  - >-
+    Редфиш, red drum, — главная рыба Атлантического побережья юга. Большую часть года в маршах ловят рыбу до 8 фунтов, но с конца сентября в заливы Джорджии входят на нерест быки — 30–45 фунтов, 40–50 дюймов, возраст за тридцать лет. Рекорд штата — 47 фунтов 7 унций; каждую осень гиды поднимают рыбу за 50. Здесь же до конца сентября стоит тарпон 100–150 фунтов, рекорд Джорджии — 161 фунт. В прилове — джек-кревалль за 25 фунтов, чёрный горбыль, рекорд штата 92 фунта, и акулы за 100.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/redfish.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/redfish.jpg
+    pos: 50% 40%
+  mods:
+  - portrait
+  - fit
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/bulls.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/bulls.jpg
+    pos: 50% 40%
+  mods:
+  - fit
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/tarpon.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/tarpon.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/tarpon-2.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/tarpon-2.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+  - fit
+- type: day
+  paras:
+  - >-
+    Приливы Golden Isles — самые высокие на всём побережье, до 10 футов. На этой неделе новолуние: вода поднимается на восемь футов и заливает траву. Рыба заходит в марш, и её видно по спине и хвосту над водой.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/floodtide.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/floodtide.jpg
+    pos: 70% 60%
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/poling.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/poling.jpg
+    pos: 30% 50%
+  mods:
+  - fit
+- type: day
+  paras:
+  - >-
+    Четыре дня ловим быков на нерестовом ходу и тарпона. На высокой воде — редфиша в траве, с шеста, по хвостам. Утро — быки, вечер — прилив.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/redfish-2.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/redfish-2.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+  - fit
+- type: day
+  paras:
+  - >-
+    Лодки: бэй-боты на 2–3 рыболова для быков и тарпона, скифы по двое для травы. Уходим с причала яхт-клуба курорта.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/release.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/release.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: day
+  paras:
+  - Вся крупная рыба отпускается в воде.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/terrace.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/terrace.jpg
+    pos: 50% 60%
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/dish.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/dish.jpg
+    pos: 35% 50%
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/spa.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/spa.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/oak-sunset.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/oak-sunset.jpg
+    pos: 40% 50%
+  mods:
+  - portrait
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/marsh.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/marsh.jpg
+    pos: 55% 60%
+- type: day
+  compact: true
+  d: 29 сентября, среда
+  w: Brunswick / Jacksonville
+  paras:
+  - >-
+    Вылет по своим маршрутам: из Brunswick чартером или из Jacksonville регулярными рейсами в Бостон и Нью-Йорк.
+- type: notes
+  title: Трансферы
+  paras:
+  - Boston, MA → Chatham, MA · 150 км, авто или чартер.
+  - Chatham, MA → Brunswick, GA · чартер, 2 часа 30 мин.
+  - >-
+    Brunswick, GA → Boston, MA или New York, NY · чартер; или Jacksonville, FL (1 час 15 мин на авто) → регулярные рейсы, 2 часа 30 мин.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/marsh-aerial.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/marsh-aerial.jpg
+    alt: Марш и Sea Island с воздуха, Джорджия
+    pos: 50% 55%

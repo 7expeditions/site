@@ -1,0 +1,227 @@
+/* Шаблон лендинга (образец — tuna-redfish-2027). Значения — из tokens.css. */
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--bg)}
+body{
+  padding:var(--edge) var(--edge) 0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:400;
+  font-size:16px;
+  line-height:1.65;
+}
+h1,h2,h3{font-family:var(--serif);font-weight:400}
+.caps{
+  font-family:var(--sans);font-weight:400;
+  text-transform:uppercase;letter-spacing:.3em;
+  font-size:11px;color:var(--dim);
+}
+.page{
+  max-width:var(--page-max);margin:0 auto;
+  padding:var(--page-py) var(--page-px);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.page.compact{min-height:0;padding:56px var(--page-px)}
+.photo-page{padding:0;max-width:none;min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge));position:relative;display:block}
+.photo-page picture,.photo-page img{display:block;width:100%;height:calc(100vh - var(--edge));height:calc(100svh - var(--edge));object-fit:cover}
+.photo-page .cap{
+  position:absolute;left:0;right:0;bottom:28px;text-align:center;
+  color:var(--ivory);text-shadow:0 0 24px rgba(0,0,0,.45);
+}
+hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+/* вертикальный кадр на горизонтальном экране — без обрезки */
+@media (orientation: landscape){
+  .photo-page.portrait{background:var(--bg)}
+  .photo-page.portrait img{object-fit:contain;height:calc(100vh - 72px)}
+  .photo-page.portrait .cap{color:var(--dim);text-shadow:none}
+}
+.photo-page img.wide{object-fit:contain;background:var(--bg);width:100%;height:auto}
+.photo-page img.map{background:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);
+  mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%)}
+/* широкий кадр: секция по высоте кадра, подпись под ним */
+.photo-page:has(img.wide){
+  min-height:0;height:auto;
+  padding:0;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.photo-page:has(img.wide) picture{height:auto;width:100%}
+.photo-page:has(img.wide) .cap{position:static;margin-top:14px;padding-bottom:14px}
+/* кадр, который на телефоне показывается целиком, без обрезки */
+@media (orientation: portrait){
+  .photo-page.fit{min-height:0;height:auto;padding:0;display:flex;flex-direction:column;justify-content:center}
+  .photo-page.fit picture,.photo-page.fit img{height:auto;width:100%;object-fit:contain}
+  .photo-page.fit .cap{position:static;margin-top:14px;padding-bottom:14px;color:var(--dim);text-shadow:none}
+}
+.photo-page:has(img.wide){background:var(--bg)}
+.photo-page:has(img.wide) .cap{color:var(--dim);text-shadow:none}
+/* своя точка кадра для вертикального экрана */
+@media (orientation: portrait){ img.mp{object-position:var(--mpos)!important} }
+/* обложка */
+.cover{position:relative}
+.cover .overlay{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  justify-content:flex-end;align-items:center;padding:64px 24px;
+  color:var(--ivory);text-align:center;text-shadow:0 0 28px rgba(0,0,0,.5);
+}
+.cover .title{font-family:var(--serif);font-weight:400;font-size:52px;letter-spacing:.02em;margin-bottom:16px}
+.cover .sub{font-family:var(--sans);font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:22px;line-height:1.5;margin-bottom:20px}
+.cover .caps{font-size:15px;color:var(--ivory)}
+/* обложка: текст слева */
+.cover .overlay.left{align-items:flex-start;text-align:left;padding-left:64px}
+/* обложка на телефоне: фото на весь экран, заголовок сверху на небе */
+@media (orientation: portrait){
+  .cover.top picture img{object-position:50% 50%!important}
+  .cover.top .overlay{justify-content:flex-start!important;align-items:center!important;text-align:center!important;padding:72px 20px 24px!important}
+  .cover.top .title{font-size:34px;white-space:nowrap}
+  .cover.top .sub{font-size:16px;letter-spacing:.2em;white-space:nowrap}
+}
+/* суть */
+.fact{font-size:19px;line-height:1.7;margin-bottom:26px}
+.lead{font-family:var(--serif);font-size:26px;line-height:1.5;margin-bottom:44px;
+  text-transform:uppercase;letter-spacing:.08em;color:var(--text);-webkit-text-stroke:.3px currentColor;text-wrap:balance}
+.blk{margin-bottom:44px}
+.blk .caps{display:block;margin-bottom:14px}
+.blk .hero{font-family:var(--serif);font-size:22px;line-height:1.45;margin-bottom:14px}
+.blk p{font-family:var(--serif);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text)}
+@media (max-width:480px){
+  .lead{font-size:21px;margin-bottom:36px}
+  .blk .hero{font-size:19px}
+}
+/* программа */
+h2.section{font-size:26px;margin-bottom:6px}
+.section-sub{color:var(--dim);font-size:14px;margin-bottom:36px}
+.day{margin-bottom:26px}
+.day .d{font-weight:500;font-size:15px}
+.day .w{color:var(--dim);font-size:13px;margin:2px 0 6px}
+.day p{font-family:var(--serif);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text)}
+/* ночёвка: служебная строка под текстом дня */
+.day .stay{font-family:var(--sans);font-size:13px;line-height:1.5;color:var(--dim);margin-top:10px}
+.day .stay b{font-weight:500;color:var(--ink)}
+/* быт */
+.byt p{font-family:var(--serif);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text);margin-bottom:18px}
+h3.sub{font-size:19px;margin:28px 0 12px}
+/* почему именно сюда */
+.why p{font-family:var(--serif);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text);margin-bottom:18px}
+.why h3.sub:first-of-type{margin-top:0}
+.why a,.day a,.byt a,.cap a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+/* границы */
+.cols{display:flex;gap:48px;flex-wrap:wrap;margin-top:8px}
+.cols>div{flex:1;min-width:240px}
+.cols ul{list-style:none}
+.cols li{font-size:15px;padding:9px 0;border-bottom:1px solid var(--line)}
+/* условия */
+.terms p{font-family:var(--serif);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text);margin-bottom:14px}
+.contact{margin-top:56px}
+.contact-page{align-items:center;text-align:center;padding-top:140px!important;padding-bottom:120px!important}
+.contact-links{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.contact-links a{
+  font-family:var(--sans);font-weight:400;
+  text-transform:uppercase;letter-spacing:.3em;font-size:12px;
+  color:var(--ink);text-decoration:none;
+  border-bottom:1px solid var(--line);padding-bottom:6px;
+}
+.contact-links a.mail{text-transform:none;letter-spacing:.05em}
+@media print{.contact-links a{border-bottom:0}}
+/* три кадра в ряд: на телефоне в столбец */
+.trio-sec{padding:0}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--edge)}
+.trio picture{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--line)}
+.trio img{display:block;width:100%;height:100%;object-fit:cover}
+.trio-sec .cap{text-align:center;color:var(--dim);margin-top:14px;padding-bottom:14px}
+@media (max-width:760px){
+  .trio{grid-template-columns:1fr}
+  .trio picture{aspect-ratio:3/2}
+}
+@media (max-width:768px){
+  .page{min-height:0;padding:64px var(--page-px)}
+  .page.compact{padding:40px var(--page-px)}
+  .contact-page{padding-top:64px!important;padding-bottom:56px!important}
+}
+@media (max-width:480px){
+  .cover .title{font-size:38px}
+  .cover .sub{font-size:18px;letter-spacing:.18em}
+  .cover .caps{font-size:13px}
+  .page{padding:56px 22px}
+  .page.compact{padding:36px 22px}
+  .contact-page{padding-top:56px!important;padding-bottom:48px!important}
+}
+@media (orientation: portrait) and (max-width:375px){
+  .cover.top .title{font-size:30px}
+  .cover.top .sub{font-size:14px;letter-spacing:.16em}
+}
+footer.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;padding:30px 32px 34px;border-top:1px solid var(--line);font-family:var(--sans);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+footer.foot .place{text-transform:none;letter-spacing:.04em;font-size:12px}
+/* печать */
+@page{size:A4;margin:0}
+@media print{
+  body{font-size:12.5pt;padding:0}
+  .photo-page:has(img.wide){height:297mm;min-height:297mm;display:block}
+  .photo-page:has(img.wide) picture{height:297mm;width:210mm}
+  .photo-page.fit{height:297mm;min-height:297mm;display:block}
+  .photo-page.fit picture,.photo-page.fit img{height:297mm;width:210mm;object-fit:cover}
+  .photo-page img.wide,.photo-page img.map{height:297mm;width:210mm;object-fit:contain;
+    -webkit-mask-image:none;mask-image:none}
+  .blk p,.day p,.byt p,.terms p,.why p{font-size:11pt;line-height:1.6}
+  .page{
+    max-width:none;min-height:auto;height:297mm;width:210mm;
+    margin:0;padding:26mm 24mm;page-break-after:always;
+  }
+  .photo-page{height:297mm;width:210mm;padding:0;page-break-after:always}
+  .photo-page picture,.photo-page img{height:297mm;width:210mm}
+  .page:last-child,.photo-page:last-child{page-break-after:auto}
+}
+
+/* плейсхолдеры вместо фотографий */
+.photo-page.ph{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:40px 24px;
+  min-height:46vh;min-height:46svh}
+.photo-page.cover.ph{min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge))}
+.photo-page.ph .tag{font-family:var(--sans);text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:var(--dim)}
+.photo-page.ph .txt{font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--text);max-width:30em}
+.photo-page.ph .spec{font-family:var(--sans);font-size:12px;color:var(--dim)}
+.mapsec{padding-top:clamp(56px,9vh,110px)!important}
+.mapsec.ph{padding-top:40px!important}
+/* суть: диптих, техника обложки */
+.lead-page{padding-top:var(--page-py);padding-bottom:40px;text-align:center}
+.lead-page .lead{margin-bottom:0}
+.lead-page .intro{font-family:var(--serif);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text);text-align:left;margin-top:36px;max-width:34em}
+.diptych{display:grid;grid-template-columns:1fr;gap:var(--edge);padding:0}
+.panel{position:relative;overflow:hidden;min-height:78svh;min-height:78vh;background:var(--ivory)}
+.panel picture,.panel img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.panel .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,10,.62) 0%,rgba(20,16,10,.25) 45%,rgba(20,16,10,0) 75%)}
+.panel .over{position:absolute;left:0;right:0;bottom:0;padding:36px 28px 34px;color:var(--ivory);text-shadow:0 0 22px rgba(0,0,0,.35)}
+.panel .num{font-family:var(--sans);text-transform:uppercase;letter-spacing:.3em;font-size:11px;opacity:.8;display:block;margin-bottom:14px}
+.panel .hero{font-family:var(--serif);font-size:26px;line-height:1.35;margin:0 0 14px;text-wrap:balance;max-width:16em}
+.panel .acc{font-family:var(--sans);font-size:13px;line-height:1.65;margin:0;max-width:34em;opacity:.88}
+/* пока фото нет: подложка слоновой кости, текст тёмный */
+.panel.nophoto{border:1px dashed var(--line)}
+.panel.nophoto .shade{display:none}
+.panel.nophoto .over{color:var(--ink);text-shadow:none}
+.panel.nophoto .num{color:var(--dim);opacity:1}
+.panel.nophoto .acc{color:var(--text-2);opacity:1}
+@media (min-width:900px){
+  .diptych{grid-template-columns:1fr 1fr}
+  .panel{min-height:calc(100vh - var(--edge));min-height:calc(100svh - var(--edge))}
+  .panel .over{padding:48px 44px 46px}
+  .panel .hero{font-size:30px}
+  .panel .acc{font-size:14px}
+}
+@media (max-width:480px){
+  .panel .over{padding:28px 22px 26px}
+  .panel .hero{font-size:22px}
+}
+/* диптих: фото целиком, без обрезки; текст под фото */
+.diptych.full .panel{min-height:0;display:flex;flex-direction:column;overflow:visible}
+.diptych.full .panel picture,.diptych.full .panel img{position:static;height:auto;width:100%}
+.diptych.full .panel .shade{display:none}
+.diptych.full .panel .over{position:static;padding:26px 24px 36px;color:var(--ink);text-shadow:none}
+.diptych.full .panel .num{color:var(--dim);opacity:1}
+.diptych.full .panel .acc{color:var(--text-2);opacity:1}
+@media (min-width:900px){
+  .diptych.full .panel{min-height:0;justify-content:center}
+  .diptych.full .panel .over{padding:30px 32px 40px}
+}
+@media screen and (orientation: portrait){
+  .photo-page + .photo-page{margin-top:6px}
+}

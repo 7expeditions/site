@@ -5,7 +5,18 @@
 Репозиторий = живой сайт: пуш в main автоматически выкладывается на Render.
 
 ## Что это за сайт
-Лендинг тур компании. Одна страница (index.html) + /assets. Машинный слой (JSON-LD, meta, alt) — главная функция, он кормит AI-поисковики.
+Сайт тур-компании: главная, раздел «Рыбалка», лендинги туров в /expeditions/. Машинный слой (JSON-LD, meta, alt) — главная функция, он кормит AI-поисковики.
+
+## Устройство (Astro, статическая сборка)
+- Сборка: `npm ci && npm run build` → папка `dist/`. Render публикует `dist/`. Проверка локально: `npm run build`, затем `npx astro preview`.
+- `src/styles/tokens.css` — единственное место палитры, шрифтов и общих отступов. `grain.css` — зерно.
+- `src/layouts/Base.astro` — общий head: charset, viewport, фавикон, шрифты Prata и Golos Text.
+- Лендинги: содержание — `src/content/landings/<адрес>.yaml` (адрес страницы = имя файла), разметка — `src/pages/expeditions/[slug].astro` и `src/components/landing/*`, стили — `src/styles/landing.css` (общие для всех лендингов). Схема полей — `src/content.config.ts`.
+  - `head` — title, description, og, canonical, robots, JSON-LD страницы как есть. `favicon: false` — страница без фавикона.
+  - Блоки (`blocks`, по порядку): `cover` (обязателен, первый), `why` «Почему именно сюда» (обязателен; без него сборка пишет предупреждение), `lead`, `diptych`, `map`, `day`, `photo` (mods: portrait, fit, wide; cap — подпись), `notes` (трансферы и т. п.), опционально `summary` (анонс по дням), `heading`, `trio` (три кадра), `placeholder` (место под фото). Контакт и подвал добавляются шаблоном.
+- Главная, «Рыбалка», каталог: `src/pages/index.astro`, `fishing/index.astro`, `catalogue/index.astro`; JSON-LD главной — `src/data/home.jsonld`, таблица каталога — `src/data/catalogue.html`.
+- Фото: `src/media/` повторяет адреса сайта (`src/media/expeditions/<адрес>/img/...` = `/expeditions/<адрес>/img/...`). В YAML пишется прежний адрес. Astro делает webp нескольких ширин (srcset); `m` — отдельный кадр для вертикального экрана, `pos`/`mpos` — точка кадра. Оригиналы копируются в `dist` по тем же адресам (og:image, «открыть карту крупно»).
+- `public/` копируется как есть: robots.txt, sitemap.xml, видео хиро, страницы вне шаблона (alberta-rockies-indigenous, alberta-rockies-alaska-indigenous, tuna-chinook-2027-21g, northeast-us-tuna-chinook).
 
 ## Пуш и деплой — главное правило
 - **`git push` — только по отдельной самостоятельной команде владельца** («пушь», «отправляй», «деплой»). Никогда по своей инициативе, никогда как часть другой задачи.
@@ -20,7 +31,8 @@
 - Секреты (токены, ключи, env-файлы) — никогда в файлы репозитория и коммиты. .gitignore не ослаблять.
 
 ## Технические нормы
-- Фото: /assets, resize ≤ 1600 px по длинной стороне, jpeg quality ~78; alt содержательный, с географией по факту кадра. Страница ≤ 10 МБ.
+- Фото: в `src/media` по адресу страницы, resize ≤ 1600 px по длинной стороне, jpeg quality ~78; alt содержательный, с географией по факту кадра. Страница ≤ 10 МБ.
+- Перед коммитом: `npm run build` проходит без ошибок.
 - Видео хиро: немое (без аудиодорожки), H.264 yuv420p, autoplay loop muted playsinline, poster обязателен, ≤ 6 МБ.
 - Скорость — актив: не добавлять CSS/JS/шрифты/запросы, утяжеляющие страницу; целевой LCP ~1 с.
 - После правки текстов и JSON-LD — проверить, что JSON-LD парсится без ошибок.

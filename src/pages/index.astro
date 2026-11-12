@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import Pic from '../components/Pic.astro';
+import '../styles/tokens.css';
+import '../styles/grain.css';
+import '../styles/home.css';
+import ld from '../data/home.jsonld?raw';
+const tile = '(max-width:760px) 100vw, 34vw';
+---
+<Base charset="UTF-8">
+<Fragment slot="head">
+<title>7 Expeditions — трофейные экспедиции по Северной Америке. Осётр реки Фрейзер</title>
+<meta name="description" content="Трофейные экспедиции по Северной Америке для русскоязычных групп: белый осётр на реке Фрейзер, лосось Британской Колумбии и Аляски, тунец Атлантики. Семь экспедиций в год. Организация — Вадим, Ванкувер, с 2009 года.">
+<link rel="canonical" href="https://7expeditions.com/">
+<meta property="og:title" content="7 Expeditions — трофейные экспедиции по Северной Америке">
+<meta property="og:description" content="Семь экспедиций в год. Белый осётр на Фрейзере и континент от Аляски до Техаса. С 2009 года.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://7expeditions.com/">
+<meta property="og:locale" content="ru_RU">
+</Fragment>
+<Fragment slot="head-end">
+<link rel="preload" as="image" href="assets/hero-poster.jpg" fetchpriority="high">
+<script type="application/ld+json" is:inline set:html={'\n' + ld}></script>
+</Fragment>
+
+<header class="hero">
+  <div class="hero-media" aria-hidden="true">
+    <video src="assets/hero.mp4" poster="assets/hero-poster.jpg" width="640" height="360" autoplay loop muted playsinline></video>
+  </div>
+  <div class="txt logo"><span class="w1">СЕМЬ&nbsp;</span><span class="w2">ЭКСПЕДИЦИЙ</span></div>
+  <div class="txt claim">
+    <div class="kicker">ЗДЕСЬ</div>
+    <div class="slogan">ВСЁ ПО&#8209;НАСТОЯЩЕМУ</div>
+  </div>
+  <div class="txt shot">* Все кадры сняты в наших экспедициях</div>
+</header>
+
+<section class="tiles reveal" aria-label="Направления">
+  <div class="tile">
+    <Pic pic={{ src: '/assets/tile-fishing.jpg', alt: 'Группа рыболовов с трофейным белым осетром в реке Фрейзер, Британская Колумбия' }} sizes={tile} />
+    <span class="tile-title">Трофейная рыбалка</span>
+  </div>
+  <div class="tile">
+    <Pic pic={{ src: '/assets/tile-heliski.jpg', alt: 'Вертолёт над заснеженным хребтом, лыжник на гребне перед спуском' }} sizes={tile} />
+    <span class="tile-title">Хелиски</span>
+  </div>
+  <div class="tile">
+    <Pic pic={{ src: '/assets/tile-expeditions.jpg', alt: 'Палаточный лагерь экспедиции на берегу океана с чёрным вулканическим песком' }} sizes={tile} />
+    <span class="tile-title">Экспедиции</span>
+  </div>
+</section>
+
+<section class="service reveal" aria-label="Полный сервис">
+  <h1>С 2009 года создаем экспедиции в Канаде и за её пределами</h1>
+  <p>За каждой стоят месяцы подготовки, поэтому наша команда проводит лишь несколько каждый год. Мы разрабатываем каждую экспедицию под ваш график, стандарты и стиль. От сезонных рекомендаций и брони лучших локаций до организации ВИП-лагерей, индивидуальной логистики, разрешений, личных шеф-поваров и эксклюзивных возможностей.</p>
+</section>
+
+<section class="contact" aria-label="Контакт">
+  <nav class="contact-links">
+    <a href="https://wa.me/17788553539">WhatsApp</a>
+    <a href="https://t.me/VadimRubinov">Telegram</a>
+    <a class="mail" href="mailto:explore@7expeditions.com">explore@7expeditions.com</a>
+  </nav>
+</section>
+
+<footer>
+  <div>© 7 Expeditions, 2009-2026</div>
+  <div class="place">Vancouver, Canada</div>
+</footer>
+
+<script is:inline>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.reveal')[0]?.classList.add('in');
+</script>
+</Base>

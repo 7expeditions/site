@@ -1,0 +1,17 @@
+---
+import Pic from '../Pic.astro';
+import { ratio } from '../../lib/media';
+const { b } = Astro.props;
+const mods: string[] = b.mods ?? [];
+const r = ratio(b.pic.src), rm = b.pic.m ? ratio(b.pic.m) : r;
+// какая ширина кадра нужна: обрезка по экрану (cover), целиком по высоте (portrait) или по ширине (fit, wide)
+const land = mods.includes('wide') ? '100vw'
+  : mods.includes('portrait') ? `min(100vw, ${Math.ceil(r * 100)}vh)`
+  : `max(100vw, ${Math.ceil(r * 100)}vh)`;
+const port = (rr: number) => mods.includes('fit') || mods.includes('wide') ? '100vw' : `max(100vw, ${Math.ceil(rr * 100)}vh)`;
+const sizes = b.pic.m ? land : `(orientation: portrait) ${port(r)}, ${land}`;
+---
+<section class:list={['photo-page', ...mods.filter(m => m !== 'wide')]}>
+  <Pic pic={b.pic} sizes={sizes} msizes={port(rm)} cls={mods.includes('wide') ? 'wide' : undefined} />
+  {b.cap && <p class="caps cap" set:html={b.cap} />}
+</section>

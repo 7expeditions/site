@@ -1,0 +1,151 @@
+head: |-
+  <title>Тунец и Чавыча — Одноэтажная Америка, 19–27 сентября 2027</title>
+  <meta property="og:image" content="https://7expeditions.com/expeditions/tuna-chinook-2027/img/og-chinook.jpg">
+favicon: false
+blocks:
+- type: cover
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/cover.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/cover.jpg
+    pos: 50% 45%
+  title: Тунец и Чавыча
+  sub: Одноэтажная Америка
+  caps: 19–27 сентября 2027
+- type: lead
+  text: Две лучшие рыбалки Северо-востока США
+- type: diptych
+  panels:
+  - pic:
+      src: /expeditions/tuna-chinook-2027/img/chinook.jpg
+      m: /expeditions/tuna-chinook-2027/img/m/chinook.jpg
+      alt: Трофейная чавыча на реке Salmon, Douglaston Salmon Run
+      pos: 50% 42%
+    num: I
+    hero: Трофейная чавыча до 45 фунтов на частном отрезке реки. Лучшая неделя в году.
+    acc: >-
+      Размещение в Douglaston Manor House, целиком под нашу группу. Дом принимал президентов и глав государств, и вряд ли какой-то рыболовный дом в Америке сравнится с ним по истории.
+  - pic:
+      src: /expeditions/tuna-chinook-2027/img/tuna.jpg
+      m: /expeditions/tuna-chinook-2027/img/m/tuna.jpg
+      alt: Гигантский синий тунец на борту, Атлантика у Чатема
+      pos: 55% 50%
+    num: II
+    hero: Гигантский синий тунец до 900 фунтов, в двух часах от Бостона.
+    acc: >-
+      Размещение в A Little Inn on Pleasant Bay, целиком под нашу группу. Девять номеров на первой линии залива, окна на воду и сад, интерьеры в новоанглийской палитре от Мэтью Йи.
+- type: map
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/map-tuna-chinook-en.svg
+    m: /expeditions/tuna-chinook-2027/img/m/map-tuna-chinook-en.svg
+    alt: 'Карта экспедиции: Кейп-Код, Атлантика и река Salmon'
+  href: /expeditions/tuna-chinook-2027/img/map-tuna-chinook-en.svg
+- type: day
+  d: 19 сентября, воскресенье
+  w: Бостон → Чатем
+  paras:
+  - >-
+    Трансфер из Бостона в Чатем. Едем за рулём на трёх-четырёх ретро-машинах шестидесятых и семидесятых, багаж идёт отдельной машиной. Дорога занимает столько, сколько нужно: останавливаемся у воды, в старых городках по пути, где захочется выйти.
+  - >-
+    Живём в A Little Inn on Pleasant Bay: девять номеров на первой линии залива, между Чатемом и Орлеаном. На эти дни гостиница целиком наша, с садом и террасой, других гостей нет.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/car.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/car.jpg
+    pos: 50% 60%
+  mods:
+  - fit
+- type: day
+  d: 20 сентября, понедельник
+  w: Гигантский синий тунец · банки восточнее Чатема
+  paras:
+  - >-
+    Синий тунец стоит на банках восточнее Чатема с июня по ноябрь. Гигант, самая крупная рыба, какую берут на удочку в Атлантике, ходит здесь же, а гавань в двух часах от бостонского аэропорта.
+  - >-
+    Трофей ждём в дрейфе с живцом, под снасть на 60 килограммов. Тунец поменьше, от 30 до 100 килограммов, ходит по птичьим котлам, и его берут спиннингом и джигом. Такого разрешено забирать.
+  - Вечер после океана проходит в городке на берегу залива, с ресторанами и садом у воды.
+  - В первый день выходим рано утром на трёх шхунах с прицелом на большой трофей.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/rod.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/rod.jpg
+    pos: 40% 50%
+- type: day
+  d: 21 сентября, вторник
+  w: По результатам первого дня
+  paras:
+  - >-
+    Решаем по итогам первого дня: или снова за гигантом, или тунец на 30–100 килограммов спиннингом по птичьим котлам. Трофей или количество.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/sunset.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/sunset.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: day
+  d: 22 сентября, среда
+  w: Резерв
+  paras:
+  - >-
+    Резерв под погоду. Если оба дня состоялись, третий день рыбалки по выбору группы или отдых.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/jet.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/jet.jpg
+    pos: 50% 60%
+  mods:
+  - fit
+- type: day
+  d: 23 сентября, четверг
+  w: Чатем → Oswego → Douglaston Manor
+  paras:
+  - Чартерный рейс из Chatham, MA в Oswego, NY, примерно час пятнадцать.
+  - >-
+    Douglaston Manor стоит над устьем на земле, которая с 1807 года принадлежит одной семье, и первым её хозяином был адъютант Вашингтона. Седьмое поколение семьи держит здесь частную рыболовную воду: четыре километра реки от озера вверх, единственный закрытый участок на всей реке, куда рыба заходит первой и где на берегу только свои. Дом на восемь спален, кухня, столовая, причал, спуск к воде. На эти дни он сдаётся целиком, одной компании.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/manor.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/manor.jpg
+    pos: 47% 60%
+- type: day
+  d: 24–26 сентября, пятница, суббота, воскресенье
+  w: Douglaston Salmon Run · три рыболовных дня
+  paras:
+  - >-
+    За чавычей принято лететь на Аляску. Меньше известно, что в озере Онтарио живёт её полноценная пресноводная популяция: каждую осень рыба 20–40 фунтов заходит из озера в реку Salmon. Река держит рекорд Великих озёр по чавыче, 47,8&nbsp;фунта, и мировой рекорд по кижучу, 33,3&nbsp;фунта. И сюда час лёта от Нью-Йорка.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/chinook-record.jpg
+  mods:
+  - wide
+- type: day
+  paras:
+  - >-
+    Ход короткий, пик приходится на вторую половину сентября и первую половину октября. Рыба, только что вошедшая из озера, ещё не растратила силу в реке.
+  - >-
+    У самого устья лежат 2,5 мили частной воды, единственный закрытый участок на всех 17 милях реки. Рыба проходит здесь первой, прямо из озера, и вода целиком в распоряжении гостей дома. Ловля вброд, с гидами, обед на берегу. На воду выходим пешком, от дома до реки несколько сотен ярдов.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/release.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/release.jpg
+    pos: 50% 50%
+  mods:
+  - portrait
+- type: day
+  compact: true
+  d: 27 сентября, понедельник
+  w: Syracuse
+  paras:
+  - >-
+    Вылет по своим маршрутам, из Сиракуз в Нью-Йорк или Бостон регулярными рейсами или чартером.
+- type: notes
+  title: Трансферы
+  paras:
+  - Boston, MA → Chatham, MA · 150 км, авто или чартер.
+  - Chatham, MA → Oswego, NY · чартер, 1 час 15 мин.
+  - Syracuse, NY → New York, NY или Boston, MA · 1 час, регулярные рейсы.
+- type: photo
+  pic:
+    src: /expeditions/tuna-chinook-2027/img/river.jpg
+    m: /expeditions/tuna-chinook-2027/img/m/river.jpg
+    pos: 50% 50%

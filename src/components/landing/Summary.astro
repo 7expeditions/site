@@ -1,0 +1,7 @@
+---
+// анонс по дням
+const { b } = Astro.props;
+---
+<section class="page compact">
+  <div class="day">{b.paras.map((p: string) => <p set:html={p} />)}</div>
+</section>

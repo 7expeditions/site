@@ -1,0 +1,35 @@
+---
+// Лендинги: /expeditions/<адрес>/ из src/content/landings/<адрес>.yaml
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import '../../styles/tokens.css';
+import '../../styles/grain.css';
+import '../../styles/landing.css';
+import Cover from '../../components/landing/Cover.astro';
+import Lead from '../../components/landing/Lead.astro';
+import Diptych from '../../components/landing/Diptych.astro';
+import MapSec from '../../components/landing/MapSec.astro';
+import Day from '../../components/landing/Day.astro';
+import Photo from '../../components/landing/Photo.astro';
+import Trio from '../../components/landing/Trio.astro';
+import Notes from '../../components/landing/Notes.astro';
+import Why from '../../components/landing/Why.astro';
+import Summary from '../../components/landing/Summary.astro';
+import Heading from '../../components/landing/Heading.astro';
+import Placeholder from '../../components/landing/Placeholder.astro';
+import Contact from '../../components/landing/Contact.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('landings');
+  return pages.map(p => ({ params: { slug: p.id }, props: { page: p.data, slug: p.id } }));
+}
+const { page, slug } = Astro.props;
+const C: Record<string, any> = { cover: Cover, lead: Lead, diptych: Diptych, map: MapSec, day: Day, photo: Photo,
+  trio: Trio, notes: Notes, why: Why, summary: Summary, heading: Heading, placeholder: Placeholder };
+if (!page.blocks.some((b: any) => b.type === 'why'))
+  console.warn(`\x1b[33m[лендинг ${slug}] нет блока «Почему именно сюда» (type: why) — нужен текст от владельца\x1b[0m`);
+---
+<Base head={page.head} icon={page.favicon ? 'seven' : 'off'}>
+  {page.blocks.map((b: any) => { const X = C[b.type]; return <X b={b} />; })}
+  <Contact />
+</Base>

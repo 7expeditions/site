@@ -1,0 +1,16 @@
+---
+import Pic from '../Pic.astro';
+const { b } = Astro.props;
+const svg = b.pic.src.endsWith('.svg');
+---
+<section class="photo-page mapsec">
+  {b.href
+    ? <a href={b.href} target="_blank" rel="noopener" style="display:block"><Pic pic={b.pic} cls={svg ? 'wide map' : 'wide'} /></a>
+    : <Pic pic={b.pic} cls={svg ? 'wide map' : 'wide'} />}
+  {(b.cap || b.link) && (
+    <p class="caps cap">
+      {b.cap && <span set:html={b.cap} />}
+      {b.link && b.href && <>{b.cap && ' · '}<a href={b.href} target="_blank" rel="noopener" set:html={b.link} /></>}
+    </p>
+  )}
+</section>

@@ -1,0 +1,11 @@
+---
+const { b } = Astro.props;
+---
+<section class:list={['page', { compact: b.compact }]}>
+  <div class="day">
+    {b.d && <div class="d" set:html={b.d} />}
+    {b.w && <div class="w" set:html={b.w} />}
+    {b.paras.map((p: string) => <p set:html={p} />)}
+    {b.stay && <p class="stay" set:html={b.stay} />}
+  </div>
+</section>

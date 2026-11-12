@@ -1,0 +1,13 @@
+---
+// Служебный каталог страниц (закрыт в robots.txt). Таблица — src/data/catalogue.html.
+import Base from '../../layouts/Base.astro';
+import '../../styles/catalogue.css';
+import body from '../../data/catalogue.html?raw';
+---
+<Base charset="UTF-8" fonts="none" icon="none">
+<Fragment slot="head">
+<title>Каталог страниц | 7 Expeditions</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+</Fragment>
+<Fragment set:html={body} />
+</Base>

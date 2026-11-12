@@ -1,0 +1,33 @@
+---
+// Общий каркас всех страниц: head (шрифты, фавикон). Палитра (tokens.css) и зерно (grain.css) подключает страница.
+// Свой head страницы (title, description, og, canonical, robots, JSON-LD) передаётся как есть.
+interface Props {
+  head?: string;                      // готовый HTML из содержания страницы
+  fonts?: 'all' | 'golos' | 'none';
+  icon?: 'seven' | 'none' | 'off';   // off — без фавикона
+  charset?: string;
+}
+const { head, fonts = 'all', icon = 'seven', charset = 'utf-8' } = Astro.props;
+const FONT_URL = {
+  all: 'https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500&display=swap',
+  golos: 'https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap',
+};
+const ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23221E18'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='20' fill='%23F1EDE4' text-anchor='middle'%3E7%3C/text%3E%3C/svg%3E";
+---
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset={charset}>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{head && <Fragment set:html={head} />}
+<slot name="head" />
+{icon !== 'off' && <link rel="icon" href={icon === 'seven' ? ICON : 'data:,'}>}
+{fonts !== 'none' && <link rel="preconnect" href="https://fonts.googleapis.com">}
+{fonts !== 'none' && <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>}
+{fonts !== 'none' && <link href={FONT_URL[fonts]} rel="stylesheet">}
+<slot name="head-end" />
+</head>
+<body>
+<slot />
+</body>
+</html>

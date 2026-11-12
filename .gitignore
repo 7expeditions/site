@@ -1,1 +1,4 @@
 env.txt
+node_modules/
+dist/
+.astro/

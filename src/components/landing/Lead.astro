@@ -1,0 +1,7 @@
+---
+const { b } = Astro.props;
+---
+<section class="page lead-page">
+  <h1 class="lead" set:html={b.text} />
+  {b.intro && <p class="intro" set:html={b.intro} />}
+</section>

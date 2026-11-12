@@ -1,0 +1,7 @@
+---
+const { b } = Astro.props;
+---
+<section class="page byt">
+  {b.title && <div class="caps" style="margin-bottom:40px" set:html={b.title} />}
+  {b.paras.map((p: string) => <p set:html={p} />)}
+</section>

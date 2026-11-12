@@ -1,0 +1,9 @@
+---
+// место под фото, которого пока нет
+const { b } = Astro.props;
+---
+<section class:list={['photo-page', 'ph', { mapsec: b.map, cover: b.cover }]}>
+  <div class="tag" set:html={b.tag} />
+  <div class="txt" set:html={b.txt} />
+  {b.spec && <div class="spec" set:html={b.spec} />}
+</section>

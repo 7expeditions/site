@@ -1,0 +1,68 @@
+/* Главная. Палитра, шрифты, поля — в tokens.css, зерно — в grain.css. */
+*{margin:0;padding:0;box-sizing:border-box}
+::selection{background:var(--char);color:var(--ivory)}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--char);font-family:var(--body);
+  font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.hero{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+.hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.92)}
+.hero-media::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.22);pointer-events:none}
+.hero .logo{position:absolute;top:40px;left:64px;
+  font-family:var(--body);font-size:15px;letter-spacing:.32em;
+  color:var(--ivory);text-transform:uppercase;white-space:nowrap}
+.hero .logo .w1{font-weight:500}
+.hero .logo .w2{font-weight:400;opacity:.85}
+.hero .txt{text-shadow:0 0 2px rgba(0,0,0,.5),0 2px 28px rgba(0,0,0,.45)}
+.hero .claim{position:absolute;left:64px;top:50%;transform:translateY(-60%)}
+.hero .kicker{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  font-size:clamp(12px,1.05vw,16px);letter-spacing:.42em;color:var(--ivory);opacity:.9;margin-bottom:14px;margin-left:.035em}
+.hero .slogan{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  font-size:clamp(28px,2.5vw,44px);letter-spacing:.04em;line-height:1.16;color:var(--ivory)}
+.hero .shot{position:absolute;left:64px;bottom:44px;
+  font-family:var(--body);font-weight:400;font-size:11.5px;
+  letter-spacing:.06em;color:#E4DED2;white-space:nowrap}
+@media(max-width:768px){
+  .hero .logo,.hero .claim,.hero .shot{left:24px}
+  .hero .claim{right:24px}
+  .hero .kicker{margin-bottom:10px}
+}
+@media(max-width:359px){.hero .slogan{font-size:24px}}
+
+.service{padding:clamp(4.5rem,13svh,8.5rem) var(--g);text-align:center}
+.service h1{font-family:var(--display);font-weight:400;max-width:52rem;margin:0 auto;
+  text-transform:uppercase;letter-spacing:.08em;color:#4A4338;-webkit-text-stroke:.3px currentColor;
+  font-size:clamp(1.1rem,1.4vw,1.35rem);line-height:1.5;text-wrap:balance}
+.service p{margin:clamp(1.8rem,4vh,2.6rem) auto 0;max-width:44rem;
+  font-family:var(--display);font-weight:400;color:#4A4338;
+  font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75}
+
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--edge);padding:var(--edge) var(--edge) 0}
+.tile{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--umber)}
+.tile img{width:100%;height:100%;object-fit:cover}
+.tile::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(24,20,15,.16), rgba(24,20,15,.06))}
+.tile-title{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;
+  transform:translateY(9%);
+  font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.2em;
+  color:var(--ivory);text-align:center;text-shadow:0 0 3px rgba(24,20,15,.55),0 2px 20px rgba(24,20,15,.6);
+  font-size:clamp(1rem,1.3vw,1.25rem);line-height:1.4;padding:0 .8rem}
+@media(max-width:760px){.tiles{grid-template-columns:1fr}}
+
+.contact{padding:clamp(3.5rem,9svh,6rem) var(--g) clamp(2.5rem,6svh,4rem);text-align:center}
+.contact-links{display:flex;gap:clamp(2rem,6vw,4.6rem);justify-content:center;flex-wrap:wrap}
+.contact-links a{color:var(--char);text-decoration:none;
+  font-size:.84rem;letter-spacing:.3em;text-transform:uppercase;
+  padding-bottom:.55rem;border-bottom:1px solid var(--line);transition:border-color .4s}
+.contact-links a:hover,.contact-links a:focus-visible{border-color:var(--char);outline:none}
+.contact-links a.mail{text-transform:none;letter-spacing:.08em}
+
+footer{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:baseline;
+  padding:1.9rem 0 2.2rem;margin:0 var(--edge);border-top:1px solid var(--line);
+  font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--umber)}
+footer .place{text-transform:none;letter-spacing:.06em}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media(max-width:640px){.contact-links{flex-direction:column;align-items:center;gap:1.7rem}}

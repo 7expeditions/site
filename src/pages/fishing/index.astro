@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import Pic from '../../components/Pic.astro';
+import '../../styles/tokens.css';
+import '../../styles/grain.css';
+import '../../styles/fishing.css';
+---
+<Base charset="UTF-8" fonts="golos">
+<Fragment slot="head">
+<title>Рыбалка | 7 Expeditions</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://7expeditions.com/fishing/">
+</Fragment>
+
+<header class="top">
+  <div class="logo"><span class="w1">СЕМЬ&nbsp;</span><span class="w2">ЭКСПЕДИЦИЙ</span></div>
+</header>
+
+<h1>Рыбалка</h1>
+
+<section class="tiles" aria-label="Рыболовные туры">
+  <a class="tile" href="/expeditions/northeast-us-tuna-chinook/">
+    <Pic pic={{ src: '/fishing/img/tuna-chinook-cover.jpg', alt: 'Аэрофото реки с лесистыми берегами — экспедиция за тунцом и чавычой по северо-востоку США' }} sizes="(max-width:760px) 100vw, 25vw" />
+    <span class="tile-title">Тунец и Чавыча восточного побережья США</span>
+  </a>
+</section>
+
+<footer>
+  <div>© 7 Expeditions, 2009-2026</div>
+  <div class="place">Vancouver, Canada</div>
+</footer>
+</Base>

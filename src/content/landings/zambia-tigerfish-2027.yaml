@@ -1,0 +1,223 @@
+head: |-
+  <title>Тайгерфиш в Замбии | 7 Expeditions</title>
+  <meta name="description" content="Частный тур: водопад Виктория и рыбалка на тайгерфиш в Нижнем Замбези. Восемь дней, два лоджа, три коротких перелёта.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Тайгерфиш в Замбии | 7 Expeditions">
+  <meta property="og:description" content="Частный тур. Восемь дней, семь ночей. Конец сентября, начало октября 2027.">
+  <meta property="og:image" content="https://7expeditions.com/expeditions/zambia-tigerfish-2027/img/cover.jpg">
+favicon: false
+blocks:
+- type: cover
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/cover.jpg
+    alt: Рыбак с тайгерфиш на лодке, Нижний Замбези
+    pos: 50% 40%
+    mpos: 50% 50%
+    m: /expeditions/zambia-tigerfish-2027/img/cover-m.jpg
+  title: Тайгерфиш в Замбии
+  sub: Частный тур
+  caps: Восемь дней, семь ночей. Конец сентября, начало октября 2027.
+- type: summary
+  paras:
+  - |-
+    <b>День 1.</b> Прилёт в Лусаку, перелёт в Ливингстон.<br/>
+    <b>День 2.</b> Водопад Виктория с двух сторон.<br/>
+    <b>День 3.</b> Чартер в Royal Zambezi Lodge, рыбалка.<br/>
+    <b>День 4.</b> Рыбалка.<br/>
+    <b>День 5.</b> Рыбалка.<br/>
+    <b>День 6.</b> Сафари.<br/>
+    <b>День 7.</b> Рыбалка.<br/>
+    <b>День 8.</b> Утренняя рыбалка, вылет.
+- type: map
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/map.jpg
+    alt: 'Карта маршрута: Лусака, Ливингстон, озеро Кариба, Royal Zambezi Lodge в Нижнем Замбези'
+  href: /expeditions/zambia-tigerfish-2027/img/map-full.jpg
+  cap: Маршрут. Цифрами отмечены дни.
+  link: Открыть карту крупно
+- type: why
+  title: Почему именно сюда
+  items:
+  - h: Рыба
+    html: >-
+      Тайгерфиш желанная добыча для всех рыбаков. Хищник с зубами, который бьёт блесну на скорости и сразу выходит в свечку. Мест, где его ловят, около десяти, и все они в Африке. <b>Мы перебрали их все и сознательно выбрали Нижний Замбези.</b> Тайгерфиш здесь стоит в течении, в предсказуемых местах: за косами, в обратках, на выходах из проток. Это заброс и активная проводка, много поклёвок за день, а рыба в течении сильнее и прыгучее озёрной. Средний размер 3&#8209;4&nbsp;кг, удачный трофей до 7&nbsp;кг, рекордный 11&nbsp;кг. Гиды знают ямы и косы, где стоит крупная рыба. <b>Здесь единственное место, где такая рыбалка сочетается с лоджем уровня люкс, простой логистикой и безопасной средой.</b>
+  - h: Время
+    html: >-
+      Конец сентября и начало октября это <b>пик сезона</b>. Сухой сезон, вода низкая, тёплая и прозрачная, рыба выходит на косы и в протоки и агрессивно кормится перед нерестом. Те же недели лучшие и для сафари: трава выгорела, звери держатся у реки. Водопад в это время маловодный, зато открыты Livingstone Island и Купель дьявола на самой кромке.
+  - h: Лодж
+    html: >-
+      <b><a href="https://www.royalzambezilodge.com/" rel="noopener" target="_blank">Royal Zambezi Lodge</a> лучший на реке по сочетанию люкса и рыбалки:</b> собственная флотилия до восьми лодок и местные рыболовные гиды. 14&nbsp;сьютов, группа размещается в синглах без выкупа лоджа. Спиннинговые снасти предоставляются, но можно привезти свои. <b>Запасной вариант на том же участке, <a href="https://www.bainesrivercamp.com/" rel="noopener" target="_blank">Baines’ River Camp</a>:</b> тот же формат рыбалки с выделенным гидом и лодкой на группу, уровень номеров ниже, группа занимает лагерь целиком. Первые две ночи живём в пятизвёздочном <a href="https://www.anantara.com/en/royal-livingstone" rel="noopener" target="_blank">Royal Livingstone by Anantara</a>, отеле на территории нацпарка Моси&#8209;оа&#8209;Тунья с собственным выходом к водопаду.
+  - h: Безопасность
+    html: >-
+      <b>Замбия одна из самых спокойных стран Африки, без конфликтов и без главных африканских болезней.</b> Эболы здесь не было ни разу. Жёлтой лихорадки в стране нет, сертификат для въезда из Казахстана не нужен. Малярия: конец сентября это конец сухого сезона, комаров минимум; лодж просит репеллент и длинные рукава на вечер и советует обсудить профилактику с врачом за шесть недель до выезда.
+  - h: Логистика
+    html: >-
+      Из Казахстана <b>одна пересадка</b>: Emirates через Дубай или Qatar Airways через Доху. Внутри страны всё очень просто: чартеры с полосы на полосу, точки рыбалки в 5&#8209;15&nbsp;минутах от лоджа.
+  - h: Виза
+    html: >-
+      <b>Единая виза KAZA UniVisa</b> действует в Замбии, Зимбабве и Ботсване. Оформляется заранее <b>онлайн</b> или по прилёте в Лусаке, без приглашений и собеседований, за несколько минут.
+- type: heading
+  text: Программа
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d01-angling.jpg
+    alt: Рыбаки с гидом на лодке Royal Zambezi Lodge на Замбези
+  mods:
+  - fit
+  cap: На воде. Фото Royal Zambezi Lodge.
+- type: day
+  d: День 1
+  w: Лусака, Ливингстон.
+  paras:
+  - >-
+    Прилёт в Лусаку, иммиграция, пересадка на <a href="https://proflight-zambia.com/" rel="noopener" target="_blank">Proflight</a> (регулярный, 1&nbsp;ч) или чартер в Ливингстон. Трансфер 20&nbsp;мин в <a href="https://www.anantara.com/en/royal-livingstone" rel="noopener" target="_blank">Royal Livingstone by Anantara</a>: отель на самом водопаде, свой вход, брызги видны с террас. Вечером закатный круиз по Замбези от отельного причала.
+  stay: <b>Ночь.</b> Royal Livingstone by Anantara.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d01-hotel.jpg
+    alt: Корпуса Royal Livingstone by Anantara и зебры на лужайке
+  mods:
+  - fit
+  cap: Royal Livingstone by Anantara. Фото отеля.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d02-falls.jpg
+    alt: Водопад Виктория и радуга, вид с зимбабвийской стороны
+  mods:
+  - fit
+  cap: Водопад Виктория. Зимбабвийская сторона.
+- type: day
+  d: День 2
+  w: Водопад Виктория, полный день.
+  paras:
+  - >-
+    Утро: вертолётный облёт водопада и ущелья Батока с замбийской стороны, 10&nbsp;мин от отеля. Затем микроавтобусом через границу в Зимбабве, пешая прогулка вдоль полноводной стороны водопада, 2&nbsp;часа. Обед на террасе Victoria Falls Hotel с видом на мост и столб брызг. К 15:00 возвращение в отель, бассейн, SPA у реки. Вечером ужин на лужайке с видом на Замбези.
+  stay: <b>Ночь.</b> Royal Livingstone by Anantara.
+- type: trio
+  pics:
+  - src: /expeditions/zambia-tigerfish-2027/img/d02-heli.jpg
+    alt: Водопад Виктория, ущелье и мост с вертолёта
+  - src: /expeditions/zambia-tigerfish-2027/img/d02-bridge.jpg
+    alt: Мост через ущелье Замбези между Замбией и Зимбабве
+  - src: /expeditions/zambia-tigerfish-2027/img/d02-gorge.jpg
+    alt: Водопад Виктория и мост, вид со стороны Зимбабве
+  cap: С вертолёта. Мост в Зимбабве. Первое ущелье.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d03-charter.jpg
+    alt: Экипаж чартера у самолёта на полосе Royal Airstrip
+    mpos: 37% 50%
+  mods:
+  - fit
+  cap: Royal Airstrip. Фото Royal Zambezi Lodge.
+- type: day
+  d: День 3
+  w: Livingstone Island, Royal Zambezi Lodge.
+  paras:
+  - >-
+    07:30 лодка от причала отеля на Livingstone Island: выход на кромку водопада и Angel’s Pool, завтрак на острове, к 09:30 в отеле. 11:00 чартер из Ливингстона на Royal Airstrip (около 1&nbsp;ч 45&nbsp;мин), трансфер в <a href="https://www.royalzambezilodge.com/" rel="noopener" target="_blank">Royal Zambezi Lodge</a> 10&nbsp;мин. Обед, размещение в 10 синглах, инструктаж рыболовных гидов. 15:30 первая сессия на воде для рыбаков; для остальных закатный круиз по реке.
+  stay: <b>Ночь.</b> Royal Zambezi Lodge.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d03-deck.jpg
+    alt: Гость на деке сьюта Royal Zambezi Lodge смотрит на реку
+  mods:
+  - portrait
+  cap: Дек сьюта над рекой. Фото Royal Zambezi Lodge.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d04-tiger1.jpg
+    alt: Рыбак держит крупную тигровую рыбу на лодке, Нижний Замбези
+    pos: 50% 65%
+    mpos: 80% 50%
+  cap: Тайгерфиш. Нижний Замбези.
+- type: day
+  d: День 4
+  w: Рыбалка, первый день.
+  paras:
+  - >-
+    Вся группа на воде. С 06:00 до 11:00 и с 15:30 до 18:30, лодки по два&#8209;три человека с рыболовным гидом, спиннинг/нахлыст. Первый день это знакомство с рекой: косы и обратки у лоджа, техника проводки, работа с тигром на вываживании. Днём отдых у бассейна.
+  stay: <b>Ночь.</b> Royal Zambezi Lodge.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d04-tiger2.jpg
+    alt: Рыбак с тигровой рыбой в лодке, удилища на фоне неба
+    pos: 50% 70%
+  mods:
+  - portrait
+  cap: Тайгерфиш. Нижний Замбези.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d05-tiger.jpg
+    alt: Двое рыбаков с крупной тигровой рыбой на лодке, Замбези
+    pos: 50% 60%
+    mpos: 0% 50%
+  cap: Тайгерфиш. Нижний Замбези.
+- type: day
+  d: День 5
+  w: Рыбалка, второй день.
+  paras:
+  - >-
+    Вся группа на воде. Смена участков: протоки и песчаные косы выше лоджа, где стоит крупная рыба. Вечерняя сессия на глубоких ямах, вунду на тяжёлую снасть по желанию.
+  stay: <b>Ночь.</b> Royal Zambezi Lodge.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d06-lodge.jpg
+    alt: Слон у гостевой зоны Royal Zambezi Lodge
+  mods:
+  - fit
+  cap: Слон в гостевой зоне лоджа. Фото Royal Zambezi Lodge.
+- type: day
+  d: День 6
+  w: Сафари&#8209;день для всей группы.
+  paras:
+  - >-
+    05:30 выезд в Нижний Замбези на трёх машинах: слон, буйвол, лев, дикие собаки. Бушевой завтрак. Днём бассейн. 16:00 лодочное сафари по каналам к устью Чонгве, закат на воде. Ужин на острове посреди реки.
+  stay: <b>Ночь.</b> Royal Zambezi Lodge.
+- type: trio
+  pics:
+  - src: /expeditions/zambia-tigerfish-2027/img/d06-elephants.jpg
+    alt: Слоны купаются в Замбези
+  - src: /expeditions/zambia-tigerfish-2027/img/d06-dogs.jpg
+    alt: Дикие собаки на песке, Зимбабве
+  - src: /expeditions/zambia-tigerfish-2027/img/d06-lion.jpg
+    alt: Львица под деревом, Замбия
+  cap: Слоны в реке. Дикие собаки. Львица.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d05-valley.jpg
+    alt: Долина Замбези, деревья на острове и горы на дальнем берегу
+  mods:
+  - fit
+  cap: Долина Замбези. Горы Мана&#8209;Пулс на дальнем берегу.
+- type: day
+  d: День 7
+  w: Рыбалка, третий день. Вертолёт и SPA.
+  paras:
+  - >-
+    Рыбаки: дальний выход вниз к границе парка, полный день с обедом на острове; здесь самые старые тигры.
+  - >-
+    Для тех, кто не хочет больше ловить: утром вертолётный облёт горного уступа над Замбези и долины Мана&#8209;Пулс (4 человека на рейс), после обеда SPA, вечером ночной драйв с прожектором.
+  stay: <b>Ночь.</b> Royal Zambezi Lodge.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d08-tiger.jpg
+    alt: Рыбак с крупной тигровой рыбой на Замбези
+    pos: 50% 45%
+  cap: Тайгерфиш. Нижний Замбези.
+- type: day
+  d: День 8
+  w: Рыбалка, четвёртый день. Утренний драйв. Вылет.
+  paras:
+  - 'Рыбаки: с 06:00 до 10:00, последний шанс на трофей.'
+  - >-
+    Для тех, кто не хочет больше ловить: утренний сафари&#8209;драйв в парк с бушевым завтраком.
+  - Обед, чартер 35&nbsp;мин в Лусаку, международный вылет вечером.
+- type: photo
+  pic:
+    src: /expeditions/zambia-tigerfish-2027/img/d08-sunset.jpg
+    alt: Закат над Замбези, горы на горизонте
+  mods:
+  - fit
+  cap: Закат над Замбези.
