@@ -1,7 +1,10 @@
 /* Главная. Палитра, шрифты, поля — в tokens.css, зерно — в grain.css. */
 *{margin:0;padding:0;box-sizing:border-box}
 ::selection{background:var(--char);color:var(--ivory)}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+.hero,.screen{scroll-snap-align:start;scroll-margin-top:var(--edge)}
+.last{min-height:100svh;display:flex;flex-direction:column;scroll-snap-align:start}
+.last .service{flex:1;display:flex;flex-direction:column;justify-content:center}
 body{background:var(--bg);color:var(--char);font-family:var(--body);
   font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .hero{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;isolation:isolate}
@@ -34,7 +37,7 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
 
 /* Лого и контакты закреплены на всех экранах. Цвет: светлый над фото, тёмный над светлым фоном (.dark). */
 .fixed-ui{position:fixed;z-index:10;color:var(--ivory);text-decoration:none;
-  text-shadow:0 0 2px rgba(0,0,0,.5),0 2px 28px rgba(0,0,0,.45);
+  text-shadow:0 0 2px rgba(0,0,0,.35),0 1px 12px rgba(0,0,0,.25);
   transition:color .4s,text-shadow .4s,opacity .4s,visibility .4s}
 .fixed-ui.dark{color:var(--ink);text-shadow:none}
 .logo{top:calc(var(--edge) + 40px);left:calc(var(--edge) + 64px);
@@ -46,16 +49,26 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
   text-transform:uppercase;padding-bottom:.4rem;border-bottom:1px solid transparent;transition:border-color .4s}
 .dock a:hover,.dock a:focus-visible{border-color:currentColor;outline:none}
 .dock.off{opacity:0;visibility:hidden}
+/* Подложка цвета страницы под лого и контактами — только над светлым фоном, чтобы текст не наезжал. */
+.band{left:0;right:0;z-index:9;background:var(--bg);opacity:0;pointer-events:none}
+.band.dark{opacity:1}
+.band.off{opacity:0}
+.band-top{top:0;height:calc(var(--edge) + 84px)}
+.band-bottom{display:none}
 @media(min-width:769px){.dock{top:calc(var(--edge) + 40px);right:calc(var(--edge) + 64px);line-height:22px}}
 @media(max-width:768px){
   .logo{left:calc(var(--edge) + 24px)}
   .dock{left:0;right:0;bottom:calc(18px + env(safe-area-inset-bottom));justify-content:center;gap:3rem}
+  .band-top{height:calc(var(--edge) + 80px)}
+  .band-bottom{display:block;bottom:0;height:calc(58px + env(safe-area-inset-bottom))}
 }
 
 /* Три экрана «что мы делаем»: кадр на весь экран, рамка как у хиро. */
 .screen{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;
   overflow:hidden;background:var(--umber);isolation:isolate}
 .screen picture,.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.screen::before{content:"";position:absolute;left:0;right:0;top:0;height:32%;z-index:1;pointer-events:none;
+  background:linear-gradient(to bottom, rgba(24,20,15,.45), rgba(24,20,15,0))}
 .screen::after{content:"";position:absolute;inset:0;
   background:linear-gradient(to top, rgba(24,20,15,.38), rgba(24,20,15,.08) 55%)}
 .screen-txt{position:absolute;left:64px;bottom:72px;z-index:1;max-width:30rem;color:var(--ivory);

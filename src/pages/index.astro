@@ -30,6 +30,8 @@ const screens = [
 <script type="application/ld+json" is:inline set:html={'\n' + ld}></script>
 </Fragment>
 
+<div class="band band-top fixed-ui" aria-hidden="true"></div>
+<div class="band band-bottom fixed-ui" aria-hidden="true"></div>
 <a class="logo fixed-ui" href="#top" aria-label="7 Expeditions — наверх"><span class="w1">СЕМЬ&nbsp;</span><span class="w2">ЭКСПЕДИЦИЙ</span></a>
 <nav class="dock fixed-ui" aria-label="Связаться">
   <a href="https://wa.me/17788553539">WhatsApp</a>
@@ -60,7 +62,8 @@ const screens = [
   </section>
 ))}
 
-<section class="service reveal" id="s4" aria-label="Кто мы">
+<div class="last" id="s4">
+<section class="service reveal" aria-label="Кто мы">
   <h1>С 2009 года создаем экспедиции в Канаде и за её пределами</h1>
   <p>За каждой стоят месяцы подготовки, поэтому наша команда проводит лишь несколько каждый год. Мы разрабатываем каждую экспедицию под ваш график, стандарты и стиль. От сезонных рекомендаций и брони лучших локаций до организации ВИП-лагерей, индивидуальной логистики, разрешений, личных шеф-поваров и эксклюзивных возможностей.</p>
 </section>
@@ -77,13 +80,15 @@ const screens = [
   <div>© 7 Expeditions, 2009-2026</div>
   <div class="place">Vancouver, Canada</div>
 </footer>
+</div>
 
 <script is:inline>
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.querySelectorAll('.reveal')[0]?.classList.add('in');
 const dock=document.querySelector('.dock'),end=document.querySelector('.contact');
-new IntersectionObserver(([e])=>dock.classList.toggle('off',e.isIntersecting)).observe(end);
+const bb=document.querySelector('.band-bottom');
+new IntersectionObserver(([e])=>{dock.classList.toggle('off',e.isIntersecting);bb.classList.toggle('off',e.isIntersecting)}).observe(end);
 // Лого и контакты: светлые над фото, тёмные над светлым фоном.
 const ui=[...document.querySelectorAll('.fixed-ui')];
 const tone=()=>ui.forEach(el=>{const r=el.getBoundingClientRect(),y=r.top+r.height/2;
