@@ -20,6 +20,7 @@
   - между двумя фото-блоками (`cover`, `photo`, `trio`, `diptych`, `map`, `placeholder`) не больше двух абзацев текста. Считаются абзацы `day`, `notes`, `summary`, `lead` (текст и `intro`). Не считаются: заголовки, подписи, строка ночёвки `stay`, эссе `why`;
   - в шапке заполнены `description`, `canonical`, `og.title`, `og.description`, `og.image` (превью ссылки в WhatsApp и Telegram);
   - вес страницы ≤ 10 МБ: HTML + самый крупный вариант каждого фото (проверка после сборки, `src/lib/weight.mjs`).
+  - Предупреждение (не ошибка): «на странице N заглушек вместо фото», если остались блоки `placeholder`.
   - Правила абзацев и шапки — `src/lib/rules.ts`. Четыре прежних лендинга (список `LEGACY` там же) по ним получают предупреждение, а не ошибку, пока их тексты не переделаны.
 - Примеры для агента: `src/content/examples/example-min.yaml` (одно место, 5 дней, только необходимое) и `example-max.yaml` (три места, 14 дней, все блоки). Сборка проверяет их теми же правилами и удаляет из `dist`; посмотреть: `KEEP_EXAMPLES=1 npm run build`, страницы `/x-examples/<имя>/`.
 - Главная, «Рыбалка», каталог: `src/pages/index.astro`, `fishing/index.astro`, `catalogue/index.astro`; JSON-LD главной — `src/data/home.jsonld`, таблица каталога — `src/data/catalogue.html`.

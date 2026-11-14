@@ -39,6 +39,8 @@ export function check(slug: string, page: any): { errors: string[]; warnings: st
 export function enforce(where: string, slug: string, page: any) {
   const { errors, warnings } = check(slug, page);
   for (const w of warnings) console.warn(`\x1b[33m[${where}${slug}] ${w}\x1b[0m`);
+  const ph = page.blocks.filter((b: any) => b.type === 'placeholder').length;
+  if (ph) console.warn(`\x1b[33m[${where}${slug}] на странице ${ph} заглушек вместо фото\x1b[0m`);
   if (!page.blocks.some((b: any) => b.type === 'why'))
     console.warn(`\x1b[33m[${where}${slug}] нет блока «Почему именно сюда» (type: why) — нужен текст от владельца\x1b[0m`);
   if (errors.length) throw new Error(`[${where}${slug}] страница нарушает правила шаблона:\n- ${errors.join('\n- ')}`);
