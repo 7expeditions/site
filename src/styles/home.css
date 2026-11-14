@@ -8,11 +8,6 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
 .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.92)}
 .hero-media::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.22);pointer-events:none}
-.hero .logo{position:absolute;top:40px;left:64px;
-  font-family:var(--body);font-size:15px;letter-spacing:.32em;
-  color:var(--ivory);text-transform:uppercase;white-space:nowrap}
-.hero .logo .w1{font-weight:500}
-.hero .logo .w2{font-weight:400;opacity:.85}
 .hero .txt{text-shadow:0 0 2px rgba(0,0,0,.5),0 2px 28px rgba(0,0,0,.45)}
 .hero .claim{position:absolute;left:64px;top:50%;transform:translateY(-60%)}
 .hero .kicker{font-family:var(--display);font-weight:400;text-transform:uppercase;
@@ -23,7 +18,7 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
   font-family:var(--body);font-weight:400;font-size:11.5px;
   letter-spacing:.06em;color:#E4DED2;white-space:nowrap}
 @media(max-width:768px){
-  .hero .logo,.hero .claim,.hero .shot{left:24px}
+  .hero .claim,.hero .shot{left:24px}
   .hero .claim{right:24px}
   .hero .kicker{margin-bottom:10px}
 }
@@ -37,36 +32,50 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
   font-family:var(--display);font-weight:400;color:#4A4338;
   font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75}
 
+/* Лого и контакты закреплены на всех экранах. Цвет: светлый над фото, тёмный над светлым фоном (.dark). */
+.fixed-ui{position:fixed;z-index:10;color:var(--ivory);text-decoration:none;
+  text-shadow:0 0 2px rgba(0,0,0,.5),0 2px 28px rgba(0,0,0,.45);
+  transition:color .4s,text-shadow .4s,opacity .4s,visibility .4s}
+.fixed-ui.dark{color:var(--ink);text-shadow:none}
+.logo{top:calc(var(--edge) + 40px);left:calc(var(--edge) + 64px);
+  font-family:var(--body);font-size:15px;letter-spacing:.32em;text-transform:uppercase;white-space:nowrap}
+.logo .w1{font-weight:500}
+.logo .w2{font-weight:400;opacity:.85}
+.dock{display:flex;gap:clamp(1.6rem,3vw,2.6rem)}
+.dock a{color:inherit;text-decoration:none;font-family:var(--body);font-size:.72rem;letter-spacing:.3em;
+  text-transform:uppercase;padding-bottom:.4rem;border-bottom:1px solid transparent;transition:border-color .4s}
+.dock a:hover,.dock a:focus-visible{border-color:currentColor;outline:none}
+.dock.off{opacity:0;visibility:hidden}
+@media(min-width:769px){.dock{top:calc(var(--edge) + 40px);right:calc(var(--edge) + 64px);line-height:22px}}
+@media(max-width:768px){
+  .logo{left:calc(var(--edge) + 24px)}
+  .dock{left:0;right:0;bottom:calc(18px + env(safe-area-inset-bottom));justify-content:center;gap:3rem}
+}
+
 /* Три экрана «что мы делаем»: кадр на весь экран, рамка как у хиро. */
 .screen{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;
   overflow:hidden;background:var(--umber);isolation:isolate}
 .screen picture,.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .screen::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(to top, rgba(24,20,15,.32), rgba(24,20,15,.08) 55%)}
-.screen-title{position:absolute;left:64px;bottom:44px;z-index:1;
-  font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.2em;
-  color:var(--ivory);text-shadow:0 0 3px rgba(24,20,15,.55),0 2px 20px rgba(24,20,15,.6);
+  background:linear-gradient(to top, rgba(24,20,15,.38), rgba(24,20,15,.08) 55%)}
+.screen-txt{position:absolute;left:64px;bottom:72px;z-index:1;max-width:30rem;color:var(--ivory);
+  text-shadow:0 0 3px rgba(24,20,15,.55),0 2px 20px rgba(24,20,15,.6)}
+.screen-title{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.2em;
   font-size:clamp(1.25rem,2vw,2rem);line-height:1.3}
-@media(max-width:768px){.screen-title{left:24px;right:24px;bottom:32px}}
+.screen-rule{display:block;width:44px;height:1px;background:currentColor;opacity:.7;margin:1.1rem 0 1rem}
+.screen-note{font-family:var(--body);font-weight:400;font-size:.9rem;line-height:1.6;letter-spacing:.02em;opacity:.85}
 
-/* Контакт, закреплённый на всех экранах. Прячется, когда виден нижний блок контактов. */
-.dock{position:fixed;z-index:10;display:flex;transition:opacity .4s,visibility .4s}
-.dock a{color:var(--ivory);text-decoration:none;font-family:var(--body);
-  font-size:.72rem;letter-spacing:.26em;text-transform:uppercase}
-.dock.off{opacity:0;visibility:hidden}
-@media(min-width:769px){
-  .dock{top:calc(var(--edge) + 28px);right:calc(var(--edge) + 40px);gap:2px;
-    background:rgba(34,30,24,.55);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-  .dock a{padding:.85rem 1.4rem;transition:background .3s}
-  .dock a:hover,.dock a:focus-visible{background:rgba(34,30,24,.6);outline:none}
-}
+/* Стрелка вниз — на следующий экран. */
+.next{position:absolute;left:50%;bottom:30px;z-index:1;width:30px;height:30px;margin-left:-15px;opacity:.75;transition:opacity .4s}
+.next::before{content:"";position:absolute;left:8px;top:4px;width:13px;height:13px;
+  border-right:1px solid var(--ivory);border-bottom:1px solid var(--ivory);transform:rotate(45deg);
+  filter:drop-shadow(0 1px 6px rgba(0,0,0,.5))}
+.next:hover,.next:focus-visible{opacity:1;outline:none}
+
 @media(max-width:768px){
-  .dock{left:0;right:0;bottom:0;background:var(--ink);
-    padding-bottom:env(safe-area-inset-bottom)}
-  .dock a{flex:1;text-align:center;padding:1.05rem 0}
-  .dock a+a{border-left:1px solid rgba(241,237,228,.18)}
-  .screen-title{bottom:calc(32px + 56px)}
-  .hero .shot{bottom:calc(44px + 56px)}
+  .screen-txt{left:24px;right:24px;bottom:112px}
+  .hero .shot{bottom:112px}
+  .next{bottom:62px}
 }
 
 .contact{padding:clamp(3.5rem,9svh,6rem) var(--g) clamp(2.5rem,6svh,4rem);text-align:center}

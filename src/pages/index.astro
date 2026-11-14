@@ -6,6 +6,13 @@ import '../styles/grain.css';
 import '../styles/home.css';
 import ld from '../data/home.jsonld?raw';
 const screen = '100vw';
+// Три экрана «что мы делаем». note — место под короткий текст владельца (сейчас заглушка).
+const NOTE = 'Место под короткий текст: одна-две строки.';
+const screens = [
+  { title: 'Трофейная рыбалка', note: NOTE, pic: { src: '/assets/tile-fishing.jpg', alt: 'Группа рыболовов с трофейным белым осетром в реке Фрейзер, Британская Колумбия' } },
+  { title: 'Хелиски', note: NOTE, pic: { src: '/assets/tile-heliski.jpg', alt: 'Вертолёт над заснеженным хребтом, лыжник на гребне перед спуском' } },
+  { title: 'Экспедиции', note: NOTE, pic: { src: '/assets/tile-expeditions.jpg', alt: 'Палаточный лагерь экспедиции на берегу океана с чёрным вулканическим песком' } },
+];
 ---
 <Base charset="UTF-8">
 <Fragment slot="head">
@@ -23,37 +30,37 @@ const screen = '100vw';
 <script type="application/ld+json" is:inline set:html={'\n' + ld}></script>
 </Fragment>
 
-<header class="hero">
+<a class="logo fixed-ui" href="#top" aria-label="7 Expeditions — наверх"><span class="w1">СЕМЬ&nbsp;</span><span class="w2">ЭКСПЕДИЦИЙ</span></a>
+<nav class="dock fixed-ui" aria-label="Связаться">
+  <a href="https://wa.me/17788553539">WhatsApp</a>
+  <a href="https://t.me/VadimRubinov">Telegram</a>
+</nav>
+
+<header class="hero" id="top">
   <div class="hero-media" aria-hidden="true">
     <video src="assets/hero.mp4" poster="assets/hero-poster.jpg" width="640" height="360" autoplay loop muted playsinline></video>
   </div>
-  <div class="txt logo"><span class="w1">СЕМЬ&nbsp;</span><span class="w2">ЭКСПЕДИЦИЙ</span></div>
   <div class="txt claim">
     <div class="kicker">ЗДЕСЬ</div>
     <div class="slogan">ВСЁ ПО&#8209;НАСТОЯЩЕМУ</div>
   </div>
   <div class="txt shot">* Все кадры сняты в наших экспедициях</div>
+  <a class="next" href="#s1" aria-label="Дальше"></a>
 </header>
 
-<nav class="dock" aria-label="Связаться">
-  <a href="https://wa.me/17788553539">WhatsApp</a>
-  <a href="https://t.me/VadimRubinov">Telegram</a>
-</nav>
+{screens.map((s, i) => (
+  <section class="screen" id={`s${i + 1}`} aria-label={s.title}>
+    <Pic pic={s.pic} sizes={screen} />
+    <div class="screen-txt">
+      <h2 class="screen-title">{s.title}</h2>
+      <span class="screen-rule" aria-hidden="true"></span>
+      <p class="screen-note">{s.note}</p>
+    </div>
+    <a class="next" href={`#s${i + 2}`} aria-label="Дальше"></a>
+  </section>
+))}
 
-<section class="screen" aria-label="Трофейная рыбалка">
-  <Pic pic={{ src: '/assets/tile-fishing.jpg', alt: 'Группа рыболовов с трофейным белым осетром в реке Фрейзер, Британская Колумбия' }} sizes={screen} />
-  <h2 class="screen-title">Трофейная рыбалка</h2>
-</section>
-<section class="screen" aria-label="Хелиски">
-  <Pic pic={{ src: '/assets/tile-heliski.jpg', alt: 'Вертолёт над заснеженным хребтом, лыжник на гребне перед спуском' }} sizes={screen} />
-  <h2 class="screen-title">Хелиски</h2>
-</section>
-<section class="screen" aria-label="Экспедиции">
-  <Pic pic={{ src: '/assets/tile-expeditions.jpg', alt: 'Палаточный лагерь экспедиции на берегу океана с чёрным вулканическим песком' }} sizes={screen} />
-  <h2 class="screen-title">Экспедиции</h2>
-</section>
-
-<section class="service reveal" aria-label="Кто мы">
+<section class="service reveal" id="s4" aria-label="Кто мы">
   <h1>С 2009 года создаем экспедиции в Канаде и за её пределами</h1>
   <p>За каждой стоят месяцы подготовки, поэтому наша команда проводит лишь несколько каждый год. Мы разрабатываем каждую экспедицию под ваш график, стандарты и стиль. От сезонных рекомендаций и брони лучших локаций до организации ВИП-лагерей, индивидуальной логистики, разрешений, личных шеф-поваров и эксклюзивных возможностей.</p>
 </section>
@@ -77,5 +84,12 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.querySelectorAll('.reveal')[0]?.classList.add('in');
 const dock=document.querySelector('.dock'),end=document.querySelector('.contact');
 new IntersectionObserver(([e])=>dock.classList.toggle('off',e.isIntersecting)).observe(end);
+// Лого и контакты: светлые над фото, тёмные над светлым фоном.
+const ui=[...document.querySelectorAll('.fixed-ui')];
+const tone=()=>ui.forEach(el=>{const r=el.getBoundingClientRect(),y=r.top+r.height/2;
+  const onPhoto=[...document.querySelectorAll('.hero,.screen')].some(s=>{const b=s.getBoundingClientRect();return y>=b.top&&y<=b.bottom});
+  el.classList.toggle('dark',!onPhoto)});
+let t=0;addEventListener('scroll',()=>{if(!t){t=requestAnimationFrame(()=>{tone();t=0})}},{passive:true});
+addEventListener('resize',tone);tone();
 </script>
 </Base>
