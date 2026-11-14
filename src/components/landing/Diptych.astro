@@ -2,17 +2,20 @@
 import Pic from '../Pic.astro';
 import { ratio } from '../../lib/media';
 const { b } = Astro.props;
-// панель: обрезка по высоте экрана (78vh на телефоне, весь экран от 900px); full — фото целиком
+// Места: 1–3 панели. От 900px панели стоят в ряд (n штук), на телефоне — друг под другом.
+// Панель: обрезка по высоте экрана (78vh на телефоне, весь экран от 900px); full — фото целиком.
+const n = b.panels.length;
+const col = `${Math.round(100 / n)}vw`;
 const sz = (url: string, m?: string) => {
-  if (b.full) return { sizes: '(min-width:900px) 50vw, 100vw', msizes: '100vw' };
+  if (b.full) return { sizes: `(min-width:900px) ${col}, 100vw`, msizes: '100vw' };
   const r = ratio(url), rm = m ? ratio(m) : r;
   return {
-    sizes: `(min-width:900px) max(50vw, ${Math.ceil(r * 100)}vh), max(100vw, ${Math.ceil(r * 78)}vh)`,
+    sizes: `(min-width:900px) max(${col}, ${Math.ceil(r * 100)}vh), max(100vw, ${Math.ceil(r * 78)}vh)`,
     msizes: `max(100vw, ${Math.ceil(rm * 78)}vh)`,
   };
 };
 ---
-<section class:list={['diptych', { full: b.full }]}>
+<section class:list={['diptych', { full: b.full, one: n === 1, three: n === 3 }]}>
   {b.panels.map((p: any) => (
     <div class:list={['panel', { nophoto: !p.pic }]}>
       {p.pic && <Pic pic={p.pic} {...sz(p.pic.src, p.pic.m)} />}

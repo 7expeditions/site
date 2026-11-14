@@ -1,13 +1,12 @@
-head: |-
-  <title>Осётр и лосось — Британская Колумбия | 7 Expeditions</title>
-  <meta name="description" content="Белый осётр реки Фрейзер и лосось Тихого океана у Тофино за одну неделю. Fraser River Lodge и Wickaninnish Inn. Экспедиция 7 Expeditions, Ванкувер, с 2009 года.">
-  <link rel="canonical" href="https://7expeditions.com/expeditions/bc-canada-sturgeon-salmon/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Осётр и лосось — Британская Колумбия | 7 Expeditions">
-  <meta property="og:description" content="Белый осётр реки Фрейзер и лосось Тихого океана у Тофино за одну неделю.">
-  <meta property="og:url" content="https://7expeditions.com/expeditions/bc-canada-sturgeon-salmon/">
-  <meta property="og:image" content="https://7expeditions.com/expeditions/bc-canada-sturgeon-salmon/img/cover.jpg">
-  <meta property="og:locale" content="ru_RU">
+title: Осётр и лосось — Британская Колумбия | 7 Expeditions
+description: >-
+  Белый осётр реки Фрейзер и лосось Тихого океана у Тофино за одну неделю. Fraser River Lodge и Wickaninnish Inn. Экспедиция 7 Expeditions, Ванкувер, с 2009 года.
+canonical: https://7expeditions.com/expeditions/bc-canada-sturgeon-salmon/
+og:
+  title: Осётр и лосось — Британская Колумбия | 7 Expeditions
+  description: Белый осётр реки Фрейзер и лосось Тихого океана у Тофино за одну неделю.
+  image: https://7expeditions.com/expeditions/bc-canada-sturgeon-salmon/img/cover.jpg
+  locale: ru_RU
 blocks:
 - type: cover
   pic:

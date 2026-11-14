@@ -1,0 +1,29 @@
+---
+// Страница лендинга: шапка из полей, блоки по порядку, контакт и подвал.
+import Base from '../../layouts/Base.astro';
+import '../../styles/tokens.css';
+import '../../styles/grain.css';
+import '../../styles/landing.css';
+import Head from './Head.astro';
+import Cover from './Cover.astro';
+import Lead from './Lead.astro';
+import Diptych from './Diptych.astro';
+import MapSec from './MapSec.astro';
+import Day from './Day.astro';
+import Photo from './Photo.astro';
+import Trio from './Trio.astro';
+import Notes from './Notes.astro';
+import Why from './Why.astro';
+import Summary from './Summary.astro';
+import Heading from './Heading.astro';
+import Placeholder from './Placeholder.astro';
+import Contact from './Contact.astro';
+const { page } = Astro.props;
+const C: Record<string, any> = { cover: Cover, lead: Lead, diptych: Diptych, map: MapSec, day: Day, photo: Photo,
+  trio: Trio, notes: Notes, why: Why, summary: Summary, heading: Heading, placeholder: Placeholder };
+---
+<Base icon={page.favicon ? 'seven' : 'off'}>
+  <Head slot="head" page={page} />
+  {page.blocks.map((b: any) => { const X = C[b.type]; return <X b={b} />; })}
+  <Contact />
+</Base>

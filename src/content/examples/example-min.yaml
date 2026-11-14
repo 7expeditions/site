@@ -1,0 +1,87 @@
+# Пример для агента: МИНИМАЛЬНЫЙ лендинг — одно место, 5 дней, только обязательное.
+# Фото и тексты условные. Файл проверяется сборкой, на сайт не попадает.
+# Обязательные блоки: cover (первый) и why. Между фото-блоками — не больше двух абзацев.
+title: 'Условный тур: одно место, 5 дней | 7 Expeditions'
+description: 'Условное описание страницы для поиска и превью ссылки: одна-две фразы о туре.'
+robots: noindex, nofollow
+canonical: https://7expeditions.com/expeditions/primer-min/
+og:
+  title: 'Условный тур: одно место, 5 дней'
+  description: Условное описание для превью ссылки в мессенджерах.
+  image: https://7expeditions.com/expeditions/tuna-redfish-2027/img/og-tuna.jpg
+  locale: ru_RU
+blocks:
+- type: cover
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/cover.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/cover.jpg
+    alt: 'Условное фото: cover'
+  title: Условное место
+  sub: Регион
+  caps: 5 дней · даты
+- type: diptych
+  panels:
+  - pic:
+      src: /expeditions/tuna-redfish-2027/img/marsh.jpg
+      m: /expeditions/tuna-redfish-2027/img/m/marsh.jpg
+      alt: 'Условное фото: marsh'
+    num: I · Место
+    hero: Чем это место особенное — одной фразой
+    acc: Условный текст. Где живём, как ловим, что рядом.
+- type: why
+  title: Почему именно сюда
+  items:
+  - h: Рыба
+    html: Условный текст. Почему здесь лучшая рыбалка в это время года.
+  - h: Место
+    html: Условный текст. Чем место отличается от других.
+- type: day
+  d: День 1
+  w: Условное место · переезд, рыбалка
+  paras:
+  - 'Условный текст. Что происходит в день 1: утро, рыбалка, обед.'
+  - Условный текст. Вечер, ужин, ночёвка.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/poling.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/poling.jpg
+    alt: 'Условное фото: poling'
+- type: day
+  d: День 2
+  w: Условное место · переезд, рыбалка
+  paras:
+  - 'Условный текст. Что происходит в день 2: утро, рыбалка, обед.'
+  - Условный текст. Вечер, ужин, ночёвка.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/redfish.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/redfish.jpg
+    alt: 'Условное фото: redfish'
+- type: day
+  d: День 3
+  w: Условное место · переезд, рыбалка
+  paras:
+  - 'Условный текст. Что происходит в день 3: утро, рыбалка, обед.'
+  - Условный текст. Вечер, ужин, ночёвка.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/tail.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/tail.jpg
+    alt: 'Условное фото: tail'
+- type: day
+  d: День 4
+  w: Условное место · переезд, рыбалка
+  paras:
+  - 'Условный текст. Что происходит в день 4: утро, рыбалка, обед.'
+  - Условный текст. Вечер, ужин, ночёвка.
+- type: photo
+  pic:
+    src: /expeditions/tuna-redfish-2027/img/inn.jpg
+    m: /expeditions/tuna-redfish-2027/img/m/inn.jpg
+    alt: 'Условное фото: inn'
+- type: day
+  d: День 5
+  w: Условное место · переезд, рыбалка
+  paras:
+  - 'Условный текст. Что происходит в день 5: утро, рыбалка, обед.'
+  - Условный текст. Вечер, ужин, ночёвка.

@@ -211,6 +211,17 @@ footer.foot .place{text-transform:none;letter-spacing:.04em;font-size:12px}
   .panel .over{padding:28px 22px 26px}
   .panel .hero{font-size:22px}
 }
+/* одно место: панель во всю ширину */
+@media (min-width:900px){
+  .diptych.one{grid-template-columns:1fr}
+}
+/* три места: три панели в ряд, текст чуть компактнее */
+@media (min-width:900px){
+  .diptych.three{grid-template-columns:1fr 1fr 1fr}
+  .diptych.three .panel .over{padding:40px 32px 38px}
+  .diptych.three .panel .hero{font-size:26px}
+  .diptych.three .panel .acc{font-size:13px}
+}
 /* диптих: фото целиком, без обрезки; текст под фото */
 .diptych.full .panel{min-height:0;display:flex;flex-direction:column;overflow:visible}
 .diptych.full .panel picture,.diptych.full .panel img{position:static;height:auto;width:100%}

@@ -1,6 +1,6 @@
-head: |-
-  <title>Тунец, Редфиш и Тарпон — Атлантическое побережье США, 21–29 сентября 2027</title>
-  <meta property="og:image" content="https://7expeditions.com/expeditions/tuna-redfish-2027/img/og-tuna.jpg">
+title: Тунец, Редфиш и Тарпон — Атлантическое побережье США, 21–29 сентября 2027
+og:
+  image: https://7expeditions.com/expeditions/tuna-redfish-2027/img/og-tuna.jpg
 blocks:
 - type: cover
   pic:

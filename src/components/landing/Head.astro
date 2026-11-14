@@ -1,0 +1,17 @@
+---
+// Шапка лендинга из полей содержания.
+const { page } = Astro.props;
+const og = page.og ?? {};
+const ld = page.jsonld ? JSON.stringify(page.jsonld, null, 2).replace(/<\//g, '<\\/') : null;
+---
+<title>{page.title}</title>
+{page.description && <meta name="description" content={page.description}>}
+{page.robots && <meta name="robots" content={page.robots}>}
+{page.canonical && <link rel="canonical" href={page.canonical}>}
+{og.title && <meta property="og:type" content="website">}
+{og.title && <meta property="og:title" content={og.title}>}
+{og.description && <meta property="og:description" content={og.description}>}
+{og.title && page.canonical && <meta property="og:url" content={page.canonical}>}
+{og.image && <meta property="og:image" content={og.image}>}
+{og.locale && <meta property="og:locale" content={og.locale}>}
+{ld && <script type="application/ld+json" is:inline set:html={ld}></script>}

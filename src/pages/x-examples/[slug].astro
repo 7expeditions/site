@@ -1,0 +1,15 @@
+---
+// Примеры для агента: src/content/examples/*.yaml. Собираются и проверяются теми же правилами,
+// после сборки папка удаляется из dist (оставить для просмотра: KEEP_EXAMPLES=1 npm run build).
+import { getCollection } from 'astro:content';
+import LandingPage from '../../components/landing/LandingPage.astro';
+import { enforce } from '../../lib/rules';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('examples');
+  for (const p of pages) enforce('пример ', p.id, p.data);
+  return pages.map(p => ({ params: { slug: p.id }, props: { page: p.data } }));
+}
+const { page } = Astro.props;
+---
+<LandingPage page={page} />
