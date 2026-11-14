@@ -37,17 +37,37 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
   font-family:var(--display);font-weight:400;color:#4A4338;
   font-size:clamp(1rem,1.2vw,1.0625rem);line-height:1.75}
 
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--edge);padding:var(--edge) var(--edge) 0}
-.tile{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--umber)}
-.tile img{width:100%;height:100%;object-fit:cover}
-.tile::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(to top, rgba(24,20,15,.16), rgba(24,20,15,.06))}
-.tile-title{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;
-  transform:translateY(9%);
+/* Три экрана «что мы делаем»: кадр на весь экран, рамка как у хиро. */
+.screen{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;
+  overflow:hidden;background:var(--umber);isolation:isolate}
+.screen picture,.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.screen::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(24,20,15,.32), rgba(24,20,15,.08) 55%)}
+.screen-title{position:absolute;left:64px;bottom:44px;z-index:1;
   font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.2em;
-  color:var(--ivory);text-align:center;text-shadow:0 0 3px rgba(24,20,15,.55),0 2px 20px rgba(24,20,15,.6);
-  font-size:clamp(1rem,1.3vw,1.25rem);line-height:1.4;padding:0 .8rem}
-@media(max-width:760px){.tiles{grid-template-columns:1fr}}
+  color:var(--ivory);text-shadow:0 0 3px rgba(24,20,15,.55),0 2px 20px rgba(24,20,15,.6);
+  font-size:clamp(1.25rem,2vw,2rem);line-height:1.3}
+@media(max-width:768px){.screen-title{left:24px;right:24px;bottom:32px}}
+
+/* Контакт, закреплённый на всех экранах. Прячется, когда виден нижний блок контактов. */
+.dock{position:fixed;z-index:10;display:flex;transition:opacity .4s,visibility .4s}
+.dock a{color:var(--ivory);text-decoration:none;font-family:var(--body);
+  font-size:.72rem;letter-spacing:.26em;text-transform:uppercase}
+.dock.off{opacity:0;visibility:hidden}
+@media(min-width:769px){
+  .dock{top:calc(var(--edge) + 28px);right:calc(var(--edge) + 40px);gap:2px;
+    background:rgba(34,30,24,.55);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  .dock a{padding:.85rem 1.4rem;transition:background .3s}
+  .dock a:hover,.dock a:focus-visible{background:rgba(34,30,24,.6);outline:none}
+}
+@media(max-width:768px){
+  .dock{left:0;right:0;bottom:0;background:var(--ink);
+    padding-bottom:env(safe-area-inset-bottom)}
+  .dock a{flex:1;text-align:center;padding:1.05rem 0}
+  .dock a+a{border-left:1px solid rgba(241,237,228,.18)}
+  .screen-title{bottom:calc(32px + 56px)}
+  .hero .shot{bottom:calc(44px + 56px)}
+}
 
 .contact{padding:clamp(3.5rem,9svh,6rem) var(--g) clamp(2.5rem,6svh,4rem);text-align:center}
 .contact-links{display:flex;gap:clamp(2rem,6vw,4.6rem);justify-content:center;flex-wrap:wrap}
