@@ -2,12 +2,12 @@
 *{margin:0;padding:0;box-sizing:border-box}
 ::selection{background:var(--char);color:var(--ivory)}
 html{scroll-behavior:smooth;scroll-snap-type:y proximity}
-.hero,.screen{scroll-snap-align:start;scroll-margin-top:var(--edge)}
+.hero,.screen{scroll-snap-align:start}
 .last{min-height:100svh;display:flex;flex-direction:column;scroll-snap-align:start}
 .last .service{flex:1;display:flex;flex-direction:column;justify-content:center}
 body{background:var(--bg);color:var(--char);font-family:var(--body);
   font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-.hero{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;isolation:isolate}
+.hero{position:relative;height:100svh;isolation:isolate}
 .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.92)}
 .hero-media::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.22);pointer-events:none}
@@ -40,7 +40,7 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
   text-shadow:0 0 2px rgba(0,0,0,.35),0 1px 12px rgba(0,0,0,.25);
   transition:color .4s,text-shadow .4s,opacity .4s,visibility .4s}
 .fixed-ui.dark{color:var(--ink);text-shadow:none}
-.logo{top:calc(var(--edge) + 40px);left:calc(var(--edge) + 64px);
+.logo{top:40px;left:64px;
   font-family:var(--body);font-size:15px;letter-spacing:.32em;text-transform:uppercase;white-space:nowrap}
 .logo .w1{font-weight:500}
 .logo .w2{font-weight:400;opacity:.85}
@@ -53,18 +53,18 @@ body{background:var(--bg);color:var(--char);font-family:var(--body);
 .band{left:0;right:0;z-index:9;background:var(--bg);opacity:0;pointer-events:none}
 .band.dark{opacity:1}
 .band.off{opacity:0}
-.band-top{top:0;height:calc(var(--edge) + 84px)}
+.band-top{top:0;height:84px}
 .band-bottom{display:none}
-@media(min-width:769px){.dock{top:calc(var(--edge) + 40px);right:calc(var(--edge) + 64px);line-height:22px}}
+@media(min-width:769px){.dock{top:40px;right:64px;line-height:22px}}
 @media(max-width:768px){
-  .logo{left:calc(var(--edge) + 24px)}
+  .logo{left:24px}
   .dock{left:0;right:0;bottom:calc(18px + env(safe-area-inset-bottom));justify-content:center;gap:3rem}
-  .band-top{height:calc(var(--edge) + 80px)}
+  .band-top{height:80px}
   .band-bottom{display:block;bottom:0;height:calc(58px + env(safe-area-inset-bottom))}
 }
 
 /* Три экрана «что мы делаем»: кадр на весь экран, рамка как у хиро. */
-.screen{position:relative;height:calc(100svh - var(--edge));margin:var(--edge) var(--edge) 0;
+.screen{position:relative;height:100svh;
   overflow:hidden;background:var(--umber);isolation:isolate}
 .screen picture,.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .screen::before{content:"";position:absolute;left:0;right:0;top:0;height:32%;z-index:1;pointer-events:none;
