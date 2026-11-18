@@ -23,7 +23,7 @@ blocks:
 - type: diptych
   panels:
   - pic:
-      src: /expeditions/defis-landing-2027/img/barra-main.jpg
+      src: /expeditions/defis-landing-2027/img/barra-main-v2.jpg
       m: /expeditions/defis-landing-2027/img/m/barra-main-v4.jpg
       alt: Мужчина в бейсболке, очках и рубашке с логотипом держит большую барамунди на фоне зелёных деревьев.
       pos: 50% 40%
