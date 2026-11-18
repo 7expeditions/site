@@ -1,9 +1,9 @@
-title: ТЕСТ, DEFIS LANDING, DEFIS 2027 · Арнем-Ленд, Австралия · апрель 2027
+title: Барамунди Арнем-Ленда, Австралия · апрель 2027
 description: Барамунди в реках Арнем-Ленда, Австралия. Апрель 2027. Четыре дня, пять ночей, восемь человек, Arnhem Land Barramundi Lodge.
 robots: noindex, nofollow
 canonical: https://7expeditions.com/expeditions/defis-landing-2027/
 og:
-  title: ТЕСТ, DEFIS LANDING, DEFIS 2027 · Арнем-Ленд, Австралия · апрель 2027
+  title: Барамунди Арнем-Ленда, Австралия · апрель 2027
   description: Барамунди в реках Арнем-Ленда, Австралия. Апрель 2027. Четыре дня, пять ночей, восемь человек, Arnhem Land Barramundi Lodge.
   image: https://7expeditions.com/expeditions/defis-landing-2027/img/og.jpg
   locale: ru_RU
@@ -11,19 +11,19 @@ blocks:
 - type: cover
   pic:
     src: /expeditions/defis-landing-2027/img/barra-cover.jpg
-    m: /expeditions/defis-landing-2027/img/m/barra-cover.jpg
+    m: /expeditions/defis-landing-2027/img/m/barra-cover-v2.jpg
     alt: Мужчина в бейсболке, светлой рубашке и очках держит крупную барамунди перед бортом лодки; лицо видно.
     pos: 50% 40%
-  title: ТЕСТ, DEFIS LANDING, DEFIS 2027
-  sub: Арнем-Ленд, Северная территория, Австралия
+  title: Барамунди Арнем-Ленда
+  sub: Северная территория, Австралия
   caps: 4 дня · 5 ночей · апрель 2027 · 8 человек
 - type: lead
-  text: Апрель, барамунди, реки Арнем-Ленда, вход по разрешениям владельцев земли.
+  text: Апрель 2027. Четыре дня на реках Арнем-Ленда, ловим барамунди, живём в лодже в 20 км от Манингриды.
 - type: diptych
   panels:
   - pic:
       src: /expeditions/defis-landing-2027/img/barra-main.jpg
-      m: /expeditions/defis-landing-2027/img/m/barra-main.jpg
+      m: /expeditions/defis-landing-2027/img/m/barra-main-v2.jpg
       alt: Мужчина в бейсболке, очках и рубашке с логотипом держит большую барамунди на фоне зелёных деревьев.
       pos: 50% 40%
     num: I
@@ -55,8 +55,10 @@ blocks:
 - type: photo
   pic:
     src: /expeditions/defis-landing-2027/img/barra-anglers.jpg
-    m: /expeditions/defis-landing-2027/img/m/barra-anglers.jpg
+    m: /expeditions/defis-landing-2027/img/m/barra-anglers-v2.jpg
     alt: Трое мужчин в очках и кепках позируют с большой барамунди на фоне синего неба.
+  mods:
+  - fit
   cap: Барамунди в лодке. Реки Арнем-Ленда. Фото Arnhem Land Barramundi Lodge
 - type: day
   d: День на воде
@@ -74,27 +76,31 @@ blocks:
 - type: photo
   pic:
     src: /expeditions/defis-landing-2027/img/barra-hand.jpg
-    m: /expeditions/defis-landing-2027/img/m/barra-hand.jpg
+    m: /expeditions/defis-landing-2027/img/m/barra-hand-v2.jpg
     alt: Мужчина в белой шляпе и синей рубашке держит барамунди вдоль корпуса; лицо видно.
-    pos: 50% 45%
+  mods:
+  - fit
+  cap: Барамунди 83 см. Фото Arnhem Land Barramundi Lodge
 - type: photo
   pic:
-    src: /expeditions/defis-landing-2027/img/suite.jpg
-    m: /expeditions/defis-landing-2027/img/m/suite.jpg
-    alt: 'Интерьер номера: двуспальная кровать с серым покрывалом, кресло и выход на деревянную террасу.'
-  cap: Номер и веранда. Фото Arnhem Land Barramundi Lodge
+    src: /expeditions/defis-landing-2027/img/mangrove-jack-v2.jpg
+    m: /expeditions/defis-landing-2027/img/m/mangrove-jack-v2.jpg
+    alt: Мужчина в светлой рубашке и шляпе держит над бортом красную рыбу (мангровый джек).
+  mods:
+  - fit
+  cap: Мангровый джек. Фото Arnhem Land Barramundi Lodge
 - type: trio
   pics:
-  - src: /expeditions/defis-landing-2027/img/mangrove-jack.jpg
-    m: /expeditions/defis-landing-2027/img/m/mangrove-jack.jpg
-    alt: Мужчина в светлой рубашке и шляпе держит над бортом красную рыбу (мангровый джек).
+  - src: /expeditions/defis-landing-2027/img/suite.jpg
+    m: /expeditions/defis-landing-2027/img/m/suite.jpg
+    alt: 'Интерьер номера: двуспальная кровать с серым покрывалом, кресло и выход на деревянную террасу.'
   - src: /expeditions/defis-landing-2027/img/lodge.jpg
     m: /expeditions/defis-landing-2027/img/m/lodge.jpg
     alt: Палаточный домик с деревянной террасой среди кустарника и деревьев.
   - src: /expeditions/defis-landing-2027/img/dinner.jpg
     m: /expeditions/defis-landing-2027/img/m/dinner.jpg
     alt: Блюдо из запечённой красной рыбы с лимоном и зеленью на белой тарелке.
-  cap: Улов, жильё, ужин. Фото Arnhem Land Barramundi Lodge
+  cap: Номер, домик, ужин. Фото Arnhem Land Barramundi Lodge
 - type: notes
   title: Дорога
   paras:
