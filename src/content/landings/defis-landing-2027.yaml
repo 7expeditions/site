@@ -11,7 +11,7 @@ blocks:
 - type: cover
   pic:
     src: /expeditions/defis-landing-2027/img/barra-cover-v2.jpg
-    m: /expeditions/defis-landing-2027/img/m/barra-cover-v3.jpg
+    m: /expeditions/defis-landing-2027/img/m/barra-cover-v4.jpg
     alt: Мужчина в бейсболке, светлой рубашке и очках держит крупную барамунди перед бортом лодки; лицо видно.
     pos: 50% 40%
     mpos: 50% 25%
@@ -24,7 +24,7 @@ blocks:
   panels:
   - pic:
       src: /expeditions/defis-landing-2027/img/barra-main.jpg
-      m: /expeditions/defis-landing-2027/img/m/barra-main-v3.jpg
+      m: /expeditions/defis-landing-2027/img/m/barra-main-v4.jpg
       alt: Мужчина в бейсболке, очках и рубашке с логотипом держит большую барамунди на фоне зелёных деревьев.
       pos: 50% 40%
       mpos: 50% 0%
