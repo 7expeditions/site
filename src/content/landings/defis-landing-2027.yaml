@@ -1,0 +1,104 @@
+title: ТЕСТ, DEFIS LANDING, DEFIS 2027 · Арнем-Ленд, Австралия · апрель 2027
+description: Барамунди в реках Арнем-Ленда, Австралия. Апрель 2027. Четыре дня, пять ночей, восемь человек, Arnhem Land Barramundi Lodge.
+robots: noindex, nofollow
+canonical: https://7expeditions.com/expeditions/defis-landing-2027/
+og:
+  title: ТЕСТ, DEFIS LANDING, DEFIS 2027 · Арнем-Ленд, Австралия · апрель 2027
+  description: Барамунди в реках Арнем-Ленда, Австралия. Апрель 2027. Четыре дня, пять ночей, восемь человек, Arnhem Land Barramundi Lodge.
+  image: https://7expeditions.com/expeditions/defis-landing-2027/img/og.jpg
+  locale: ru_RU
+blocks:
+- type: cover
+  pic:
+    src: /expeditions/defis-landing-2027/img/barra-cover.jpg
+    m: /expeditions/defis-landing-2027/img/m/barra-cover.jpg
+    alt: Мужчина в бейсболке, светлой рубашке и очках держит крупную барамунди перед бортом лодки; лицо видно.
+    pos: 50% 40%
+  title: ТЕСТ, DEFIS LANDING, DEFIS 2027
+  sub: Арнем-Ленд, Северная территория, Австралия
+  caps: 4 дня · 5 ночей · апрель 2027 · 8 человек
+- type: lead
+  text: Апрель, барамунди, реки Арнем-Ленда, вход по разрешениям владельцев земли.
+- type: diptych
+  panels:
+  - pic:
+      src: /expeditions/defis-landing-2027/img/barra-main.jpg
+      m: /expeditions/defis-landing-2027/img/m/barra-main.jpg
+      alt: Мужчина в бейсболке, очках и рубашке с логотипом держит большую барамунди на фоне зелёных деревьев.
+      pos: 50% 40%
+    num: I
+    hero: Барамунди рек Арнем-Ленда, в списке лоджа Metre Club рыбы от 100 см.
+    acc: Живём в Arnhem Land Barramundi Lodge в 20 км от Манингриды. Двенадцать номеров, в каждом кондиционер и большая веранда.
+- type: map
+  pic:
+    src: /expeditions/defis-landing-2027/img/map-defis-en.svg
+    m: /expeditions/defis-landing-2027/img/m/map-defis-en-m.svg
+    alt: 'Карта экспедиции: Дарвин, Манингрида, лодж, реки Ливерпул, Томкинсон, Мэнн, Гумадир'
+  href: /expeditions/defis-landing-2027/img/map-defis-en.svg
+- type: why
+  title: Почему именно сюда
+  items:
+  - h: Время
+    html: 'Лодж принимает рыболовов <b>только в два окна</b>: март и апрель, потом октябрь и ноябрь. Весеннее окно идёт с марта минимум до конца апреля. Мы едем в апреле 2027. Точные даты пока не назначены.'
+  - h: Доступ
+    html: Арнем-Ленд это земля аборигенов. Въезд только <b>по разрешениям традиционных владельцев земли</b>. Разрешения на рыбалку для нас оформляет лодж. Другого рыболовного оператора в этом районе нет.
+  - h: Рыба
+    html: 'Ловим барамунди в реках Liverpool, Tomkinson, Mann и Goomadeer, а ещё в прибрежных протоках и устьях рек. У лоджа есть свой <b>Metre Club</b>: список рыб от 100 см, пойманных здесь с 2005 по 2026 год. Барамунди длиннее 80 см гиды отпускают, это производители.'
+  - h: Лодж
+    html: 'Живём в <a href="https://barralodge.com.au/the-lodge/" target="_blank" rel="noopener">Arnhem Land Barramundi Lodge</a>, в 20 км от Манингриды. В лодже <b>12 сафари-сьютов</b>: кондиционер, большая веранда, кровати ставят как двуспальную или две раздельные. Всё питание входит в проживание, готовит свой повар.'
+  - h: Безопасность
+    html: До Дарвина 300 км, до Манингриды 20 км. В районе лоджа <b>мобильной связи нет</b>, сеть Telstra есть в Манингриде. В главном здании лоджа работает интернет Starlink.
+  - h: Логистика
+    html: От Дарвина до Манингриды 300 км, <b>около часа</b> рейсом Airnorth, он летает ежедневно. Лимит багажа на рейсе 15 кг. От лоджа до причала автобус идёт 20–30 минут. У лоджа восемь лодок OceanMaster.
+- type: heading
+  text: Что на месте
+- type: photo
+  pic:
+    src: /expeditions/defis-landing-2027/img/barra-anglers.jpg
+    m: /expeditions/defis-landing-2027/img/m/barra-anglers.jpg
+    alt: Трое мужчин в очках и кепках позируют с большой барамунди на фоне синего неба.
+  cap: Барамунди в лодке. Реки Арнем-Ленда. Фото Arnhem Land Barramundi Lodge
+- type: day
+  d: День на воде
+  w: Типичный день рыбалки
+  paras:
+  - Автобус уходит от лоджа чуть раньше 7:00. До причала 20–30 минут, по плохой дороге дольше. К 7:30 все лодки на воде.
+  - Ловим до 16:00, иногда время сдвигают под прилив. В 16:30–16:45 автобус привозит нас обратно в лодж. Еду в лодже готовит свой повар, она входит в проживание.
+  stay: <b>Ночь.</b> Arnhem Land Barramundi Lodge
+- type: photo
+  pic:
+    src: /expeditions/defis-landing-2027/img/boat.jpg
+    m: /expeditions/defis-landing-2027/img/m/boat.jpg
+    alt: Белая лодка с рыбаками на воде у зелёного берега с мангровыми деревьями.
+  cap: Лодка OceanMaster на воде. У лоджа их восемь. Фото Arnhem Land Barramundi Lodge
+- type: photo
+  pic:
+    src: /expeditions/defis-landing-2027/img/barra-hand.jpg
+    m: /expeditions/defis-landing-2027/img/m/barra-hand.jpg
+    alt: Мужчина в белой шляпе и синей рубашке держит барамунди вдоль корпуса; лицо видно.
+    pos: 50% 45%
+- type: photo
+  pic:
+    src: /expeditions/defis-landing-2027/img/suite.jpg
+    m: /expeditions/defis-landing-2027/img/m/suite.jpg
+    alt: 'Интерьер номера: двуспальная кровать с серым покрывалом, кресло и выход на деревянную террасу.'
+  cap: Номер и веранда. Фото Arnhem Land Barramundi Lodge
+- type: trio
+  pics:
+  - src: /expeditions/defis-landing-2027/img/mangrove-jack.jpg
+    m: /expeditions/defis-landing-2027/img/m/mangrove-jack.jpg
+    alt: Мужчина в светлой рубашке и шляпе держит над бортом красную рыбу (мангровый джек).
+  - src: /expeditions/defis-landing-2027/img/lodge.jpg
+    m: /expeditions/defis-landing-2027/img/m/lodge.jpg
+    alt: Палаточный домик с деревянной террасой среди кустарника и деревьев.
+  - src: /expeditions/defis-landing-2027/img/dinner.jpg
+    m: /expeditions/defis-landing-2027/img/m/dinner.jpg
+    alt: Блюдо из запечённой красной рыбы с лимоном и зеленью на белой тарелке.
+  cap: Улов, жильё, ужин. Фото Arnhem Land Barramundi Lodge
+- type: notes
+  title: Дорога
+  paras:
+  - Дарвин → Манингрида · 300 км, около 60 минут, рейс Airnorth.
+  - Манингрида → лодж · 20 км, около 20 минут.
+  - Лодж → причал · 20–30 минут, автобус.
+  - Багаж на рейсе · до 15 кг.
