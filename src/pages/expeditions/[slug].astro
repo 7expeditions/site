@@ -7,8 +7,8 @@ import { enforce } from '../../lib/rules';
 export async function getStaticPaths() {
   const pages = await getCollection('landings');
   for (const p of pages) enforce('лендинг ', p.id, p.data);
-  return pages.map(p => ({ params: { slug: p.id }, props: { page: p.data } }));
+  return pages.map(p => ({ params: { slug: p.id }, props: { page: p.data, slug: p.id } }));
 }
-const { page } = Astro.props;
+const { page, slug } = Astro.props;
 ---
-<LandingPage page={page} />
+<LandingPage page={page} slug={slug} />

@@ -1,12 +1,19 @@
 ---
 import Pic from '../Pic.astro';
-const { b } = Astro.props;
+const { b, brand } = Astro.props;
 ---
-<section class:list={['photo-page', 'cover', { top: b.mobileTop }]}>
+<section class:list={['photo-page', 'cover', { top: b.mobileTop, branded: brand }]}>
   <Pic pic={b.pic} eager />
   <div class:list={['overlay', { left: b.align === 'left' }]}>
     <div class="title" set:html={b.title} />
     {b.sub && <div class="sub" set:html={b.sub} />}
     {b.caps && <div class="caps" set:html={b.caps} />}
   </div>
+  {brand && <div class="brand">
+    <span class="brand-name"><span class="w1">СЕМЬ&nbsp;</span><span class="w2">ЭКСПЕДИЦИЙ</span></span>
+    <nav class="brand-links" aria-label="Связаться">
+      <a href="https://wa.me/17788553539">WhatsApp</a>
+      <a href="https://t.me/VadimRubinov">Telegram</a>
+    </nav>
+  </div>}
 </section>

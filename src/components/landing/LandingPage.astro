@@ -18,12 +18,15 @@ import Summary from './Summary.astro';
 import Heading from './Heading.astro';
 import Placeholder from './Placeholder.astro';
 import Contact from './Contact.astro';
-const { page } = Astro.props;
+import { LEGACY } from '../../lib/rules';
+const { page, slug } = Astro.props;
+// Имя компании и контакты поверх обложки, имя компании во вкладке и превью: у всех лендингов, кроме прежних (LEGACY).
+const brand = !LEGACY.includes(slug);
 const C: Record<string, any> = { cover: Cover, lead: Lead, diptych: Diptych, map: MapSec, day: Day, photo: Photo,
   trio: Trio, notes: Notes, why: Why, summary: Summary, heading: Heading, placeholder: Placeholder };
 ---
 <Base icon={page.favicon ? 'seven' : 'off'}>
-  <Head slot="head" page={page} />
-  {page.blocks.map((b: any) => { const X = C[b.type]; return <X b={b} />; })}
+  <Head slot="head" page={page} brand={brand} />
+  {page.blocks.map((b: any) => { const X = C[b.type]; return <X b={b} brand={brand && b.type === 'cover'} />; })}
   <Contact />
 </Base>

@@ -1,14 +1,18 @@
 ---
 // Шапка лендинга из полей содержания.
-const { page } = Astro.props;
+const { page, brand } = Astro.props;
+const SITE = '7 Expeditions';
+// Имя компании во вкладке ставит шаблон; в содержании его не пишут.
+const title = brand && !page.title.includes(SITE) ? `${page.title} · ${SITE}` : page.title;
 const og = page.og ?? {};
 const ld = page.jsonld ? JSON.stringify(page.jsonld, null, 2).replace(/<\//g, '<\\/') : null;
 ---
-<title>{page.title}</title>
+<title>{title}</title>
 {page.description && <meta name="description" content={page.description}>}
 {page.robots && <meta name="robots" content={page.robots}>}
 {page.canonical && <link rel="canonical" href={page.canonical}>}
 {og.title && <meta property="og:type" content="website">}
+{brand && og.title && <meta property="og:site_name" content={SITE}>}
 {og.title && <meta property="og:title" content={og.title}>}
 {og.description && <meta property="og:description" content={og.description}>}
 {og.title && page.canonical && <meta property="og:url" content={page.canonical}>}
