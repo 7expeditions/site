@@ -92,7 +92,17 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   .brand-links{gap:.6rem}
   .brand-links a{font-size:.56rem;letter-spacing:.08em}
 }
-@media print{.brand,.cover.branded::before{display:none}}
+/* обложка: низ фото затемнён под текстом; строки текста делятся поровну */
+.cover.branded::after{content:"";position:absolute;left:0;right:0;bottom:0;height:55%;pointer-events:none;
+  background:linear-gradient(to top,rgba(24,20,15,.6),rgba(24,20,15,0))}
+.cover.branded .overlay{z-index:1}
+.cover.branded .title,.cover.branded .sub,.cover.branded .caps{text-wrap:balance}
+/* заголовок сверху (телефон): затемнение под текстом тоже сверху */
+@media (orientation: portrait){
+  .cover.branded.top::after{display:none}
+  .cover.branded.top::before{height:48%;background:linear-gradient(to bottom,rgba(24,20,15,.6),rgba(24,20,15,0))}
+}
+@media print{.brand,.cover.branded::before,.cover.branded::after{display:none}}
 /* обложка: текст слева */
 .cover .overlay.left{align-items:flex-start;text-align:left;padding-left:64px}
 /* обложка на телефоне: фото на весь экран, заголовок сверху на небе */
