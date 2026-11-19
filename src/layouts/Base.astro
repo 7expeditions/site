@@ -13,6 +13,7 @@ const FONT_URL = {
   golos: 'https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap',
 };
 // Фавикон: «7» шрифтом Prata, охра #B06F24, без плашки. Файлы — public/favicon.svg и public/favicon-32.png (для браузеров без SVG-иконок).
+// Иконка для экрана телефона: public/apple-touch-icon.png, 180×180, та же «7» на тёмном фоне #221E18. public/favicon.ico — для страниц вне шаблона.
 ---
 <!DOCTYPE html>
 <html lang="ru">
@@ -23,6 +24,7 @@ const FONT_URL = {
 <slot name="head" />
 {icon === 'seven' && <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">}
 {icon === 'seven' && <link rel="icon" href="/favicon.svg" type="image/svg+xml">}
+{icon === 'seven' && <link rel="apple-touch-icon" href="/apple-touch-icon.png">}
 {icon === 'none' && <link rel="icon" href="data:,">}
 {fonts !== 'none' && <link rel="preconnect" href="https://fonts.googleapis.com">}
 {fonts !== 'none' && <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>}
